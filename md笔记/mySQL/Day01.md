@@ -1,6 +1,39 @@
-# 操作
+# mySQL基本命令
 
-## 2.数据库操作
+```mermaid
+graph TB
+  基本命令 ---数据库操作
+  数据库操作 ---表操作
+  表操作 ---数据操作
+    数据操作 -.->增加
+    数据操作 -.->删除
+    数据操作 -.->修改
+    数据操作 -.->查找
+  数据操作 ---关联
+```
+
+## 一.基本命令
+
+- 1.启动服务
+  - 格式:`net start 服务名称`
+  - 示例:`net start mysql157`
+- 2.关闭服务
+  - 格式:`net stop 服务名称`
+  - 示例:`net stop mysql157`
+- 3.链接服务
+  - 格式:`mysql -u 用户名 -p`
+  - 示例:`mysql -u root -p`
+- 4.远程链接
+  - 格式:`mysql -h ip地址 -u 用户名 -p`
+  - 示例:`mysql -h 192.168.1.100 -u root -p`
+- 5.断开链接
+  - `exit`或者`quit`
+- 6.查看版本
+  - `select version()`
+- 7.显示当前时间
+  - `select now()`
+
+## 二.数据库操作
 
 - 1.创建数据库
   - 格式: `create database 数据库名 charset=utf8;`
@@ -14,12 +47,12 @@
 - 4.查看当前选择的数据库
   - `select database();`
 
-## 3.表操作
+## 三.表操作
 
 - 1.查看当前数据库中所有表
   - `show tables;`
 - 2.创建表
-  - 格式: `create table 表名(列及类型)`
+  - 格式: `create table 表名(列及类型);`
   - 说明:
     字段           |含义
     --------------|--
@@ -37,12 +70,18 @@
             address varchar(20),
             isDel   bit         default 0
         );
+- 3.删除表
+  - 格式:`drop table 表名`
+  - 示例:`drop table student`
 
-```mermaid
-graph LR
-  数据库 -->B
-   B -->C
-   B -->D
-    D -->123
-  数据库 -->4444
-```
+## 四.数据操作
+
+### 1.增加
+
+### 2.删除
+
+### 3.修改
+
+## 五.查找
+
+## 六.关联
