@@ -15,57 +15,50 @@ data03['厂名'] = data03['厂名'].str.replace('）',')')
 data03.index = data03['厂名']
 del data03['单位'],data03['厂名'],data03['华  电 ']
 data03 = data03.T
+data03['利用小时'] = data03['实际发电量']/data03['容量']
+data03 = data03.sort_values('利用小时',ascending=False)
+data03['利用小时排名'] = [n+1 for n in range(len(data03))]
 # %%
+output_file("./输出/9E对标.html")
 
-data03.columns=['1','2','3','4','5','6']
-data03.index.name = 'cty'
-data03['4'] = data03['4']/10
+data03Pic = data03.copy()
+data03Pic.columns=['1','2','3','4','5','6']
+data03Pic.index.name = 'cty'
+data03Pic['1'] = data03Pic['1']*1.3
 
-name_cty = data03.index.tolist()
+color = ['#EDD1CB', '#e0b1b4', '#cf91a3', '#b77495']
+         # , '#49838a', '#3e5f7e','#383c65', '#2b1e3e']
+data03Pic['7'] = color
 
+name_cty = data03Pic.index.tolist()
 
-p = figure(plot_width=500, plot_height=400,
-           title='不同9E电厂在2018年19月的指标情况',
-           tools='reset,wheel_zoom,pan,crosshair,box_select,save',
-           x_range=data03.index.tolist())
+hover = HoverTool(tooltips=[('容量', '@1'),
+                            ('经信委下达电量', '@2'),
+                            ('实际发电量', '@3'),
+                            ('下达电量完成率', '@4'),
+                            ('利用小时', '@5')])
 
-source = ColumnDataSource(data=data03)
+source = ColumnDataSource(data=data03Pic)
 
-p.circle(x='cty', y='1', size='4', source=source)
+p = figure(plot_width=1000, plot_height=900,
+           title='不同9E电厂在2018年10月的指标情况',
+           tools=[hover, 'reset,ywheel_zoom,xwheel_zoom,pan,crosshair,box_select,save'],
+           x_range=name_cty)
+
+p.circle(x='cty', y='5', size='1', source=source,
+         color = '7', alpha=0.9,
+         line_color='black', line_width=2, line_dash=[4, 2])
+
+p.yaxis.axis_label = "利用小时"
+
+p.xaxis.major_label_text_font_size = '16pt'
+p.xaxis.major_label_text_font_size = '14pt'
+
+p.xgrid.grid_line_color = None
+p.ygrid.grid_line_alpha = 0.9
+
 
 show(p)
 
 
-
-
-
-
-
-
-
-
-output_file("111.html")
-p = figure(plot_width=1500, plot_height=400,
-           title='不同9E电厂在2018年19月的指标情况',
-           tools='reset,wheel_zoom,pan,crosshair,box_select,save')
-
-p.circle(x=data03.index.tolist(), y='容量', size='计划电量(完成率)', source=data03,
-          line_color='black', line_alpha=0.8, line_width=0.5, line_dash=[4, 2])
-
-show(p)
-
-
-
-#%%
-color = ['green', 'blue', 'red']
-hover = HoverTool(tooltips=[('电影均分', '@score'),
-                            ('这一年电影产量', '@num')])
-p = figure(plot_width=1500, plot_height=400,
-           title='不同9E电厂在2018年19月的指标情况',
-            tools=[hover, 'reset,wheel_zoom,pan,crosshair,box_select,save'])
-i = 0
-
-source = ColumnDataSource(data03)
-p.circle(x='years', y='score', size='num', source=source,
-          fill_color=color[i], fill_alpha=0.6,
-          line_color='black', line_alpha=0.8, line_width=0.5, line_dash=[4, 2])
+# %%
