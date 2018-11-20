@@ -43,8 +43,33 @@
   - 与变量相同的驼峰命名方法
 - 类的声明
   - 使用`class`
-  - 案例:'./代码案例/PY全栈02_OPP面向对象.py'
+  - 案例:'./代码案例/PY全栈02_OPP面向对象.py'1.1-1.3
 - 访问对象成员检查
 
         obj.__dict__
         # dict前后有两个下划线
+
+### self
+
+> 类中函数自动带一个变量`self`
+
+- 案例: `./代码案例/PY全栈02_OPP面向对象.py` 1.4
+
+```python
+class student():
+
+    name = None
+    age = 18
+    gender = 'man'
+    course = 'Python'
+
+    # 这个函数必须有(self)的变量传入
+    def doHomeWork(self):
+        self.name = '1110k'
+        print(self.name,end=' ')
+        print('正在做作业')
+        return None
+stu_xiaoming = student()
+stu_xiaoming.doHomeWork()
+print(stu_xiaoming.name)
+```

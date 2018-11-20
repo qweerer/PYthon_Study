@@ -1,5 +1,4 @@
-# %%
-# 空'类'
+# %% 1.1 空'类'
 
 
 class studert():
@@ -9,8 +8,9 @@ class studert():
 
 stu_xiaoming = studert()
 del stu_xiaoming
-# %%
-# 标准'类'
+
+print('***********************', '1.1', '***********************')
+# %% 1.2 标准'类'
 
 
 class student():
@@ -33,8 +33,33 @@ yu_min.name = '域名'
 print('"域名"的信息:')
 print(yu_min.name)
 yu_min.doHomeWork()
-# 设置学生:'芦苇'
 
-# %%
+print('***********************', '1.2', '***********************')
+# %% 1.3 所有实例
 print('student的所有实例为:')
 student.__dict__
+
+print('***********************', '1.3', '***********************')
+# %% 1.4 self
+
+
+class student():
+
+    name = None
+    age = 18
+    gender = 'man'
+    course = 'Python'
+
+    # 这个函数必须有(self)的变量传入
+    def doHomeWork(self):
+        self.name = '1110k'
+        print(self.name, end=' ')
+        print('正在做作业')
+        return None
+
+
+stu_xiaoming = student()
+stu_xiaoming.doHomeWork()
+print(stu_xiaoming.name)
+
+print('***********************', '1.4', '***********************')
