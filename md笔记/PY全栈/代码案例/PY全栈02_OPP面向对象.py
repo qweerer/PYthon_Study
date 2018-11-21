@@ -57,9 +57,16 @@ class student():
         print('正在做作业')
         return None
 
+    def doHomeWorkagain():
+        print('正在做作业')
+        print(__class__.name)
+        print(__class__.age)
+        return None
 
-stu_xiaoming = student()
-stu_xiaoming.doHomeWork()
-print(stu_xiaoming.name)
 
+# stu_xiaoming = student()
+# stu_xiaoming.doHomeWork()
+student.doHomeWorkagain()
+# print(stu_xiaoming.name)
+print(student.name)
 print('***********************', '1.4', '***********************')

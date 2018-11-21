@@ -52,8 +52,7 @@
 ### self
 
 > 类中函数自动带一个变量`self`
-
-- 案例: `./代码案例/PY全栈02_OPP面向对象.py` 1.4
+> 案例: `./代码案例/PY全栈02_OPP面向对象.py` 1.4
 
 ```python
 class student():
@@ -73,3 +72,116 @@ stu_xiaoming = student()
 stu_xiaoming.doHomeWork()
 print(stu_xiaoming.name)
 ```
+
+- 如果不加`self`则成为一个类的函数,
+  - 他的调用为:
+
+        类名.函数名()
+  - 访问类的变量方法为:
+
+        __class__.变量名
+
+```python
+class student():
+
+    name = None
+    age = 18
+    gender = 'man'
+    course = 'Python'
+
+    def doHomeWorkagain():
+        print('正在做作业')
+        print(__class__.name)
+        print(__class__.age)
+        return None
+
+
+
+student.doHomeWorkagain()
+```
+
+```python
+正在做作业
+None
+18
+```
+
+### 鸭子模型
+
+> 不论是否是本类,只要构造相同,就可以调用
+
+```python
+class A():
+    name = " liuying"
+    age = 18
+
+    def __init__(self):
+        self.name = "aaaa"
+        self.age = 200
+
+    def say(self):
+        print(self.name)
+        print(self.age)
+
+class B():
+    name = "bbbb"
+    age = 90
+
+a = A()
+# 此时，系统会默认把a作为第一个参数传入函数
+a.say()
+
+# 此时，self被a替换
+A.say(a)
+# 同样可以把A作为参数传入
+A.say(A)
+
+# 此时，传入的是类实例B，因为B具有name和age属性，所以不会报错
+A.say(B)
+```
+
+    aaaa
+    200
+    aaaa
+    200
+    liuying
+    18
+    bbbb
+    90
+
+## 4. 面向对象的三大特性
+
+- 封装
+- 继承
+- 多态
+
+### 4.1 封装
+
+- 封装就是对对象的成员进行访问限制
+- 封装的三个级别：
+  - 公开，public
+  - 受保护的，protected
+  - 私有的，private
+  - public，private，protected不是关键字
+- 判别对象的位置
+  - 对象内部
+  - 对象外部
+  - 子类中
+- [python中下划线使用](http://blog.csdn.net/handsomekang/article/details/40303207)
+- 私有
+  - 私有成员是最高级别的封装，只能在当前类或对象中访问
+  - 在成员前面添加两个两个下划线即可
+
+        class Person():
+            # name是共有的成员
+            name = "liuying"
+            # __age就是私有成员
+            __age = 18
+    > Python的私有不是真私有，是一种成为name mangling的改名策略
+    > 可以使用对象._classname_attributename访问
+- 受保护的封装  protected
+  - 受保护的封装是将对象成员进行一定级别的封装，然后，在类中或者子类中都
+  可以进行访问，但是在外部不可以
+  - 封装方法： 在成员名称前只加一个下划线即可
+- 公开的，公共的 public
+  - 公共的封装实际对成员没有任何操作，任何地方都可以访问
