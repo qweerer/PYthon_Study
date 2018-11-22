@@ -70,3 +70,4 @@ student.doHomeWorkagain()
 # print(stu_xiaoming.name)
 print(student.name)
 print('***********************', '1.4', '***********************')
+# %%

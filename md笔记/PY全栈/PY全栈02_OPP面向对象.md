@@ -209,6 +209,10 @@ A.say(B)
   - 被继承的类叫父类，也叫基类，也叫超类
   - 用于继承的类，叫子类，也叫派生类
   - 继承与被继承一定存在一个 is-a 关系
+
+#### 继承语法
+
+
 - 继承的语法，参见oop-2.ipynb
 - 继承的特征
   - 所有的类都继承自object类，即所有的类都是object类的子类
@@ -261,6 +265,7 @@ A.say(B)
   - 构造函数一定要有，如果没有，则自动向上查找，按照MRO顺序，直到找到为止
 
 ## 3.3 多态
+
 - 多态就是同一个对象在不同情况下有不同的状态出现
 - 多态不是语法，是一种设计思想
 - 多态性： 一种调用方式，不同的执行效果
@@ -268,21 +273,21 @@ A.say(B)
 - [多态和多态性](https://www.cnblogs.com/luchuangao/p/6739557.html)
 
 - Mixin设计模式
-    - 主要采用多继承方式对类的功能进行扩展
-    - [Mixin概念](https://www.zhihu.com/question/20778853)
-    - [MRO and Mixin](http://blog.csdn.net/robinjwong/article/details/48375833)
-    - [Mixin模式](https://www.cnblogs.com/xybaby/p/6484262.html)
-    - [Mixin MRO](http://runforever.github.io/2014-07-19/2014-07-19-python-mixin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/)
-    - [MRO](http://xiaocong.github.io/blog/2012/06/13/python-mixin-and-mro/)
-    
+  - 主要采用多继承方式对类的功能进行扩展
+  - [Mixin概念](https://www.zhihu.com/question/20778853)
+  - [MRO and Mixin](http://blog.csdn.net/robinjwong/article/details/48375833)
+  - [Mixin模式](https://www.cnblogs.com/xybaby/p/6484262.html)
+  - [Mixin MRO](http://runforever.github.io/2014-07-19/2014-07-19-python-mixin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/)
+  - [MRO](http://xiaocong.github.io/blog/2012/06/13/python-mixin-and-mro/)
+
 - 我们使用多继承语法来实现Minxin
 - 使用Mixin实现多继承的时候非常小心
-    - 首先他必须表示某一单一功能，而不是某个物品
-    - 职责必须单一，如果由多个功能，则写多个Mixin
-    - Mixin不能依赖于子类的实现
-    - 子类及时没有继承这个Mixin类， 也能照样工作，只是缺少了某个功能
+  - 首先他必须表示某一单一功能，而不是某个物品
+  - 职责必须单一，如果由多个功能，则写多个Mixin
+  - Mixin不能依赖于子类的实现
+  - 子类及时没有继承这个Mixin类， 也能照样工作，只是缺少了某个功能
 - 优点
-    - 使用Mixin可以在不对类进行任何修改的情况下，扩充功能
-    - 可以方便的组织和维护不同功能组件的划分
-    - 可以根据需要任意调整功能类的组合
-    - 可以避免创建很多新的类，导致类的继承混乱
+  - 使用Mixin可以在不对类进行任何修改的情况下，扩充功能
+  - 可以方便的组织和维护不同功能组件的划分
+  - 可以根据需要任意调整功能类的组合
+  - 可以避免创建很多新的类，导致类的继承混乱
