@@ -210,27 +210,129 @@ A.say(B)
   - 用于继承的类，叫子类，也叫派生类
   - 继承与被继承一定存在一个 is-a 关系
 
-#### 继承语法
+- 继承语法
 
+  ```python
+  class 子类名(父类名):
+      pass
+  ```
 
-- 继承的语法，参见oop-2.ipynb
-- 继承的特征
-  - 所有的类都继承自object类，即所有的类都是object类的子类
-  - 子类一旦继承父类，则可以使用父类中除私有成员外的所有内容
-  - 子类继承父类后并没有将父类成员完全赋值到子类中，而是通过引用关系访问调用
-  - 子类中可以定义独有的成员属性和方法
-  - 子类中定义的成员和父类成员如果相同，则优先使用子类成员
-  - 子类如果想扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用 [父类名.父类成员] 的格式来调用父类成员，也可以使用super().父类成员的格式来调用
-- 继承变量函数的查找顺序问题
-  - 优先查找自己的变量
-  - 没有则查找父类
-  - 构造函数如果本类中没有定义，则自动查找调用父类构造函数
-  - 如果本类有定义，则不在继续向上查找
+  案例:
+
+  ```python
+  class Person():
+    name = "NoName"
+    age = 18
+    __score = 0 # 考试成绩是秘密，只要自己知道
+    _petname = "sec" #小名，是保护的，子类可以用，但不能公用
+    def sleep(self):
+        print("Sleeping ... ...")
+
+  #父类写在括号内
+  class Teacher(Person):
+      teacher_id = "9527"
+      def make_test(self):
+          print("attention")
+
+  t = Teacher()
+  print(t.name)
+  # 受保护不能外部访问，为啥这里可以
+  print(t._petname)
+
+  # 私有访问问题
+  # 公开访问私有变量，报错
+  #print(t.__score)
+
+  t.sleep()
+  print(t.teacher_id)
+  t.make_test()
+  ```
+
+  >- 子类和父类定义同一个名称变量，则优先使用子类本身
+  >- 子类不能使用父类中的私有成员
+  >- 子类继承父类后并没有将父类成员完全赋值到子类中，而是通过引用关系访问调用
+  >- 所有的类都继承自object类，即所有的类都是object类的子类
+
+- 扩充父类函数
+
+  >子类如果想扩充父类的方法，可以在定义新方法的同时访问父类成员来进行代码重用，可以使用 [父类名.父类成员] 的格式来调用父类成员，也可以使用super().父类成员的格式来调用
+
+  ```python
+  class Person():
+      name = "NoName"
+      age = 18
+      __score = 0 # 考试成绩是秘密，只要自己知道
+      _petname = "sec" #小名，是保护的，子类可以用，但不能公用
+      def sleep(self):
+          print("Sleeping ... ...")
+      def work(self):
+          print("make some money")
+
+  #父类写在括号内
+  class Teacher(Person):
+      teacher_id = "9527"
+      name = "DaNa"
+      def make_test(self):
+          print("attention")
+
+      def work(self):
+          # 扩充父类的功能只需要调用父类相应的函数
+          #Person.work(self)
+          # 扩充父类的另一种方法
+          # super代表得到父类
+          super().work()
+          self.make_test()
+
+  t = Teacher()
+  t.work()
+  ```
+
+  ```c
+  make some money
+  attention
+  ```
+
 - 构造函数
+  - 构造函数如果本类中没有定义，则自动查找调用父类构造函数,如果有，则不在继续向上查找
   - 是一类特殊的函数，在类进行实例化之前进行调用
   - 如果定义了构造函数，则实例化时使用构造函数，不查找父类构造函数
   - 如果没定义，则自动查找父类构造函数
   - 如果子类没定义，父类的构造函数带参数，则构造对象时的参数应该按父类参数构造
+
+  ```python
+  class Animel():
+    def __init__(self):
+        print("Animel")
+
+  class PaxingAni(Animel):
+      def __init__(self, name):
+          print(" Paxing Dongwu {0}".format(name))
+
+  class Dog(PaxingAni):
+      # __init__就是构造函数
+      # 每次实例化的时候，第一个被自动的调用
+      # 因为主要工作是进行初始化，所以得名
+      def __init__(self):
+          print("I am init in dog")
+
+  # 实例化Dog时，查找到Dog的构造函数，参数匹配，不报错
+  d = Dog()
+
+  class Cat(PaxingAni):
+      pass
+
+  # 此时，由于Cat没有构造函数，则向上查找
+  # 因为PaxingAni的构造函数需要两个参数，
+  # 实例化的时候需要再填入一个变量,当做'PaxingAni'构造函数中的'name传入变量',
+  # 否则报错
+  c = Cat(123)
+  ```
+
+  ```c
+  I am init in dog
+  Paxing Dongwu 123
+  ```
+
 - super
   - super不是关键字， 而是一个类
   - super的作用是获取MRO（MethodResolustionOrder）列表中的第一个类
