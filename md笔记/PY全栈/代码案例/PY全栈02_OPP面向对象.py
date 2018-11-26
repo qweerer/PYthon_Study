@@ -71,3 +71,32 @@ student.doHomeWorkagain()
 print(student.name)
 print('***********************', '1.4', '***********************')
 # %%
+
+
+class Animos():
+
+    def gogo(self):
+        print(112)
+
+
+class Puru(Animos):
+    pass
+
+
+class cat(Puru):
+
+    def gogo(self):
+        print(222)
+        super().gogo()
+
+
+haha = cat()
+haha.gogo()
+print('&'*20)
+Animos.gogo(haha)
+print('&'*20)
+print(Puru.__mro__)
+print(cat.__mro__)
+
+# %%
+

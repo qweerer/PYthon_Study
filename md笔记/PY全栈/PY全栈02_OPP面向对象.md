@@ -277,9 +277,10 @@ A.say(B)
 
       def work(self):
           # 扩充父类的功能只需要调用父类相应的函数
-          #Person.work(self)
+          Person.work(self)
           # 扩充父类的另一种方法
           # super代表得到父类
+          # super()可以向上一直查找,知道找到`work()`函数为止
           super().work()
           self.make_test()
 
@@ -288,6 +289,7 @@ A.say(B)
   ```
 
   ```c
+  make some money
   make some money
   attention
   ```
@@ -333,11 +335,16 @@ A.say(B)
   Paxing Dongwu 123
   ```
 
-- super
-  - super不是关键字， 而是一个类
-  - super的作用是获取MRO（MethodResolustionOrder）列表中的第一个类
-  - super于父类直接没任何实质性关系，但通过super可以调用到父类
-  - super使用两个方,参见在构造函数中调用父类的构造函数
+- `.__mro__`:显示家谱
+
+  ```python
+  class A():
+    pass
+  class B(A):
+    pass
+  print(A.__mro__)
+  print(B.__mro__)
+  ```
 
 - 单继承和多继承
   - 单继承：每个类只能继承一个类
