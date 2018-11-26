@@ -70,7 +70,7 @@ student.doHomeWorkagain()
 # print(stu_xiaoming.name)
 print(student.name)
 print('***********************', '1.4', '***********************')
-# %%
+# %% 1.5 mro
 
 
 class Animos():
@@ -97,6 +97,40 @@ Animos.gogo(haha)
 print('&'*20)
 print(Puru.__mro__)
 print(cat.__mro__)
+print('***********************', '1.5', '***********************')
+# %% 1.6 继承自己的想法
+
+
+class A():
+    def __init__(self):
+        print('我是A')
+
+
+class B1(A):
+    def __init__(self):
+        print('我是B1,下面是我爸的发言')
+        super.__init__(A)
+
+
+class B2(A):
+    def __init__(self):
+        print('我是B2')
+
+    def work(self):
+        print('干活中')
+
+
+class C(B1):
+    def __init__(self):
+        print('我是C')
+
+    def work(self):
+        b2 = B2()
+        B2.work(b2)
+
+
+abc = C()
+abc.work()
+print('***********************', '1.6', '***********************')
 
 # %%
-
