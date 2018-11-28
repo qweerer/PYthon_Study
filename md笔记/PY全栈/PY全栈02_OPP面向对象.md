@@ -23,7 +23,7 @@
   - 多态,Mixin
 - 类的相关函数与属性
   - 成员描述
-  - 内置属性 
+  - 内置属性
 - 魔法函数
   - 魔法函数概述
   - 构造魔法函数
@@ -434,10 +434,41 @@ A.say(B)
     - property(fget, fset, fdel, doc)
 
     ```python
-    class A():
-        A.name = None
-        A.age = 0
+    # 定义一个Person类，具有name，age属性
+    # 对于任意输入的姓名，我们希望都用大写方式保存
+    # 年龄，我们希望内部统一用整数保存
+    # x = property(fget, fset, fdel, doc)
+    class Person():
+        '''
+        这个是类的文档,
+        在'print(Person.__doc__)'时显示.
+        这是一个人，一个高尚的人，一个脱离了低级趣味的人
+        他还他妈的有属性
+        '''
+        # 函数的名称可以任意
+        # 读取操作
+        def fget(self):
+            return self._name * 2
 
+        # 设定是操作
+        def fset(self, name):
+            # 所有输入的姓名以大写形式保存
+            self._name = name.upper()
+
+        # 删除时操作
+        def fdel(self):
+            self._name = "NoName"
+        # 如果外部定义一个对象,那么先进行2→1→3
+        name = property(fget, fset, fdel, "对name进行下下操作啦")
+
+    p1 = Person()
+    p1.name = "TuLing"
+    print(p1.name)
+
+    ```
+
+    ```c
+    TULINGTULING
     ```
 - 无论哪种修饰符都是为了对成员属性进行相应的控制  
   - 类的方式： 适合多个类中的多个属性共用用一个描述符
@@ -468,7 +499,7 @@ A.say(B)
 - 属性操作相关
   - `__getattr__`: 访问一个不存在的属性时触发
   - `__setattr__`: 对成员属性进行设置的时候触发
-    - 参数： 
+    - 参数：
       - self用来获取当前对象
       - 被设置的属性名称，以字符串形式出现
       - 需要对属性名称设置的值
@@ -483,7 +514,7 @@ A.say(B)
       - 返回值可以是任意值，推荐返回布尔值
       - 案例
 
-# 8. 类和对象的三种方法
+### 类和对象的三种方法
 
 - 实例方法
   - 需要实例化对象才能使用的方法，使用过程中可能需要截止对象的其他对象的方法完成
@@ -491,7 +522,52 @@ A.say(B)
   - 不需要实例化，通过类直接访问
 - 类方法
   - 不需要实例化
-- 参看案例
+- 案例
+    ```python
+    # 三种方法的案例
+    class Person:
+        # 实例方法
+        def eat(self):
+            print(self)
+            print("Eating.....")
+
+        #类方法
+        # 类方法的第一个参数，一般命名为cls，区别于self
+        @classmethod
+        def play(cls):
+            print(cls)
+            print("Playing.....")
+
+        # 静态方法
+        # 不需要用第一个参数表示自身或者类
+        @staticmethod
+        def say():
+
+            print("Saying....")
+
+    yueyue = Person()
+
+    # 实例方法
+    yueyue.eat()
+    # 类方法
+    Person.play()
+    yueyue.play()
+    #静态方法
+    Person.say()
+    yueyue.say()
+    ```
+
+    ```c
+    <__main__.Person object at 0x7f4aac6b3eb8>
+    Eating.....
+    <class '__main__.Person'>
+    Playing.....
+    <class '__main__.Person'>
+    Playing.....
+    Saying....
+    Saying....
+    ```
+
 - 三个方法具体区别自行百度
 
 | 是否自动传入第一个变量`self` | 实例方法 | 类方法 | 静态方法 |
