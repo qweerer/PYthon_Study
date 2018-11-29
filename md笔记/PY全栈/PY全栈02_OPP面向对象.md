@@ -582,16 +582,35 @@ A.say(B)
 - 抽象方法： 没有具体实现内容的方法成为抽象方法
 - 抽象方法的主要意义是规范了子类的行为和接口
 
-################################需要导入代码
 ### 抽象类
 
+- 抽象类：包含抽象方法的类叫抽象类，通常成为ABC类
 - 抽象类的使用需要借助abc模块
 
   ```python
   import abc
-  ```
 
-- 抽象类：包含抽象方法的类叫抽象类，通常成为ABC类
+  #声明一个类并且指定当前类的元类
+  class Human(metaclass=abc.ABCMeta):
+
+      # 定义一个抽象的方法
+      @abc.abstractmethod
+      def smoking(self):
+          pass
+
+      # 定义类抽象方法
+      @abc.abstractclassmethod
+      def drink():
+          pass
+
+      # 定义静态抽象方法
+      @abc.abstractstaticmethod
+      def play():
+          pass
+
+      def sleep(self):
+          print("Sleeping.......")
+  ```
 
 - 抽象类的使用
 
@@ -605,10 +624,97 @@ A.say(B)
 ## 11. 自定义类
 
 - 类其实是一个类定义和各种方法的自由组合
-- 可以定义类和函数，然后自己通过类直接赋值
-- 可以借助于MethodType实现
+- 共有``种方法
+- 1.可以定义类和函数，然后自己通过类直接赋值
+
+```python
+class A():
+    pass
+
+def say(self):
+    print("Saying... ...")
+
+
+class B():
+    def say(self):
+        print("Saying......")
+
+say(9)
+A.say = say
+
+a = A()
+a.say()
+
+b = B()
+b.say()
+```
+
+```c
+Saying... ...
+Saying... ...
+Saying......
+```
+
+- 2.可以借助于MethodType实现
+
+```python
+from types import MethodType
+
+class A():
+    pass
+
+def say(self):
+    print("Saying... ...")
+
+a = A()
+a.say = MethodType(say, A)
+a.say()
+```
+
 - 借助于type实现
+
+```python
+# 先定义类应该具有的成员函数
+def say(self):
+    print("Saying.....")
+    
+def talk(self):
+    print("Talking .....")
+    
+#用type来创建一个类
+A = type("AName", (object, ), {"class_say":say, "class_talk":talk})
+
+# 然后可以像正常访问一样使用类
+a = A()
+
+a.class_say()
+a.class_talk()
+```
 
 - 利用元类实现- MetaClass
   - 元类是类
   - 备用来创造别的类
+  - 元类写法是固定的，必须继承自type
+  - 元类一般命名以MetaClass结尾
+
+```python
+
+# 元类写法是固定的，必须继承自type
+# 元类一般命名以MetaClass结尾
+class TulingMetaClass(type):
+    # 注意以下写法
+    def __new__(cls, name, bases, attrs):
+        #自己的业务处理
+        print("哈哈，我是元类呀")
+        attrs['id'] = '000000'
+        attrs['addr'] = "北京海淀区公主坟西翠路12号"
+        return type.__new__(cls, name, bases, attrs)
+
+# 元类定义完就可以使用，使用注意写法
+class Teacher(object, metaclass=TulingMetaClass):
+    pass
+
+t = Teacher()
+
+t.id
+```
