@@ -13,13 +13,22 @@ os.chdir('D:\\code\\PYthon_Study\\工作代码\\每日报表')
 year = 365
 # %%
 data01 = pd.read_excel('每日报表基础文件.xlsx', header=0)
+'''
 nM = str(data01['num'][data01['name'] == '昨日日期'].tolist()[0])[:2]
 nD = str(data01['num'][data01['name'] == '昨日日期'].tolist()[0])[2:]
+'''
+yM = str(data01['num'][data01['name'] == '昨日日期'].tolist()[0])[5:7]
+yD = str(data01['num'][data01['name'] == '昨日日期'].tolist()[0])[8:10]
+nM = str(data01['num'][data01['name'] == '今日日期'].tolist()[0])[5:7]
+nD = str(data01['num'][data01['name'] == '今日日期'].tolist()[0])[8:10]
+
 dayFaDian = data01['num'][data01['name'] == '日发电量'].tolist()[0]/10000
 mouLeiJi = data01['num'][data01['name'] == '月累计发电量'].tolist()[0]/10000
 yearLeiJi = data01['num'][data01['name'] == '年累计发电量'].tolist()[0]/10000
 
 # %% 广东公司大唐集团月度电量完成日督导情况表
+# 已经不需要此表
+'''
 lyFaDian = data01['num'][data01['name'] == '去年日发电量'].tolist()[0]/10000
 lyLeiJi = data01['num'][data01['name'] == '去年月累计发电量'].tolist()[0]/10000
 
@@ -33,7 +42,7 @@ dayok.to_excel(writer,'shell1')
 writer.save()
 
 del lyFaDian, lyLeiJi, dayok
-
+'''
 # %% 9E对标
 '''
 data02 = pd.read_excel('利用小时统计分析表2018.xlsx', header=0)
@@ -86,17 +95,17 @@ if c.tolist()[0]:
     b = 1
 
 if a+b == 2:
-    a = '#5~#6机组、#7~#8机组运行'
+    a = '5、6、7、8号机组运行'
 elif a+b == 0:
-    a = '#5~#6机组、#7~#8机组全部停运'
+    a = '5、6、7、8号机组全部停备'
 else:
     if a == 1:
-        a = '#5~#6机组运行、#7~#8机组停运'
+        a = '5、6号机组运行、7、8号机组停备'
     else:
-        a = '#7~#8机组运行、#5~#6机组停运'
+        a = '7、8号机组运行、5、6号机组停备'
 
 # 开始打印结果
-print('{}月{}日宝昌公司{}'.format(nM, nD, a), end=',')
+print('{}月{}日宝昌公司{}'.format(yM, yD, a), end=';')
 del a, b, c
 print('日发电量{}万千瓦时;月累计发电量{}万千瓦时'.format(int(dayFaDian+0.5), int(mouLeiJi+0.5)), end=',')
 # 计算完成月计划情况
@@ -110,10 +119,26 @@ print('年累计发电量{}万千瓦时，完成分公司下达年发电量计�
 # 计算高于时间进度情况
 lz = data01['num'][data01['name'] == '昨天是今年第几天'].tolist()[0]
 lzb = lzb - (lz/year)*100
-print('高于时间进度%.2f%%。累计%i天'%(lzb,lz))
-del lz, lzb, nD, nM, yearLeiJi, mouLeiJi, dayFaDian
+print('高于时间进度%.2f%%'%lzb, end='。')
 
+# 判断今天的运行情况
+c = str(data01['num'][data01['name'] == '今日发电情况'].tolist()[0])
 
+print('今天({}月{}日){}。'.format(nM, nD, c))
+print('累计%i天'%lz)
+del lz, lzb, nD, nM
+
+# %% 一般情况下的报表
+
+dayok = pd.DataFrame({'当日':dayFaDian, '月累计':mouLeiJi,'年累计': yearLeiJi, 
+                      '日利用小时': dayFaDian/36.68, '月利用小时': mouLeiJi/36.68, '年利用小时': yearLeiJi/36.68}, index = [0])
+
+dayok = dayok.T
+writer = pd.ExcelWriter('./输出/电量完成日out.xlsx')
+dayok.to_excel(writer,'shell1')
+writer.save()
+
+del dayok
 
 
 
