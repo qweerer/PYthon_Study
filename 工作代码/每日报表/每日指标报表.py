@@ -22,6 +22,8 @@ yD = str(data01['num'][data01['name'] == '昨日日期'].tolist()[0])[8:10]
 nM = str(data01['num'][data01['name'] == '今日日期'].tolist()[0])[5:7]
 nD = str(data01['num'][data01['name'] == '今日日期'].tolist()[0])[8:10]
 
+dayGas = data01['num'][data01['name'] == '当日燃料消耗'].tolist()[0]/10000
+
 dayFaDian = data01['num'][data01['name'] == '日发电量'].tolist()[0]/10000
 mouLeiJi = data01['num'][data01['name'] == '月累计发电量'].tolist()[0]/10000
 yearLeiJi = data01['num'][data01['name'] == '年累计发电量'].tolist()[0]/10000
@@ -131,7 +133,8 @@ del lz, lzb, nD, nM
 # %% 一般情况下的报表
 
 dayok = pd.DataFrame({'当日':dayFaDian, '月累计':mouLeiJi,'年累计': yearLeiJi, 
-                      '日利用小时': dayFaDian/36.68, '月利用小时': mouLeiJi/36.68, '年利用小时': yearLeiJi/36.68}, index = [0])
+                      '日利用小时': dayFaDian/36.68, '月利用小时': mouLeiJi/36.68,
+                      '年利用小时': yearLeiJi/36.68, '每日气耗':dayGas}, index = [0])
 
 dayok = dayok.T
 writer = pd.ExcelWriter('./输出/电量完成日out.xlsx')
