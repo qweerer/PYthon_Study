@@ -8,8 +8,8 @@ Created on Thu Nov  8 10:12:11 2018
 # %%
 import pandas as pd
 import os
-os.chdir('D:\\code\\PYthon_Study\\工作代码\\每日报表')
-# os.chdir('D:\\user\\Documents\\00code\\PYthon_Study\\工作代码\\每日报表')
+# os.chdir('D:\\code\\PYthon_Study\\工作代码\\每日报表')
+os.chdir('D:\\user\\Documents\\00code\\PYthon_Study\\工作代码\\每日报表')
 year = 365
 # %%
 data01 = pd.read_excel('每日报表基础文件.xlsx', header=0)
