@@ -123,9 +123,15 @@ lz = data01['num'][data01['name'] == '昨天是今年第几天'].tolist()[0]
 lzb = lzb - (lz/year)*100
 print('高于时间进度%.2f%%'%lzb, end=',')
 
+# 判断全年未完成电量情况,一套机需要250千瓦时左右
 lz = data01['num'][data01['name'] == '年计划发电量'].tolist()[0]
-print('完成年发电量计划还需%i千瓦'%(lz-yearLeiJi), end='时')
-print('(约%i套开机)'%((lz-yearLeiJi)/250+0.5), end=',')
+lz = lz-yearLeiJi
+
+if lz>0:
+    print('完成年发电量计划还需%i千瓦'%(lz), end='时')
+    print('(约%i套开机)'%(lz/250+0.5), end=',')
+else:
+    print('已完成年发电量计划')
 
 print('目前尚未执行的开机计划数为  套(今天多争取了 套开机)', end='。')
 
@@ -133,6 +139,8 @@ print('目前尚未执行的开机计划数为  套(今天多争取了 套开机
 c = str(data01['num'][data01['name'] == '今日发电情况'].tolist()[0])
 
 print('今天({}月{}日){}。(计划营销部)'.format(nM, nD, c))
+# 累计第几天
+lz = data01['num'][data01['name'] == '昨天是今年第几天'].tolist()[0]
 print('累计%i天'%lz)
 del lz, lzb, nD, nM
 
