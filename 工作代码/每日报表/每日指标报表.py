@@ -8,8 +8,8 @@ Created on Thu Nov  8 10:12:11 2018
 # %%
 import pandas as pd
 import os
-# os.chdir('D:\\code\\PYthon_Study\\工作代码\\每日报表')
-os.chdir('D:\\user\\Documents\\00code\\PYthon_Study\\工作代码\\每日报表')
+os.chdir('D:\\code\\PYthon_Study\\工作代码\\每日报表')
+# os.chdir('D:\\user\\Documents\\00code\\PYthon_Study\\工作代码\\每日报表')
 year = 365
 # %%
 data01 = pd.read_excel('每日报表基础文件.xlsx', header=0)
@@ -114,26 +114,31 @@ print('日发电量{}万千瓦时;月累计发电量{}万千瓦时'.format(int(d
 lz = data01['num'][data01['name'] == '月计划力争值'].tolist()[0]
 lzb = str((mouLeiJi/lz)*100+0.005)[:5]
 print('完成分公司月计划（力争值{}万千瓦时）的{}%'.format(lz, lzb), end='；')
+
 # 计算完成年下发电量情况
 lz = data01['num'][data01['name'] == '年计划发电量'].tolist()[0]
 lzb = (yearLeiJi/lz)*100
 print('年累计发电量{}万千瓦时，完成分公司下达年发电量计划（{}万千瓦时）的{}%'.format(int(yearLeiJi+0.5), lz, str(lzb+0.005)[:5]), end=',')
-# 计算高于时间进度情况
-lz = data01['num'][data01['name'] == '昨天是今年第几天'].tolist()[0]
-lzb = lzb - (lz/year)*100
-print('高于时间进度%.2f%%'%lzb, end=',')
 
-# 判断全年未完成电量情况,一套机需要250千瓦时左右
-lz = data01['num'][data01['name'] == '年计划发电量'].tolist()[0]
-lz = lz-yearLeiJi
+if yearLeiJi < lz:
 
-if lz>0:
+    # 计算高于时间进度情况
+    lz = data01['num'][data01['name'] == '昨天是今年第几天'].tolist()[0]
+    lzb = lzb - (lz/year)*100
+    print('高于时间进度%.2f%%'%lzb, end=',')
+
+    # 判断全年未完成电量情况,一套机需要250千瓦时左右
+    lz = data01['num'][data01['name'] == '年计划发电量'].tolist()[0]
+    lz = lz-yearLeiJi
+
     print('完成年发电量计划还需%i千瓦'%(lz), end='时')
     print('(约%i套开机)'%(lz/250+0.5), end=',')
+    
+    # lz变为年计划发电量与年计划的差值
+    print('目前尚未执行的开机计划数为  套(今天多争取了 套开机)', end='。')
 else:
-    print('已完成年发电量计划')
-
-print('目前尚未执行的开机计划数为  套(今天多争取了 套开机)', end='。')
+    # 求出高出年计划多少
+    print('高%i万千瓦时'%(yearLeiJi - lz), end='。')
 
 # 判断今天的运行情况
 c = str(data01['num'][data01['name'] == '今日发电情况'].tolist()[0])
