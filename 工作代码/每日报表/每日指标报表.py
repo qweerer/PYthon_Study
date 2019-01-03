@@ -118,7 +118,9 @@ print('完成分公司月计划（力争值{}万千瓦时）的{}%'.format(lz, l
 # 计算完成年下发电量情况
 lz = data01['num'][data01['name'] == '年计划发电量'].tolist()[0]
 lzb = (yearLeiJi/lz)*100
-print('年累计发电量{}万千瓦时，完成分公司下达年发电量计划（{}万千瓦时）的{}%'.format(int(yearLeiJi+0.5), lz, str(lzb+0.005)[:5]), end=',')
+# 分公司还未下达全年发电量
+print('年累计发电量{}万千瓦时，完成全面计划拟定的年发电量计划（{}万千瓦时）的{}%'.format(int(yearLeiJi+0.5), lz, str(lzb+0.005)[:5]), end=',')
+# print('年累计发电量{}万千瓦时，完成分公司下达年发电量计划（{}万千瓦时）的{}%'.format(int(yearLeiJi+0.5), lz, str(lzb+0.005)[:5]), end=',')
 
 if yearLeiJi < lz:
 
@@ -130,12 +132,13 @@ if yearLeiJi < lz:
     # 判断全年未完成电量情况,一套机需要250千瓦时左右
     lz = data01['num'][data01['name'] == '年计划发电量'].tolist()[0]
     lz = lz-yearLeiJi
-
-    print('完成年发电量计划还需%i千瓦'%(lz), end='时')
-    print('(约%i套开机)'%(lz/250+0.5), end=',')
+    
+    # 以下为年发电量即将完成时发送的
+    # print('完成年发电量计划还需%i千瓦'%(lz), end='时')
+    # print('(约%i套开机)'%(lz/250+0.5), end=',')
     
     # lz变为年计划发电量与年计划的差值
-    print('目前尚未执行的开机计划数为  套(今天多争取了 套开机)', end='。')
+    # print('目前尚未执行的开机计划数为  套(今天多争取了 套开机)', end='。')
 else:
     # 求出高出年计划多少
     print('高%i万千瓦时'%(yearLeiJi - lz), end='。')
