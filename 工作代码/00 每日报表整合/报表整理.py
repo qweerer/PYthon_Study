@@ -117,6 +117,7 @@ for filename in os.listdir(r'D:\\code\\PYthon_Study\\工作代码\\00 每日报�
     data_year = data_year.reset_index()
     data_year = data_year.drop_duplicates(subset='日期',keep='first')
     data_year['日期'] = data_year['日期'].str[:10]
+    data_year = data_year.reset_index(drop = True)
     
     data_fin = pd.concat([data_fin,data_year])
     # 删除每年的重复值:12.30,1.1
@@ -126,7 +127,13 @@ for filename in os.listdir(r'D:\\code\\PYthon_Study\\工作代码\\00 每日报�
 data_fin = data_fin.fillna({'#5天然气运行时间':0, '#6运行时间':0, '#7天然气运行时间':0, '#8运行时间':0})
 data_fin = data_fin.fillna(method='pad')
 # 计算有功数据
-data_fin['#5有功'] = data_fin['#5有功电度表数'] - data_fin['#5有功电度表数'].shift(1)
+data_fin['#5每日有功'] = data_fin['#5有功电度表数'] - data_fin['#5有功电度表数'].shift(1)
+data_fin['#6每日有功'] = (data_fin['#6有功电度表数'] - data_fin['#6有功电度表数'].shift(1))*120000
+data_fin['#7每日有功'] = data_fin['#7有功电度表数'] - data_fin['#7有功电度表数'].shift(1)
+data_fin['#8每日有功'] = (data_fin['#8有功电度表数'] - data_fin['#8有功电度表数'].shift(1))*120000
+data_fin['#5,#6机组每日有功'] = data_fin['#5每日有功'] + data_fin['#6每日有功']
+data_fin['#7,#8机组每日有功'] = data_fin['#7每日有功'] + data_fin['#8每日有功']
+# 由于存在换表问题,
 # %%
 writer = pd.ExcelWriter('../2016-2018year.xlsx')
 data_fin.to_excel(writer,'data')

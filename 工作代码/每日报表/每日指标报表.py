@@ -45,44 +45,7 @@ writer.save()
 
 del lyFaDian, lyLeiJi, dayok
 '''
-# %% 9E对标
-'''
-data02 = pd.read_excel('利用小时统计分析表2018.xlsx', header=0)
-data03 = pd.read_excel('下发的利用小时对标.xlsx', header=0)
-data03['num'] = data03['num']/10
 
-nDownMou = int(str(data01['num'][data01['name'] == '对标电量时间'].tolist()[0])[:2])
-nDownDay = int(str(data01['num'][data01['name'] == '对标电量时间'].tolist()[0])[2:])
-LDownMou = int(str(data01['num'][data01['name'] == '上次对标电量时间'].tolist()[0])[:2])
-LDownDay = int(str(data01['num'][data01['name'] == '上次对标电量时间'].tolist()[0])[2:])
-
-days = nDownDay - LDownDay
-
-data04 = data02[nDownMou-1:nDownMou].T
-data04 = pd.merge(data04, data03, left_index=True, right_on='name').reset_index(drop=True)
-
-data03 = data02[data02['Unnamed: 0'] == '估计容量'].T
-data04 = pd.merge(data03, data04, left_index=True, right_on='name')
-
-data04.columns = ['容量', '原数据','厂名','现数据']
-data04['原数据'] = data04['原数据'].astype(float)
-data04['差值'] = data04['现数据'] - data04['原数据']
-data04['每日差值'] = data04['差值'] /days
-
-
-
-data03 = data04.copy()
-data03.index = data03['厂名']
-del data03['厂名']
-data03 = data03.T
-data03 = data03.astype(float)
-data03['美视A'] = data03['美视A']+data03['南天（美B）']
-del data03['南天（美B）'], data03['前湾'], data03['能东']
-data03 = data03.T
-data03['每日利用小时'] = data03['每日差值']/data03['容量']
-data03 = data03.sort_values('每日利用小时', ascending=False)
-data03['每日利用小时排名'] = [x+1 for x in range(0,5)]
-'''
 # %%
 
 # 判断机组运行情况
@@ -159,11 +122,74 @@ dayok = pd.DataFrame({'当日':dayFaDian, '月累计':mouLeiJi,'年累计': year
                       '年利用小时': yearLeiJi/36.68, '每日气耗':dayGas}, index = [0])
 
 dayok = dayok.T
-writer = pd.ExcelWriter('./输出/电量完成日out.xlsx')
+writer = pd.ExcelWriter('./发送表/电量完成日out.xlsx')
 dayok.to_excel(writer,'shell1')
 writer.save()
 
 del dayok
 
+del c, data01, dayFaDian, dayGas, mouLeiJi, yD, yM, year, yearLeiJi
+
+# %% 9E对标
+# 读取3个文件,分别为:日数据,月数据,容量数据
+data01 = pd.read_excel('./统计表格/[自建数据库]上网电量数据.xlsx', header=0)
+data_everymouth = pd.read_excel('./统计表格/[自建数据库]上网电量数据.xlsx', sheet_name='上网电量(每月结束后记录)', header=0)
+data_capacity = pd.read_excel('./统计表格/[自建数据库]上网电量数据.xlsx', sheet_name='装机容量', header=0)
+
+# 将日期变为datatime,以便计算
+data01['截至日期(单位:MKw/h)'] = pd.to_datetime(data01['截至日期(单位:MKw/h)'])
+# 计算最后2次的上网电量数据
+data01 = data01[-1:-3:-1].reset_index(drop=True).T
+# 计算最后2次上网电量差值
+data01.columns = ['倒数第一次', '倒数第二次']
+data01['最近的差值'] = data01['倒数第一次'] - data01['倒数第二次']
+# 根据最后两次数据的差值计算每日上网电量
+day = pd.Series(data01['最近的差值']['截至日期(单位:MKw/h)']).dt.days.tolist()[0]
+data01['每日平均值'] = data01['最近的差值']/day
+
+# 提取对标需要的数据
+data01 = data01.loc[['南电（山）', '宝昌', '钰湖', '中海油(福华德)', '南天（美B）']]
+data_everymouth = data_everymouth[['南电（山）', '宝昌', '钰湖', '中海油(福华德)', '南天（美B）']]
+data_capacity.index = data_capacity['名称']
+data_capacity = data_capacity.loc[['宝昌', '南电', '南天', '钰湖', '中海油']]
+
+# %%
+'''
+data02 = pd.read_excel('利用小时统计分析表2018.xlsx', header=0)
+data03 = pd.read_excel('下发的利用小时对标.xlsx', header=0)
+data03['num'] = data03['num']/10
+
+nDownMou = int(str(data01['num'][data01['name'] == '对标电量时间'].tolist()[0])[:2])
+nDownDay = int(str(data01['num'][data01['name'] == '对标电量时间'].tolist()[0])[2:])
+LDownMou = int(str(data01['num'][data01['name'] == '上次对标电量时间'].tolist()[0])[:2])
+LDownDay = int(str(data01['num'][data01['name'] == '上次对标电量时间'].tolist()[0])[2:])
+
+days = nDownDay - LDownDay
+
+data04 = data02[nDownMou-1:nDownMou].T
+data04 = pd.merge(data04, data03, left_index=True, right_on='name').reset_index(drop=True)
+
+data03 = data02[data02['Unnamed: 0'] == '估计容量'].T
+data04 = pd.merge(data03, data04, left_index=True, right_on='name')
+
+data04.columns = ['容量', '原数据','厂名','现数据']
+data04['原数据'] = data04['原数据'].astype(float)
+data04['差值'] = data04['现数据'] - data04['原数据']
+data04['每日差值'] = data04['差值'] /days
+
+
+
+data03 = data04.copy()
+data03.index = data03['厂名']
+del data03['厂名']
+data03 = data03.T
+data03 = data03.astype(float)
+data03['美视A'] = data03['美视A']+data03['南天（美B）']
+del data03['南天（美B）'], data03['前湾'], data03['能东']
+data03 = data03.T
+data03['每日利用小时'] = data03['每日差值']/data03['容量']
+data03 = data03.sort_values('每日利用小时', ascending=False)
+data03['每日利用小时排名'] = [x+1 for x in range(0,5)]
+'''
 
 
