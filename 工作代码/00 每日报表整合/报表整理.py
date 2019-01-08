@@ -11,10 +11,9 @@ import pandas as pd
 import os
 os.chdir('D:\\code\\PYthon_Study\\工作代码\\00 每日报表整合\\数据')
 # os.chdir('D:\\user\\Documents\\00code\\PYthon_Study\\工作代码\\00 每日报表整合\\数据')
-data_fin = pd.DataFrame()
 exl_sheet_name = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '数据表']
 # %%
-
+data_fin = pd.DataFrame()
 for filename in os.listdir(r'D:\\code\\PYthon_Study\\工作代码\\00 每日报表整合\\数据'):
     data_year = pd.DataFrame()
     for i in exl_sheet_name:
@@ -66,7 +65,7 @@ data_fin.to_excel(writer,sheet_name='data',index=False)
 writer.save()
 # data_fin[data_fin['日期'].duplicated(keep=False)]
 # %% 函数方法
-
+data_fin = pd.DataFrame()
 def mouth_work(exlname,mouthname):
     '''
     输入文件名与sheet名(此应用的地方是月份名)
@@ -120,9 +119,16 @@ for filename in os.listdir(r'D:\\code\\PYthon_Study\\工作代码\\00 每日报�
     data_year['日期'] = data_year['日期'].str[:10]
     
     data_fin = pd.concat([data_fin,data_year])
+    # 删除每年的重复值:12.30,1.1
     data_fin = data_fin.drop_duplicates(subset='日期',keep='first')
-
-writer = pd.ExcelWriter('2016-2018year.xlsx')
-data_year.to_excel(writer,'data')
+# %%
+# 先对巡行时间进行填充,其值都是0;在对表记填充,与上方一致
+data_fin = data_fin.fillna({'#5天然气运行时间':0, '#6运行时间':0, '#7天然气运行时间':0, '#8运行时间':0})
+data_fin = data_fin.fillna(method='pad')
+# 计算有功数据
+data_fin['#5有功'] = data_fin['#5有功电度表数'] - data_fin['#5有功电度表数'].shift(1)
+# %%
+writer = pd.ExcelWriter('../2016-2018year.xlsx')
+data_fin.to_excel(writer,'data')
 writer.save()
 
