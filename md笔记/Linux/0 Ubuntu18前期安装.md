@@ -79,6 +79,9 @@ You can use the Oranchelo [PPA](https://launchpad.net/~oranchelo/+archive/ubuntu
     sudo apt-get update
     sudo apt-get install oranchelo-icon-theme
 ```
+
+### La-capitaine-icon-theme
+
 ### 第二种
 进入Github，下载源文件，解压到目标目录并进入，右键点击空白处选择在终端打开，执行：
 ```
