@@ -46,9 +46,9 @@ sudo apt install chrome-gnome-shell
 
 ###　推荐主题
 
-- [ ] 主题： Vimix
-- [ ] 图标： Marwaita Icons
-- [ ] Shell： Minimal-Conception
+- [1] 主题： Vimix
+- [2] 图标： Marwaita Icons
+- [3] Shell： Minimal-Conception
 
 
 ----------
