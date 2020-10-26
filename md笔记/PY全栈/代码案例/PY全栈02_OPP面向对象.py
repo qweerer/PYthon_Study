@@ -76,7 +76,7 @@ print('***********************', '1.4', '***********************')
 class Animos():
 
     def gogo(self):
-        print(112)
+        print('animos!go!')
 
 
 class Puru(Animos):
@@ -86,14 +86,14 @@ class Puru(Animos):
 class cat(Puru):
 
     def gogo(self):
-        print(222)
+        print('Cat!go!')
         super().gogo()
 
 
 haha = cat()
 haha.gogo()
-print('&'*20)
-Animos.gogo(haha)
+# print('&'*20)
+# Animos.gogo(haha)
 print('&'*20)
 print(Puru.__mro__)
 print(cat.__mro__)
@@ -132,5 +132,41 @@ class C(B1):
 abc = C()
 abc.work()
 print('***********************', '1.6', '***********************')
+
+# %%标准写法
+class Student(object):
+    def __init__(self, name, age, scores):
+        """
+        定义一个学生，self为其本身，其他3个是其属性
+        """
+        self.name = name
+        self.age = age
+        self.scores = scores
+
+a = Student('小明', 12, [12,13,120])
+print(a.age)
+
+
+# %%
+class student(object):
+    def __init__(self, name, age, scores):
+        self.name = name
+        self.age = age
+        self.scores = scores
+'''        
+    def get_name(self):
+        return self.name
+    
+    def get_age(self):
+        return self.age
+    
+    def get_course(self):
+        return max(self.scores)
+'''    
+
+zz = student("周周", 18, [80,100,90])
+#print(zz.get_name())
+#print(zz.get_age())
+#print(zz.get_course())
 
 # %%
