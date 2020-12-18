@@ -33,3 +33,12 @@ mkdir /opt
 mount -o bind /mnt/Hhd_01_120G/onmp/opt /opt
 # 可以用 mount 或 df -h 命令查看是否挂载成功
 ```
+
+
+
+## nextcloud
+
+如果数据目录不能设定
+```
+chown -R nobody:nogroup /sharedfolders/disk_120G/[file]nextcloud
+```
