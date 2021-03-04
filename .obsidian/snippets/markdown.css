@@ -1,0 +1,384 @@
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+.markdown-preview.markdown-preview {
+  
+  /*sspai.css • Droplr™*/
+  /* Sspai Web Theme A theme to [sspai](ssp.ai) default theme. Developed by Codegass(wchweichenhao@gmial.com) & Yves(yves@sspai.com) Download Cuto on the App Store and Google Play! */
+  background-color: rgb(253, 246, 227);
+
+  body {
+    font-size: 15px;
+    color: rgb(83, 88, 59);
+    background: #6d722b;
+    font-family: Helvetica, Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "tohoma,sans-serif";
+    margin: 0;
+    padding: 10%;
+  }
+  /* 标题 h1~h2*/
+  /* ====================================================*/
+  h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    text-align:center;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 1.6em;
+    /* margin: 40px 10px 20px 5px; */
+    padding-left: 8px;
+    padding-top: 15px;
+
+    border-bottom: 4px solid rgb(75, 131, 214);
+    line-height: 1.4;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.2em; 
+    /* margin-top: 1.1em;
+    margin: 10px 0 3px; 
+    padding-top: 7px;*/
+    padding-left: 6px;
+
+    border-left: 3px solid rgb(69, 130, 221);
+    /* border-left-style: dashed ;
+    line-height: 1.3em; */
+  }
+  h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin: 10px 0 5px;
+    padding-top: 10px
+  }
+  h5 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-weight: normal;
+    color: #AAA;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #0772a3;
+  }
+  h4, h5, h6 {
+    padding-left: 9px;
+    line-height: 1.3em;
+    margin-top: 1.1em;
+    margin-bottom: 4px;
+  }
+  h5, h6 {
+    font-size: .9em;
+  }
+  /*图片*/
+  /* ====================================================*/
+  img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 15px;
+    height: auto;
+  }
+
+/*
+  p {
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  a {
+    color: #f22f27;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #f55852;
+    text-decoration: underline;
+  }
+
+  a:focus {
+    outline-offset: -2px;
+  }
+*/
+  /* ==================================================
+  /*<blockquote> 标签定义摘自另一个源的块引用。浏览器
+  通常会对 <blockquote> 元素进行缩进。*/
+  blockquote {
+    border-left: 4px solid #42b983;
+    padding: 0px 0px 0px 15px;
+    color: #777;
+    background-color: rgba(227, 240, 171, 0.445);
+  }
+  /*
+  blockquote {
+      font-size: 1em;
+      font-style: normal;
+      padding: 30px 38px;
+      margin: 0 0 15px;
+      position: relative;
+      line-height: 1.8;
+      text-indent: 0;
+      border: none;
+      color: #888;
+  }
+  blockquote:before {
+      content: "“";
+      left: 12px;
+      top: 0;
+      color: #E0E0E0;
+      font-size: 4em;
+      font-family: Arial, serif;
+      line-height: 1em;
+      font-weight: 700;
+      position: absolute;
+  }
+  blockquote:after {
+      content: "”";
+      right: 12px;
+      bottom: -26px;
+      color: #E0E0E0;
+      font-size: 4em;
+      font-family: Arial, serif;
+      line-height: 1em;
+      font-weight: 700;
+      position: absolute;
+      bottom: -31px;
+  }*/
+
+  /* ==================================================*/
+  /*code */
+  /*code {font-size:90%;}*/
+  /*pre {text-align:left; 
+      overflow-x: scroll; 
+      color: #257fa0; 
+      background: #f6f6f6; 
+      padding: 10pt 15pt; 
+      border-radius: 3px; 
+      border: solid 1px #e2e2e2;}*/
+  pre {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    display: block;
+    background: #c8e9d79c;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 25px;
+    color: #7f007f;
+    font-family: Courier, sans-serif;
+    border: 2px solid rgb(75, 214, 195);
+  }
+  code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+  }
+  p>code {
+    color: #c7264e;
+    background-color: #f9f2f4;
+    font-size: .95em;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  /* ==================================================*/
+  /*code */
+  strong, dfn {
+    font-weight: 700;
+  }
+  em, dfn {
+    font-style: italic;
+    font-weight: 400;
+    color: #c74284;
+  }
+  del {
+    text-decoration: line-through;
+  }
+  /* ==================================================*/
+  /*code */
+  figure {
+    margin: 1em 0;
+  }
+
+  figcaption {
+    font-size: 0.75em;
+    padding: 0.5em 2em;
+    margin-bottom: 2em;
+  }
+
+  figure img {
+    margin-bottom: 0px;
+  }
+  /* ==================================================*/
+  /*分割线 */
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 5px solid rgb(0, 0, 0);
+  }
+  /*列表
+  <dl> 定义列表
+  <ol> 定义有序列表
+  <ul> 定义无序列表
+  <li> 标签定义列表项目*/
+  /* ====================================================*/
+  dl,ol,ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 5%;
+    line-height: 1;
+  }
+  ul {
+    color: #773128
+  }
+  ol {
+    color: #7f2192
+  }
+  ol p, ul p {
+    margin-bottom: 0px;
+  }
+  li {
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+  }
+  ol#footnotes {
+    font-size: 0.95em;
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-left: 0;
+    border-top: 1px solid #eaeaea;
+    counter-reset: footer-counter;
+    list-style: none;
+    color: #555;
+    padding-left: 5%;
+    margin: 20px 0;
+  }
+  ol#footnotes li {
+    margin-bottom: 10px;
+    margin-left: 16px;
+    font-weight: 400;
+    line-height: 2;
+    list-style-type: none;
+  }
+  ol#footnotes li:before {
+    content: counter(footer-counter) ". ";
+    counter-increment: footer-counter;
+    font-weight: 800;
+    font-size: .95em;
+  }
+  /* tables */
+  /* ========================== */
+  table thead, table tr {
+  /* border-top-width: 1px;*/
+  border-top-style: solid;
+  /* border-top-color: rgb(235, 242, 224);*/
+  }
+  /*
+  table {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(235, 242, 224);
+  }*/
+  /* 第一列*/
+  thead,table td:nth-child(1){
+      font-weight:bold;
+      color: #7034ca;
+  }
+  /* Padding and font style*/
+  /*
+  table td, table th {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: Verdana;
+  color: rgb(149, 170, 109);
+  }*/
+  
+  /* Alternating background colors */
+  table tr:nth-child(even) {
+  background: rgba(215, 241, 154, 0.267)
+  }
+  /* 1,3,5行
+  table tr:nth-child(odd) {
+  background: #FFF
+  }*/
+  /* ========================== */
+
+  @keyframes highfade {
+    0% {
+      background-color: none;
+    }
+
+    20% {
+      background-color: yellow;
+    }
+
+    100% {
+      background-color: none;
+    }
+  }
+
+  @-webkit-keyframes highfade {
+    0% {
+      background-color: none;
+    }
+
+    20% {
+      background-color: yellow;
+    }
+
+    100% {
+      background-color: none;
+    }
+  }
+
+  a:target,
+  ol#footnotes li:target,
+  sup a:target {
+    animation-name: highfade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: highfade;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  a:target {
+    border: 0;
+    outline: 0;
+  }
+
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  /*}*/
+
+  a:target {
+    border: 0;
+    outline: 0;
+  }
+
+  tion-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  /*}*/
+
+  a:target {
+    border: 0;
+    outline: 0;
+  }
+  
+}
