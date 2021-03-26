@@ -1,3 +1,4 @@
+#linux #linux/install 
 
 ## 编辑 /etc/rsyslog.conf
 

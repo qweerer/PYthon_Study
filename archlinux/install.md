@@ -1,5 +1,7 @@
 ## 设置字体
 
+#linux #linux/install 
+
 ```shell
 setfont /user/share/kbd/consolefonts/LatGrkCyr-12x12
 ```

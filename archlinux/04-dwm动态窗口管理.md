@@ -1,5 +1,7 @@
 # DWM， rofi, st
 
+#linux #linux/program 
+
 如果没有安装显卡驱动，需要安装
 
 ```shell

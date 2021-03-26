@@ -1,5 +1,7 @@
 # lazygit
 
+#linux #linux/program
+
 >`https://github.com/jesseduffield/lazygit/releases`
 
 ```shell
