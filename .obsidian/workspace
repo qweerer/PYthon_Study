@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cnetos8/00.安装.md",
+            "file": "archlinux/03-lazygit.md",
             "mode": "preview"
           }
         }
@@ -55,7 +55,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cnetos8/00.安装.md"
+                "file": "archlinux/03-lazygit.md"
               }
             }
           },
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cnetos8/00.安装.md",
+                "file": "archlinux/03-lazygit.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,15 +123,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "archlinux/03-lazygit.md",
+    "md笔记/PY数据分析/PY数据分析_02.数据分析方法论.md",
+    "md笔记/PY数据分析/py数据分析_数学01.md",
     "cnetos8/00.安装.md",
     "cnetos8/01.docker.md",
     "cnetos8/podman容器.md",
     "nas_OMV/002-OpenWrt.md",
     "nas_OMV/001-OMV.md",
     "欢迎使用马克飞象.md",
-    "maxiang.info/vip.html.md",
-    "cnetos8/0 安装是设置网卡名称.png",
-    "archlinux/01-开机启动.md",
-    "archlinux/03-lazygit.md"
+    "maxiang.info/vip.html.md"
   ]
 }

@@ -3,7 +3,7 @@
 sudo nautilus
 ```
 
-#主题美化
+# 主题美化
 
 
 ## 安装Gnome-tweak-tool
