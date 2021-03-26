@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "22832879817624bd",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "cnetos8/安装.md",
-            "mode": "source"
-          }
-        },
-        "group": "39c084d20e50d258"
-      },
-      {
-        "id": "42e812febf37a85a",
+        "id": "da11b7066dc2f2f2",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cnetos8/安装.md",
+            "file": "cnetos8/00.安装.md",
             "mode": "preview"
           }
-        },
-        "group": "39c084d20e50d258"
+        }
       }
     ],
     "direction": "vertical"
@@ -53,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#主题美化",
+                "query": "tag:#linux/program/shell",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,12 +48,41 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "0bff84212d25adb2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "cnetos8/00.安装.md"
+              }
+            }
+          },
+          {
+            "id": "af30c62554ba0b68",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "eebf330dfd3ac4d9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 227
   },
   "right": {
     "id": "a9435f335cd5fed6",
@@ -82,33 +98,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cnetos8/安装.md",
+                "file": "cnetos8/00.安装.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "0bff84212d25adb2",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "cnetos8/安装.md"
-              }
-            }
-          },
-          {
-            "id": "af30c62554ba0b68",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -120,8 +115,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,15 +123,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "cnetos8/安装.md",
-    "md笔记/Linux/1.开始阶段.md",
-    "md笔记/Linux/0 Ubuntu18前期安装.md",
-    "cnetos8/0 安装是设置网卡名称.png",
+    "cnetos8/00.安装.md",
+    "cnetos8/01.docker.md",
+    "cnetos8/podman容器.md",
+    "nas_OMV/002-OpenWrt.md",
     "nas_OMV/001-OMV.md",
-    "archlinux/03-lazygit.md",
-    "archlinux/04-dwm动态窗口管理.md",
-    "archlinux/05.fish & lsd.md",
-    "archlinux/install.md",
-    "archlinux/open-sudo-log.md"
+    "欢迎使用马克飞象.md",
+    "maxiang.info/vip.html.md",
+    "cnetos8/0 安装是设置网卡名称.png",
+    "archlinux/01-开机启动.md",
+    "archlinux/03-lazygit.md"
   ]
 }
