@@ -84,6 +84,13 @@ vim /etc/pacman.d/mirrorlist
 reflector -c China -a 5 --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
+#### 如果无法安装可以试下更新缓存
+
+```shell
+sudo pacman -Syy
+```
+
+
 ## 安装
 
 ```shell
@@ -254,7 +261,7 @@ pacman -S base-devel
 systemctl enable dhcpcd
 ```
 
-## 添加永固
+## 添加用户
 
 ```shell
 useradd -m -G wheel qweerer
@@ -305,8 +312,8 @@ pacman -S xf86-video-vesa
 pacman -S xf86-video-vmware
 pacman -S virtualbox-guest-utils
 pacman -S virtualbox-guest-dkms
+sudo pacman -S linux-headers=`uname -r`
 ```
-
 ### 安装显卡驱动
 
 ```shell
