@@ -4,15 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "a794a006b217c315",
+        "id": "ea7819d3cae70d8d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "01日期/2021-06-05.md",
+            "file": "nas/101-unraid-Lnmp配置.md",
+            "mode": "source"
+          }
+        },
+        "group": "4122ac13bb71d8f7"
+      },
+      {
+        "id": "fd6fbd87e28263dc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "nas/101-unraid-Lnmp配置.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "4122ac13bb71d8f7"
       }
     ],
     "direction": "vertical"
@@ -71,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266
+    "width": 268
   },
   "right": {
     "id": "a9435f335cd5fed6",
@@ -80,7 +93,6 @@
       {
         "id": "8d73096446650d01",
         "type": "tabs",
-        "dimension": 54.75578406169666,
         "children": [
           {
             "id": "5a96323f0bf1a3d0",
@@ -88,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01日期/2021-06-05.md",
+                "file": "nas/101-unraid-Lnmp配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01日期/2021-06-05.md"
+                "file": "nas/101-unraid-Lnmp配置.md"
               }
             }
           }
@@ -121,45 +133,9 @@
         "currentTab": 2
       },
       {
-        "id": "09ab308cc6fdc709",
+        "id": "8561948a9d005a2b",
         "type": "tabs",
-        "dimension": 45.24421593830334,
         "children": [
-          {
-            "id": "606e9d4ec9e689ba",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "01日期/2021-06-05.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
-              }
-            }
-          },
           {
             "id": "f0cbbfd343996fdd",
             "type": "leaf",
@@ -167,25 +143,59 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "606e9d4ec9e689ba",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "nas/101-unraid-Lnmp配置.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 5,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.86832264957265,
+                  "repelStrength": 3.86217948717949,
+                  "linkStrength": 1,
+                  "linkDistance": 30,
+                  "scale": 0.713275462622442,
+                  "close": true
+                }
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 236.60000610351562
   },
-  "active": "a794a006b217c315",
+  "active": "ea7819d3cae70d8d",
   "lastOpenFiles": [
-    "01日期/2021-06-05.md",
-    "01日期/2021-06-06.md",
-    "01日期/12313.md",
-    "01日期/未命名看板.md",
-    "cnetos8/01.docker.md",
+    "nas/101-unraid-Lnmp配置.md",
+    "nas/901-emby改端口.md",
+    "nas/902-nextcloud1-安装.md",
     "cnetos8/00.安装.md",
     "cnetos8/04.php配置.md",
     "cnetos8/podman容器.md",
-    "nas_OMV/001-OMV.md",
-    "md笔记/PY数据分析/PY数据分析_02.数据分析方法论.md"
+    "nas/001-OMV.md",
+    "01日期/12313.md",
+    "01日期/2021-06-06.md",
+    "nas/002-OpenWrt.md"
   ]
 }
