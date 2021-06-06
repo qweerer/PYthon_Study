@@ -6,14 +6,28 @@
       {
         "id": "da11b7066dc2f2f2",
         "type": "leaf",
-        "active": true,
+        "dimension": 36.821400472069236,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "archlinux/03-lazygit.md",
+            "file": "cnetos8/00.安装.md",
+            "mode": "source"
+          }
+        },
+        "group": "946937a9fefd6537"
+      },
+      {
+        "id": "521e6d78f39744bc",
+        "type": "leaf",
+        "dimension": 63.17859952793077,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "cnetos8/00.安装.md",
             "mode": "preview"
           }
-        }
+        },
+        "group": "946937a9fefd6537"
       }
     ],
     "direction": "vertical"
@@ -55,7 +69,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archlinux/03-lazygit.md"
+                "file": "cnetos8/00.安装.md"
               }
             }
           },
@@ -98,10 +112,12 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archlinux/03-lazygit.md",
+                "file": "cnetos8/00.安装.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -122,16 +138,17 @@
     "width": 276,
     "collapsed": true
   },
+  "active": "da11b7066dc2f2f2",
   "lastOpenFiles": [
-    "archlinux/03-lazygit.md",
-    "md笔记/PY数据分析/PY数据分析_02.数据分析方法论.md",
-    "md笔记/PY数据分析/py数据分析_数学01.md",
     "cnetos8/00.安装.md",
+    "cnetos8/0 安装是设置网卡名称.png",
     "cnetos8/01.docker.md",
-    "cnetos8/podman容器.md",
+    "cnetos8/04.php配置.md",
     "nas_OMV/002-OpenWrt.md",
+    "nas_OMV/901-emby改端口.md",
+    "nas_OMV/001-OMV初步配置.md",
     "nas_OMV/001-OMV.md",
-    "欢迎使用马克飞象.md",
-    "maxiang.info/vip.html.md"
+    "archlinux/06.fish & lsd.md",
+    "archlinux/04-dwm动态窗口管理.md"
   ]
 }
