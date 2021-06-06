@@ -4,30 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "da11b7066dc2f2f2",
+        "id": "a794a006b217c315",
         "type": "leaf",
-        "dimension": 36.821400472069236,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cnetos8/00.安装.md",
-            "mode": "source"
-          }
-        },
-        "group": "946937a9fefd6537"
-      },
-      {
-        "id": "521e6d78f39744bc",
-        "type": "leaf",
-        "dimension": 63.17859952793077,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "cnetos8/00.安装.md",
+            "file": "01日期/2021-06-05.md",
             "mode": "preview"
           }
-        },
-        "group": "946937a9fefd6537"
+        }
       }
     ],
     "direction": "vertical"
@@ -54,22 +39,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#linux/program/shell",
+                "query": "tag:#linux/firewall",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "0bff84212d25adb2",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "cnetos8/00.安装.md"
               }
             }
           },
@@ -96,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227
+    "width": 266
   },
   "right": {
     "id": "a9435f335cd5fed6",
@@ -105,6 +80,7 @@
       {
         "id": "8d73096446650d01",
         "type": "tabs",
+        "dimension": 54.75578406169666,
         "children": [
           {
             "id": "5a96323f0bf1a3d0",
@@ -112,9 +88,9 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cnetos8/00.安装.md",
+                "file": "01日期/2021-06-05.md",
                 "collapseAll": false,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -130,25 +106,86 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "0bff84212d25adb2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01日期/2021-06-05.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "09ab308cc6fdc709",
+        "type": "tabs",
+        "dimension": 45.24421593830334,
+        "children": [
+          {
+            "id": "606e9d4ec9e689ba",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "01日期/2021-06-05.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "f0cbbfd343996fdd",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 276,
-    "collapsed": true
+    "width": 236.60000610351562
   },
-  "active": "da11b7066dc2f2f2",
+  "active": "a794a006b217c315",
   "lastOpenFiles": [
-    "cnetos8/00.安装.md",
-    "cnetos8/0 安装是设置网卡名称.png",
+    "01日期/2021-06-05.md",
+    "01日期/2021-06-06.md",
+    "01日期/12313.md",
+    "01日期/未命名看板.md",
     "cnetos8/01.docker.md",
+    "cnetos8/00.安装.md",
     "cnetos8/04.php配置.md",
-    "nas_OMV/002-OpenWrt.md",
-    "nas_OMV/901-emby改端口.md",
-    "nas_OMV/001-OMV初步配置.md",
+    "cnetos8/podman容器.md",
     "nas_OMV/001-OMV.md",
-    "archlinux/06.fish & lsd.md",
-    "archlinux/04-dwm动态窗口管理.md"
+    "md笔记/PY数据分析/PY数据分析_02.数据分析方法论.md"
   ]
 }
