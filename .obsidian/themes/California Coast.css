@@ -399,7 +399,7 @@ settings:
   --font-smaller: 11px;
   --font-smallest: 10px;
   --normal-weight: 400;
-  --bold-weight: 600;
+  --bold-weight: 700;
   --line-width: 42rem;
   --line-height: 1.5;
   --max-width: 100%;
@@ -453,7 +453,7 @@ settings:
   --shade-0: rgb(var(--background-rgb));
 
   --shade-plus-darker: var(--shade-5);
-  --shade-plus-darker-hsl: hsl(0, 0%, 95%);
+  --shade-plus-darker-hsl: hsl(0, 0%, 50%);
   --background-primary: #f4f5ed;
   --background-primary-alt: #f5f5f5;
   --background-secondary: #f0f0f0;
@@ -463,8 +463,8 @@ settings:
   --background-modifier-border-hover: var(--shade-plus-darker);
   --background-modifier-border-focus: var(--shade-plus-darker);
   --text-normal: #000000;
-  --text-muted: #000000;
-  --text-faint: #000000;
+  --text-muted: #7f7f7f;
+  --text-faint: #7f7f7f;
   --background-transparent: transparent;
   --background-translucent: rgba(245, 245, 245, 0.75);
   --background-match-highlight: hsla(var(--accent-hsl), 0.2);
@@ -494,6 +494,47 @@ settings:
   --text-highlight-bg: #ffc16fd8;
   --text-highlight-bg-active: rgba(0, 0, 0, 0.1);
   --background-modifier-cover: rgba(170, 170, 170, 0.6);
+  /*行内代码颜色*/
+  --inside-code-background: #ffe3e3;
+
+  /*构造强调色*/
+  --line-heavy-background: #007de4;
+  --line-list-background: #00927f;
+  
+  --text-myconf01-background: #cae2f83a;
+  --text-myconf02-background: #007de4;
+  --text-myconf03-background: #9859e0;
+  /*colourful notes*/
+  --myconf-text-gray: #37352f99;
+  --myconf-text-brown: #855a46;
+  --myconf-text-orange: #d9730d;
+  --myconf-text-yellow: #d4a300;
+  --myconf-text-green: #00927f;
+  --myconf-text-blue: #0083bb;
+  --myconf-text-purple: #5d1fb9;
+  --myconf-text-pink: #c40075;
+  --myconf-text-red: #ff4343;
+
+  --myconf-background-gray: #ebeced;
+  --myconf-background-brown: #e9e5e3;
+  --myconf-background-orange: #faebdd;
+  --myconf-background-yellow: #fbf3db;
+  --myconf-background-green: #ddedea;
+  --myconf-background-blue: #ddebf1;
+  --myconf-background-purple: #eae4f2;
+  --myconf-background-pink: #f4dfeb;
+  --myconf-background-red: #ffe3e3;
+
+  --note-important: #fd4141;
+
+  /*table*/
+  --table-background-color: #ebebeb;
+  --table-background-color-odd: #ffffff;
+  --table-border-color: #555555;
+  --table-thead-background-color: #bfddf5;
+  --table-hover-raw-color: #2f93e42f;
+  --table-hover-color: #2f93e47c;
+  --table-hover-thead-color: #cde8ff;
 
   --opacity-translucency: 1;
 }
@@ -896,8 +937,8 @@ button,
 	text-decoration: none;
 	margin: 0px 0px;
 	cursor: pointer;
-  padding: 6px 6px 6px 6px !important;
-  border-radius: 16px;
+  padding: 1px 6px 1px 6px !important;
+  border-radius: 5px;
 }
 .tag:not(.token):hover {
 	color: black;
@@ -1320,10 +1361,12 @@ body.theme-dark:not(.is-translucent):not(.hider-frameless)
   background-color: transparent;
   box-shadow: none !important;
 }
+/*我的 slide侧边icon*/
 .workspace-leaf:not(.mod-active) .view-header-icon,
 .workspace-leaf:not(.mod-active) .view-action {
-  color: var(--shade-30);
+  color: var(--shade-90);
 }
+
 
 .workspace-tab-container-inner {
   background: var(--shade-plus-darker);
@@ -3318,8 +3361,10 @@ body.plugin-sliding-panes:not(.is-fullscreen)
 body.plugin-sliding-panes .view-header-title:before {
   background: none;
 }
+/* 我的 slide标题线*/
 body.plugin-sliding-panes .view-header {
   background: none;
+  border-right: 3px solid var(--line-list-background) !important;
 }
 body.plugin-sliding-panes-rotate-header
   .workspace
@@ -3812,9 +3857,12 @@ html .CodeMirror-lines {
 /* 我的备注：文件链接*/
 .internal-embed .markdown-embed {
   border: 0;
-  border-left: 3px solid  rgba(45, 136, 211, 0.7);
-  border-bottom: 3px solid  rgba(45, 136, 211, 0.7);
-  background-color: var(--background-primary-alt);
+
+  border-right: 3px solid  var(--text-myconf03-background);
+  border-left: 3px solid  var(--text-myconf03-background);
+  border-bottom: 3px solid  var(--text-myconf03-background);
+  border-top: 3px solid  var(--text-myconf03-background);
+  background-color: var(--myconf-background-purple);
   border-radius: 0;
 }
 
@@ -4172,14 +4220,13 @@ iframe {
   border-radius: 0;
   border: solid var(--quote-opening-modifier);
   border-width: 0px 0px 0px 1px;
-  background-color: transparent;
   color: var(--text-muted);
   padding: 0 0 0 calc(var(--nested-padding) / 2);
   margin-inline-start: var(--nested-padding);
 }
 
 /* Tables */
-
+/*
 .markdown-preview-view th {
   font-weight: var(--bold-weight);
   text-align: left;
@@ -4196,6 +4243,38 @@ iframe {
 }
 .markdown-preview-view tr:last-child td {
   border-bottom: none;
+}*/
+
+/*table from https://snippets.cacher.io/snippet/018387c872dc39277996 by eluotao*/
+tbody>tr:nth-child(odd){
+  background-color: var(--table-background-color-odd);
+}
+ 
+tbody>tr {
+  background-color: var(--table-background-color);
+}
+ 
+.markdown-preview-view th, .markdown-preview-view td{
+  padding: 4px 20px;
+  border: 1px solid var(--table-border-color);
+}
+
+.markdown-preview-view thead {
+  background-color: var(--table-thead-background-color);
+}
+
+/*table hover*/
+.markdown-preview-view td:hover{
+  background-color: var(--table-hover-color);
+}
+
+/*table raw hover*/
+.markdown-preview-view tr:hover{
+  background-color: var(--table-hover-raw-color);
+}
+
+.markdown-preview-view th:hover{
+  background-color: var(--table-hover-thead-color);
 }
 
 /* Preview Mode Lists  */
@@ -4205,18 +4284,24 @@ iframe {
   display: inline;
 }
 
-/* Code */
+/* 我的 Code */
 .theme-light :not(pre) > code[class*="language-"],
 .theme-light pre[class*="language-"] {
   background-color: var(--background-primary-alt);
+  border: 2px solid var(--myconf-text-blue);
+  border-radius: 3px;
 }
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"] {
   text-shadow: none;
 }
+
 .markdown-preview-section .frontmatter code {
   color: var(--text-muted);
   font-size: var(--font-small);
+}
+.theme-light code {
+  background-color: var(--inside-code-background);
 }
 .cm-s-obsidian .hmd-fold-html-stub,
 .cm-s-obsidian .hmd-fold-code-stub,
@@ -5081,19 +5166,19 @@ a[href*="obsidian://search"]:after
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* 我的 链接字体*/
 .cm-s-obsidian span.cm-url.cm-string:not(.cm-hmd-footnote-url) {
-  color: var(--shade-20);
+  color: var(--shade-60);
 }
 
 .cm-s-obsidian span.cm-link {
   color: var(--text-accent);
 }
-
+/* 我的 链接字体*/
 .cm-s-obsidian span.cm-formatting-link,
 .cm-s-obsidian span.cm-formatting-image.cm-link,
 .cm-s-obsidian span.cm-formatting-link-string.cm-url.cm-string {
-  color: var(--shade-10);
+  color: var(--shade-30);
   display: inline-block;
   padding: 0 1px;
   font-weight: 600;
@@ -5776,15 +5861,17 @@ body {
   font-weight: 500;
   font-style: italic;
 }
-
+/* 我的 强调线*/
 .markdown-preview-section hr {
+  /*
   margin-top: var(--editor-line-height-rem);
   margin-bottom: var(--editor-line-height-rem);
-  box-sizing: content-box;
-  border: 0;
-  color: transparent;
+  box-sizing: content-box;*/
+  
+  border-top: 4px dashed var(--line-heavy-background);
+  /*color: transparent;
   display: block;
-  height: var(--editor-line-height-rem);
+  height: 6px;*/
   position: relative;
 }
 
@@ -5813,16 +5900,21 @@ body {
 .markdown-preview-section svg:not(:root) {
   overflow: hidden;
 }
-
+/*我的 列表格式*/
 .markdown-preview-section ul {
   margin-left: 0;
-  padding-inline-start: 1.2em;
+  padding-inline-start: 1em;
   list-style: disc;
 }
 .markdown-preview-section ol {
   margin-left: 0;
   padding-inline-start: 1.2em;
   list-style: decimal;
+}
+.theme-light ul > li:not(.task-list-item) {
+  padding-left: 5px;
+  border-left: 2px solid var(--line-list-background);
+  margin-bottom: 10px;
 }
 
 .markdown-preview-section .footnotes li > p {
@@ -5837,13 +5929,18 @@ body {
 .markdown-preview-section blockquote {
   position: relative;
   font-style: italic;
+  /*
   border-radius: unset;
-  border: unset;
-  border-width: unset;
-  background-color: unset;
-  color: unset;
-  padding: 0 0 0 1.4375rem;
+  border: 4px 4px 4px 4px;
+  border-color: var(--text-myconf02-background);
+  border-width: 0px;
+  */
+  border-left: 4px solid var(--text-myconf02-background);
+  border-bottom: 4px solid var(--text-myconf02-background);
+  color: black;
+  padding: 8px 8px 8px 1.4375rem;
   margin-inline-start: unset;
+  background-color: var(--text-myconf01-background);
 }
 
 .markdown-preview-section blockquote:before {
@@ -6036,11 +6133,11 @@ body {
 }
 
 :root {
-    --h1-size: 1.602em;
+    --h1-size: 2.5em;
     --h1-line-height: 1.4;
     --h1-margin-top: 3;
     --h1-margin-bottom: 1; 
-    --h1-weight: 500; 
+    --h1-weight: 800; 
     --h1-style: normal; 
 
     --h2-size: 1.424em;
@@ -6052,28 +6149,28 @@ body {
 
     --h3-size: 1.266em;
     --h3-line-height: 1.4;
-    --h3-margin-top: 1.75;
+    --h3-margin-top: 0.5;
     --h3-margin-bottom: 0.5; 
     --h3-weight: 500; 
     --h3-style: normal; 
 
     --h4-size: 1.125em;
     --h4-line-height: 1.5;
-    --h4-margin-top: 1.5;
+    --h4-margin-top: 0.5;
     --h4-margin-bottom: 0.5; 
     --h4-weight: 500; 
     --h4-style: normal; 
 
     --h5-size: 1em;
     --h5-line-height: 1.5;
-    --h5-margin-top: 1.5;
+    --h5-margin-top: 0.5;
     --h5-margin-bottom: 0.5; 
     --h5-weight: 500; 
     --h5-style: normal; 
 
     --h6-size: 1em;
     --h6-line-height: 1.5;
-    --h6-margin-top: 1.5;
+    --h6-margin-top: 0.5;
     --h6-margin-bottom: 0.5; 
     --h6-weight: 500; 
     --h6-style: italic; 
@@ -6109,7 +6206,7 @@ body {
     --font-family-special-tag:       "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
     --font-family-YAML:              "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive;
 }
-
+/* 我的 标题*/
 .cc-pretty-preview .markdown-preview-view h1,
 .markdown-preview-view h1 {
   color: var(--h1-color);

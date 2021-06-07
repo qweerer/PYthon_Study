@@ -9,23 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "nas/101-unraid-Lnmp配置.md",
-            "mode": "source"
+            "file": "欢迎使用马克飞象.md",
+            "mode": "preview"
           }
         },
-        "group": "4122ac13bb71d8f7"
+        "group": "d84236635710d540"
       },
       {
-        "id": "fd6fbd87e28263dc",
+        "id": "7977e18fe8a6b817",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "nas/101-unraid-Lnmp配置.md",
-            "mode": "preview"
+            "file": "欢迎使用马克飞象.md",
+            "mode": "source"
           }
         },
-        "group": "4122ac13bb71d8f7"
+        "group": "d84236635710d540"
       }
     ],
     "direction": "vertical"
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nas/101-unraid-Lnmp配置.md",
+                "file": "欢迎使用马克飞象.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nas/101-unraid-Lnmp配置.md"
+                "file": "欢迎使用马克飞象.md"
               }
             }
           }
@@ -150,9 +150,9 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "nas/101-unraid-Lnmp配置.md",
+                "file": "欢迎使用马克飞象.md",
                 "options": {
-                  "collapse-filter": false,
+                  "collapse-filter": true,
                   "search": "",
                   "localJumps": 5,
                   "localBacklinks": true,
@@ -160,42 +160,43 @@
                   "localInterlinks": false,
                   "showTags": false,
                   "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": false,
+                  "hideUnresolved": true,
+                  "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": true,
+                  "collapse-display": false,
                   "showArrow": true,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
+                  "collapse-forces": false,
                   "centerStrength": 0.86832264957265,
                   "repelStrength": 3.86217948717949,
                   "linkStrength": 1,
                   "linkDistance": 30,
-                  "scale": 0.713275462622442,
+                  "scale": 1.0881422643088585,
                   "close": true
                 }
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 236.60000610351562
   },
-  "active": "ea7819d3cae70d8d",
+  "active": "7977e18fe8a6b817",
   "lastOpenFiles": [
-    "nas/101-unraid-Lnmp配置.md",
-    "nas/901-emby改端口.md",
-    "nas/902-nextcloud1-安装.md",
+    "欢迎使用马克飞象.md",
     "cnetos8/00.安装.md",
-    "cnetos8/04.php配置.md",
+    "cnetos8/01.docker.md",
     "cnetos8/podman容器.md",
-    "nas/001-OMV.md",
-    "01日期/12313.md",
+    "nas/101-unraid-Lnmp配置.md",
+    "nas/_about_.md",
+    "cnetos8/04.php配置.md",
+    "md笔记/PY数据分析/py数据分析_数学01.md",
     "01日期/2021-06-06.md",
-    "nas/002-OpenWrt.md"
+    "cnetos8/0 安装是设置网卡名称.png"
   ]
 }
