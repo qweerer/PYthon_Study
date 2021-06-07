@@ -9,23 +9,23 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "欢迎使用马克飞象.md",
-            "mode": "preview"
+            "file": "nas/101-unraid-Lnmp配置.md",
+            "mode": "source"
           }
         },
-        "group": "d84236635710d540"
+        "group": "45b5d39b13617a84"
       },
       {
-        "id": "7977e18fe8a6b817",
+        "id": "87c7c66f4d9aeab3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "欢迎使用马克飞象.md",
-            "mode": "source"
+            "file": "nas/101-unraid-Lnmp配置.md",
+            "mode": "preview"
           }
         },
-        "group": "d84236635710d540"
+        "group": "45b5d39b13617a84"
       }
     ],
     "direction": "vertical"
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "欢迎使用马克飞象.md",
+                "file": "nas/101-unraid-Lnmp配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "欢迎使用马克飞象.md"
+                "file": "nas/101-unraid-Lnmp配置.md"
               }
             }
           }
@@ -150,7 +150,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "欢迎使用马克飞象.md",
+                "file": "nas/101-unraid-Lnmp配置.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -186,17 +186,17 @@
     "direction": "horizontal",
     "width": 236.60000610351562
   },
-  "active": "7977e18fe8a6b817",
+  "active": "ea7819d3cae70d8d",
   "lastOpenFiles": [
+    "nas/101-unraid-Lnmp配置.md",
+    "nas/901-emby改端口.md",
     "欢迎使用马克飞象.md",
+    "README.md",
+    "nas/001-OMV.md",
+    "nas/_about_.md",
     "cnetos8/00.安装.md",
     "cnetos8/01.docker.md",
     "cnetos8/podman容器.md",
-    "nas/101-unraid-Lnmp配置.md",
-    "nas/_about_.md",
-    "cnetos8/04.php配置.md",
-    "md笔记/PY数据分析/py数据分析_数学01.md",
-    "01日期/2021-06-06.md",
-    "cnetos8/0 安装是设置网卡名称.png"
+    "cnetos8/04.php配置.md"
   ]
 }

@@ -23,7 +23,18 @@ nginx02 的配置文件
 
 - 由于自己需要使用nextcloud，所以将nextcloud作为php的docker, 对应的docker的`yml`版配置![mysql与nextcloud.yml](./unraid/mysql与nextcloud.yml)
 
+### docker文件夹绑定
 
+由于`nginx`使用远程`php-fpm`时，远程主机也需要有统一路径，所以需要双重绑定
+
+```yml
+app:
+  image: nextcloud:fpm
+  volumes:
+    - /mnt/user/00-docker-conf/nextcloud/html:/var/www/html
+```
+
+### docker中安装php扩展
 
 
 > adfasdf
