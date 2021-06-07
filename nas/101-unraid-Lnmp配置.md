@@ -31,7 +31,29 @@ nginx02 的配置文件
 app:
   image: nextcloud:fpm
   volumes:
-    - /mnt/user/00-docker-conf/nextcloud/html:/var/www/html
+ - /mnt/user/00-docker-conf/nextcloud/html/:/var/www/html/
+ - /mnt/user/00-docker-conf/nextcloud/html/:/mnt/user/00-docker-conf/nextcloud/html/
+
+ - /mnt/user/00-docker-conf/nextcloud/apps/:/var/www/html/custom_apps/
+ - /mnt/user/00-docker-conf/nextcloud/apps/:/mnt/user/00-docker-conf/nextcloud/html/custom_apps/
+
+ - /mnt/user/00-docker-conf/nextcloud/config/:/var/www/html/config/
+ - /mnt/user/00-docker-conf/nextcloud/config/:/mnt/user/00-docker-conf/nextcloud/html/config/
+
+ - /mnt/user/01-nextcloud/:/var/www/html/data
+ - /mnt/user/01-nextcloud/:/mnt/user/00-docker-conf/nextcloud/html/data/
+
+ - /mnt/user/www-data/:/mnt/user/www-data/
+```
+
+在宿主机中设置软链接
+
+```shell
+ln -s /mnt/user/00-docker-conf/nextcloud/apps /mnt/user/00-docker-conf/nextcloud/html/custom_apps
+
+ln -s /mnt/user/00-docker-conf/nextcloud/config /mnt/user/00-docker-conf/nextcloud/html/config
+
+ln -s /mnt/user/01-nextcloud /mnt/user/00-docker-conf/nextcloud/html/data
 ```
 
 ### docker中安装php扩展

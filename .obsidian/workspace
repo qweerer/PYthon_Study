@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "ea7819d3cae70d8d",
+        "id": "87c7c66f4d9aeab3",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -12,20 +12,7 @@
             "file": "nas/101-unraid-Lnmp配置.md",
             "mode": "source"
           }
-        },
-        "group": "45b5d39b13617a84"
-      },
-      {
-        "id": "87c7c66f4d9aeab3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "nas/101-unraid-Lnmp配置.md",
-            "mode": "preview"
-          }
-        },
-        "group": "45b5d39b13617a84"
+        }
       }
     ],
     "direction": "vertical"
@@ -186,7 +173,7 @@
     "direction": "horizontal",
     "width": 236.60000610351562
   },
-  "active": "ea7819d3cae70d8d",
+  "active": "87c7c66f4d9aeab3",
   "lastOpenFiles": [
     "nas/101-unraid-Lnmp配置.md",
     "nas/901-emby改端口.md",

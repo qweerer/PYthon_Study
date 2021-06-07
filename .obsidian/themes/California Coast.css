@@ -6011,9 +6011,9 @@ body {
   padding: 0 !important;
   border-radius: var(--radius-l);
 }
-
+/*我的 code边距*/
 .markdown-preview-section pre > code {
-  padding: 0.8rem;
+  padding: 1.2rem;
   display: block;
 }
 

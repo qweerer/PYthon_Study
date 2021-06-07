@@ -1,0 +1,75 @@
+https://github.com/idealclover/zhuye_kim_HTML
+https://github.com/5iux/sou
+https://github.com/xieboss-create/xieboss-create.github.io
+
+---
+########################
+## mariadb
+########################
+https://registry.hub.docker.com/r/linuxserver/mariadb
+https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png
+qweerer - 0hhh
+version: "2.1"
+services:
+  mariadb:
+    image: linuxserver/mariadb
+    container_name: mariadb
+    environment:
+      - PUID=1000
+      - PGID=1002
+      - MYSQL_ROOT_PASSWORD=1416454770
+      - TZ=Asia/Shanghai
+    volumes:
+      - /srv/dev-disk-by-id-ata-ST500LM021-1KJ152_W62MSN0L-part1/0docker-conf/mariadb:/config
+    ports:
+      - 3306:3306
+    network_mode: bridge
+    restart: unless-stopped
+  
+https://registry.hub.docker.com/r/linuxserver/nextcloud
+https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mariadb.png
+version: '2'
+
+
+########################
+## nextcloud
+########################
+services:
+  nextcloud:
+    image: nextcloud:fpm
+    container_name: nextcloud
+
+    volumes:
+      - /mnt/user/00-docker-conf/nextcloud/html/:/var/www/html/
+      - /mnt/user/00-docker-conf/nextcloud/html/:/mnt/user/00-docker-conf/nextcloud/html/
+
+      - /mnt/user/00-docker-conf/nextcloud/apps/:/var/www/html/custom_apps/
+      - /mnt/user/00-docker-conf/nextcloud/apps/:/mnt/user/00-docker-conf/nextcloud/html/custom_apps/
+
+      - /mnt/user/00-docker-conf/nextcloud/config/:/var/www/html/config/
+      - /mnt/user/00-docker-conf/nextcloud/config/:/mnt/user/00-docker-conf/nextcloud/html/config/
+
+      - /mnt/user/01-nextcloud/:/var/www/html/data
+      - /mnt/user/01-nextcloud/:/mnt/user/00-docker-conf/nextcloud/html/data/
+
+      - /mnt/user/www-data/:/mnt/user/www-data/
+    ports:
+      - 18506:9000
+    network_mode: bridge
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+
+---
+networks:
+  default:
+      driver: bridge
+      ipam:
+        config:
+          - subnet: ${IP_RANGE}.0/24
+            ip_range: ${IP_RANGE}.128/25
+            gateway: ${IP_RANGE}.1
+
+
+
