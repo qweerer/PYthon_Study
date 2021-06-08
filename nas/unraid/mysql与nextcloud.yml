@@ -61,6 +61,54 @@ services:
       - PUID=1000
       - PGID=1000
 
+########################
+## nextcloud & ninx
+########################
+
+services:
+  nextcloud-fpm:
+    image: nextcloud:fpm
+    container_name: nextcloud-fpm
+    ports:
+      - 18506:9000
+    volumes:
+      - /mnt/user/www-data/:/mnt/user/www-data/
+
+      - /mnt/user/00-docker-conf/nextcloud/html/:/var/www/html/
+      - /mnt/user/00-docker-conf/nextcloud/apps/:/var/www/html/custom_apps/
+      - /mnt/user/00-docker-conf/nextcloud/config/:/var/www/html/config/
+      - /mnt/user/01-nextcloud/:/var/www/html/data
+    network_mode: bridge
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    ports:
+      - 8080:80
+      - 82:82
+      - 18505:18505
+    links:
+      - nextcloud-fpm
+    volumes:
+      - /mnt/user/www-data/:/mnt/user/www-data/
+      - /boot/system_replace/nginx_conf/:/boot/system_replace/nginx_conf/
+      - /mnt/user/00-docker-conf/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+
+      - /mnt/user/00-docker-conf/nextcloud/html/:/var/www/html/
+      - /mnt/user/00-docker-conf/nextcloud/apps/:/var/www/html/custom_apps/
+      - /mnt/user/00-docker-conf/nextcloud/config/:/var/www/html/config/
+      - /mnt/user/01-nextcloud/:/var/www/html/data
+    volumes_from:
+      - nextcloud-fpm
+    restart: always
+    network_mode: bridge
+    environment:
+      - PUID=1000
+      - PGID=1000
 ---
 networks:
   default:
