@@ -1,0 +1,42 @@
+########################
+## cloudreve 
+########################
+https://registry.hub.docker.com/r/xavierniu/cloudreve
+https://github.com/qweerer/env_config/raw/main/png/OneDrive.png
+
+version: "2.1"
+services:
+  cloudreve:
+    image: xavierniu/cloudreve
+    container_name: cloudreve
+    environment:
+      - PUID=99
+      - PGID=100
+      - TZ=Asia/Shanghai
+    volumes:
+      - /mnt/user/01-cloudreve/:/data/
+      - /mnt/user/00-docker-conf/cloudreve/conf.ini:/cloudreve/conf.ini
+      - /mnt/user/00-docker-conf/cloudreve/cloudreve.db:/cloudreve/cloudreve.db
+      - /mnt/user/00-docker-conf/cloudreve/avatar/:/cloudreve/avatar
+    ports:
+      - 5212:5212
+    network_mode: bridge
+    restart: unless-stopped
+
+
+mkdir -p /mnt/user/00-docker-conf/cloudreve \
+    && touch /mnt/user/00-docker-conf/cloudreve/conf.ini \
+    && touch /mnt/user/00-docker-conf/cloudreve/cloudreve.db
+
+docker run -d \
+  --name nginx \
+  -v /dockercnf/nginx/conf.d:/etc/nginx/conf.d \
+  -v /dockercnf/nginx/ssl:/etc/nginx/ssl \
+  --network my-network \
+  -p 80:80 -p 443:443 \
+  --restart unless-stopped \
+  nginx:alpine
+
+
+
+
