@@ -1,6 +1,6 @@
 # cloudreve
 
-
+admin@cloudreve.org
 先创建目录与文件
 
 ```shell

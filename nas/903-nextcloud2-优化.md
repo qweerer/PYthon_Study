@@ -56,7 +56,7 @@ innodb_buffer_pool_size=1G
 innodb_io_capacity=4000
 ```
 
-## [#](https://tvtv.fun/pc-to-nas/23th.html#php-fpm-的优化)PHP-FPM 的优化
+## [PHP-FPM 的优化](https://tvtv.fun/pc-to-nas/23th.html#php-fpm-的优化)
 
 /usr/local/etc/php-fpm.d/
 
@@ -74,7 +74,7 @@ pm.min_spare_servers = 3
 pm.max_spare_servers = 9
 ```
 
-## [#](https://tvtv.fun/pc-to-nas/23th.html#通过-occ-命令修改配置)通过 OCC 命令修改配置
+## [通过 OCC 命令修改配置](https://tvtv.fun/pc-to-nas/23th.html#通过-occ-命令修改配置)
 
 通过 OCC 命令可以直接修改 Nextcloud 的各项配置，避免手动修改 config.php 文件经常出现的格式错误和拼写错误。
 
@@ -130,4 +130,35 @@ $ docker exec -it nextcloud-fpm occ config:system:set preview_max_y --value=800
 
 ```
 $ grep flags /proc/cpuinfo
+```
+
+## 为Nextcloud中的视频文件配置缩略图
+
+一、安装ffmpeg
+正如前文所述，nextcloud的视频文件缩略图功能依赖于ffmpeg，因此我们首先需要安装ffmpeg，代码如下：
+
+```shell
+docker exec -it --user root nextcloud-fpm  sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+docker exec -it --user root nextcloud-fpm  apt-get update
+docker exec -it --user root nextcloud-fpm  apt-get -y  install ffmpeg
+```
+
+上述代码的第一行是替换容器中的debian系统的软件源为中科大的镜像，这样可以显著提高ffmpeg的下载速度，该设置非必须的，只针对国内用户，当然用户也可根据自己的需要选择其他软件源。
+
+检查ffmpeg是否安装成功，可以运行命令：
+```shell
+docker exec -it nextcloud  ffmpeg
+```
+如果能看到ffmpeg的版本信息，即表示安装成功。
+
+二、配置nextcloud，打开视频文件缩略图
+配置nextcloud需要修改config/config.php文件，需要在文件中插入以下配置片段：
+```php
+  'enable_previews' => true,
+  'enabledPreviewProviders' =>
+  array (
+    0 => 'OC\\Preview\\Image',
+    1 => 'OC\\Preview\\Movie',
+    2 => 'OC\\Preview\\TXT',
+  ),
 ```
