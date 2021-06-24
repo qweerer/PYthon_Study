@@ -19,7 +19,7 @@
   --h-before5: #5dcf53;
   --h-before6: #49c9ce;
   --h-before7: #6da1dd;
-  --h-before8: #9270db;
+  --h-before8: #288b09;
 
 }
 
@@ -310,17 +310,19 @@ ul ol::before {
 }
 /* 文件管理器中文件夹选中状态时的颜色 */
 .nav-folder-title.is-being-dragged {
-  background-color: rgba(241, 243, 245, .5);
+  /*background-color: rgba(241, 243, 245, .5);*/
   color: #0A59F7;
 }
 
 
 /* 顶部菜单 */
+/*
 .titlebar-inner {
-  /* rgba(241, 243, 245, .1) */
+  /* rgba(241, 243, 245, .1) 
   background-color: #ffffff;
-}
+}*/
 /* 左侧菜单 */
+/*
 .workspace-ribbon {
   background-color: #ffffff;
 }
@@ -328,6 +330,7 @@ ul ol::before {
   background-color: #ffffff;
 }
 /* 左侧文件管理器 */
+/*
 .workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
   background-color: #ffffff;
 }
@@ -335,9 +338,10 @@ ul ol::before {
   background: #ffffff;
 }
 /* 底部状态栏 */
+/*
 .status-bar {
   background-color: #ffffff;
-}
+}*/
 
 
 /* 右上角最小化最大化按钮颜色 */
@@ -370,7 +374,7 @@ ul ol::before {
 /* 标题前面添加 h2 这样的小提示 */
 .markdown-preview-view h2 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H2';
-  color: var(--h2-color);
+  color: var(--h-before8);
   font-size: 9px;
   margin-right: 5px;
   vertical-align: middle;
@@ -381,7 +385,7 @@ ul ol::before {
 /* 标题前面添加 h3 这样的小提示 */
 .markdown-preview-view h3 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H3';
-  color: var(--h2-color);
+  color: var(--h-before8);
   font-size: 9px;
   margin-right: 5px;
   vertical-align: middle;
@@ -392,7 +396,7 @@ ul ol::before {
 /* 标题前面添加 h4 这样的小提示 */
 .markdown-preview-view h4 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H4';
-  color: var(--h2-color);
+  color: var(--h-before8);
   font-size: 9px;
   margin-right: 5px;
   vertical-align: middle;
@@ -403,7 +407,7 @@ ul ol::before {
 /* 标题前面添加 h5 这样的小提示 */
 .markdown-preview-view h5 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H5';
-  color: var(--h2-color);
+  color: var(--h-before8);
   font-size: 9px;
   margin-right: 5px;
   vertical-align: middle;
@@ -414,7 +418,7 @@ ul ol::before {
 /* 标题前面添加 h6 这样的小提示 */
 .markdown-preview-view h6 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H6';
-  color: var(--h2-color);
+  color: var(--h-before8);
   font-size: 9px;
   margin-right: 5px;
   vertical-align: middle; 
@@ -525,7 +529,7 @@ span.cm-hashtag.cm-hashtag-end {
 */
 
 .frontmatter-container .tag,
-.tag {
+.tag:not(.token){
   background-color:transparent ;
   border:1px solid !important;
   color:white !important;
@@ -537,7 +541,7 @@ span.cm-hashtag.cm-hashtag-end {
   margin:2px 0 0 0 !important;
   border-radius:14px !important;
 }
-.tag:hover {
+.tag:not(.token):hover {
   color:black !important;
   border-color:white !important;
 }
@@ -1001,7 +1005,7 @@ span.cm-hashtag.cm-hashtag-end {
   width:100%;
   object-fit: contain;
   margin:0 auto;
-  text-align:center;
+  text-align:left;
   top: 50%;
   transform: translateY(-50%);
   padding:0;
@@ -1087,15 +1091,17 @@ h1[data-heading="inbox Overview"] {
 
 
 /* 分割线 */
+/*
 .markdown-preview-view hr {
   border-color: #F1F3F5;
-}
+}*/
 
 
 /* 图片上下添加margin */
+/*
 .view-content .markdown-preview-view img {
   margin: 1.6em auto;
-}
+}*/
 
 
 
@@ -1208,6 +1214,3 @@ h1[data-heading="inbox Overview"] {
   margin-bottom: 2px;
 }
 
-.markdown-preview-view h2 {
-  font-size: 18px;
-}
