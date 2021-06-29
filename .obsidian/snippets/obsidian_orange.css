@@ -375,9 +375,9 @@ ul ol::before {
 .markdown-preview-view h2 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H2';
   color: var(--h-before8);
-  font-size: 9px;
+  font-size: 7px;
   margin-right: 5px;
-  vertical-align: middle;
+  vertical-align: top;
 }/*
 .markdown-preview-view .heading-collapse-indicator.collapse-indicator {
   margin-left: -45px;
@@ -386,9 +386,9 @@ ul ol::before {
 .markdown-preview-view h3 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H3';
   color: var(--h-before8);
-  font-size: 9px;
+  font-size: 7px;
   margin-right: 5px;
-  vertical-align: middle;
+  vertical-align: top;
 }/*
 .markdown-preview-view .heading-collapse-indicator.collapse-indicator {
   margin-left: -45px;
@@ -397,9 +397,9 @@ ul ol::before {
 .markdown-preview-view h4 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H4';
   color: var(--h-before8);
-  font-size: 9px;
+  font-size: 7px;
   margin-right: 5px;
-  vertical-align: middle;
+  vertical-align: top;
 }/*
 .markdown-preview-view .heading-collapse-indicator.collapse-indicator {
   margin-left: -45px;
@@ -408,9 +408,9 @@ ul ol::before {
 .markdown-preview-view h5 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H5';
   color: var(--h-before8);
-  font-size: 9px;
+  font-size: 7px;
   margin-right: 5px;
-  vertical-align: middle;
+  vertical-align: top;
 }/*
 .markdown-preview-view .heading-collapse-indicator.collapse-indicator {
   margin-left: -45px;
@@ -419,9 +419,9 @@ ul ol::before {
 .markdown-preview-view h6 .heading-collapse-indicator.collapse-indicator::before  {
   content: 'H6';
   color: var(--h-before8);
-  font-size: 9px;
+  font-size: 7px;
   margin-right: 5px;
-  vertical-align: middle; 
+  vertical-align: top; 
 }/*
 .markdown-preview-view .heading-collapse-indicator.collapse-indicator {
   margin-left: -45px;

@@ -53,3 +53,27 @@ anchor 的缩写
 <img src="images\MacType.ico" alt="这是图片的替换文字" title="鼠标放上后的提示语" width="25px" height=25px border=5px/>
 
 ![2021-4-26 11-29-46](2021-4-26%2011-29-46.png)
+
+## 表格标签
+
+```html
+ <table border="2" cellpadding="20" cellspacing="5" width="500px">
+ <thead>
+ 	<!-- <tr></tr> 为一个行的数据 -->
+ 	<tr align="center"> <!-- <th> 表头标签-->
+		<th>name</th> <th>age</th> <th>score</th>
+	</tr>
+ </thead>
+ <tbody>
+ 	<tr>
+ 		<td align="right">tom</td> <td align="center">32</td> <td>89</td>
+ 	</tr>
+ </tbody>
+ </table>
+```
+
+### 单元格合并
+
+```html
+
+```
