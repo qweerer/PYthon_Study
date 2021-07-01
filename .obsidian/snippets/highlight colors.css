@@ -239,7 +239,11 @@ a[href^="#htext/purple"] + mark {
 	color: rgb(100, 37, 208) !important;
 }
 
-
+/* -- I don't know --  */
+a[href^="#htext/question"] + mark {
+	background-color: #ffffff;
+	color: rgb(216, 57, 49) !important;
+}
 
 
 /* ----------------------------------------- 预览模式下 带有背景颜色的文本高亮 ----------------------------------------------  */

@@ -75,5 +75,70 @@ anchor 的缩写
 ### 单元格合并
 
 ```html
-
+ <table border="2" cellpadding="20" cellspacing="5" width="500px">
+ <thead>
+ 	<!-- <tr></tr> 为一个行的数据 -->
+ 	<tr align="center"> <!-- <th> 表头标签-->
+		<th>name</th> <th>age</th> 		<th>score</th>
+	</tr>
+ </thead>
+ <tbody>
+ 	<tr>
+		<td colspan='2'>tom</td> 		<td>89</td>
+ 	</tr>
+ </tbody>
+ </table>
 ```
+
+跨行：最上侧单元格写代码
+跨列：最左侧单元格写代码
+
+## 列表
+
+- 无序列表 `<ul> </ul>`中`<li></li>`
+
+```html
+<ul>
+	<li> list1 </li>
+	<li> list2 </li>
+</ul>
+```
+
+- 有序列表 `<ol></ol>`
+- 自定义列表 `<dl></dl>` 中 `<dt></dt> <dd></dd>`
+
+## 表单
+
+- `<form></form>`  ==表单域==
+
+```html
+<form action='url地址' method='提交方式get/post' name='表单域名称'>
+	
+</form>
+```
+
+### 表单元素
+==input元素== `说明文字: <input type='' name='' value='默认' maxlength='8'/>`
+
+- `type`常用类型
+	- `test` 文本框
+	- `password`
+	- `checkbox`
+	- `radio` 显示选择框: <input type='radio' name='gender' value='man' />男 <input type='radio' name='gender' value='woman' checked='checked' />女
+		- 要实现多选一，选择框的`name`属性必须一样，所以选择框的名字建议选择为类别名
+		- #htext/question ==`radio` 与 `checkbox`的`value`值可以做为传送到后台的数据==
+		- `checked='checked'`属性可以定义最初始选择，主要用于选择框`type`
+	- `submit`提交按钮 <input type='submit' value='名字在value中更改'/>
+	- `reset`提交按钮 <input type='reset' value='重置按钮可以重置该表单中的元素'/>
+	- `button`普通按钮，搭配JS使用<input type='button' value='搭配JS使用'/>
+	- `file` 上传文件<input type='file' value='选择文件'/>
+
+
+[input详细内容](https://www.runoob.com/tags/tag-input.html)
+
+
+| html5标签   | 描述                               |
+| ----------- | ---------------------------------- |
+| `<datalist` | 指定一个预先定义的输入控件选项列表 |
+| `<keygen>`  | 定义了表单的密钥对生成器字段       |
+| `<output>`  | 定义一个计算结果                   |
