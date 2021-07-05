@@ -120,7 +120,7 @@ anchor 的缩写
 </form>
 ```
 
-### 表单元素
+### input元素
 ==input元素== `说明文字: <input type='' name='' value='默认' maxlength='8'/>`
 
 - `type`常用类型
@@ -139,9 +139,39 @@ anchor 的缩写
 
 [input详细内容](https://www.runoob.com/tags/tag-input.html)
 
+### select下拉菜单元素
+
+```html
+<select>
+	<option selected='selected'>选项1</option>
+	<option>				  	选项2</option>
+	<option>			      	选项3</option>
+</select>
+```
+
+<select width='5000px'>
+	<option >选项1</option>
+	<option selected='selected'>选项2</option>
+	<option>选项3</option>
+</select>
 
 | html5标签   | 描述                               |
 | ----------- | ---------------------------------- |
 | `<datalist` | 指定一个预先定义的输入控件选项列表 |
 | `<keygen>`  | 定义了表单的密钥对生成器字段       |
 | `<output>`  | 定义一个计算结果                   |
+
+## `<label>`标签
+
+用于绑定多个元素，当点击`<lablel>`标签内的文本时，会自动视为点击对应的表单元素中，提高用户体验
+
+```html
+<label for='sex'>男</label>
+<input name='sex' type='radio' id='sex' checked='checked'/>
+```
+
+<label for='sex-man'>男</label> 
+<input name='gender' type='radio' id='sex-man'/>
+<label for='sex-woman'>女</label> 
+<input name='gender' type='radio' id='sex-woman' checked='checked'/>
+
