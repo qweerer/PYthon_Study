@@ -135,7 +135,7 @@ anchor 的缩写
 	- `reset`提交按钮 <input type='reset' value='重置按钮可以重置该表单中的元素'/>
 	- `button`普通按钮，搭配JS使用<input type='button' value='搭配JS使用'/>
 	- `file` 上传文件<input type='file' value='选择文件'/>
-
+	- `range` 滑块选择
 
 [input详细内容](https://www.runoob.com/tags/tag-input.html)
 
@@ -155,10 +155,18 @@ anchor 的缩写
 	<option>选项3</option>
 </select>
 
+### 文本域
+
+```html
+<textarea rows='3', cols='40'>请输入反馈信息</textarea>
+<!--最好在一行完成,换行会使初始内容显示也换行-->
+```
+<textarea rows='3', cols='40'>请输入反馈信息</textarea>
+### html5新增
+
 | html5标签   | 描述                               |
 | ----------- | ---------------------------------- |
 | `<datalist` | 指定一个预先定义的输入控件选项列表 |
-| `<keygen>`  | 定义了表单的密钥对生成器字段       |
 | `<output>`  | 定义一个计算结果                   |
 
 ## `<label>`标签
