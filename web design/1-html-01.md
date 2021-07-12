@@ -2,6 +2,10 @@
 
 **tag**: #web/html
 
+## VSCODE插件推荐
+
+![vscode插件](./images/01-html-01-01前端插件推荐.jpg)
+
 ## 标签
 
 | 功能                |                代码                 |
