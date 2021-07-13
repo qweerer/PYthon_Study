@@ -1,0 +1,13 @@
+{
+  "file-explorer:new-file": [],
+  "file-explorer:new-file-in-new-pane": [],
+  "editor:open-link-in-new-leaf": [],
+  "table-editor-obsidian:table-control-bar": [],
+  "app:open-help": [],
+  "graph:open": [],
+  "switcher:open": [],
+  "app:open-settings": [],
+  "app:go-back": [],
+  "editor:follow-link": [],
+  "workspace:close": []
+}
