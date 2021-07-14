@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米侧边栏</title>
+    <style>
+        .sild-menu {
+            display: inline-block;
+            width: 240px;
+            background-color: rgba(22, 22, 22, 0.37);
+        }
+
+        .sild-menu-block {
+            height: 15px;
+        }
+
+        .sild-menu a {
+            display: inline-block;
+            height: 40px;
+            width: 240px;
+            line-height: 40px;
+            /* background-color: #bbb; */
+            color: white;
+            text-decoration: none;
+            text-indent: 2em;
+            font-size: 16px;
+        }
+
+        .sild-menu a:hover {
+            background: #f60;
+            text-decoration: none;
+        }
+
+    </style>
 </head>
+
 <body>
     <div>
         <div class="sild-menu">
-            <ul>
-                li*5>a
-            </ul>
+            <div class='sild-menu-block'></div>
+            <div>
+                <a href="#">手机 电话卡</a>
+                <!-- <span class="sild-menu-right">></span> -->
+            </div>
+            <div>
+                <a href="#">电视 盒子</a>
+                <!-- <span class="sild-menu-right">></span> -->
+            </div>
+            <div>
+                <a href="#">笔记本 显示器</a>
+                <!-- <span class="sild-menu-right">></span> -->
+            </div>
+            <div>
+                <a href="#">家电 插线板</a>
+                <!-- <span class="sild-menu-right">></span> -->
+            </div>
+            <div>
+                <a href="#">出行 穿戴</a>
+                <!-- <span class="sild-menu-right">></span> -->
+            </div>
+            <div>
+                <a href="#">智能 路由器</a>
+                <!-- <span class="sild-menu-right">></span> -->
+            </div>
+            <div class='sild-menu-block'></div>
         </div>
     </div>
 </body>
+
 </html>
