@@ -124,3 +124,18 @@ table>form>div.div0$*5{这是5个div1}+p.pro*2{这是$个p}
         text-decoration: underline;
     }
 ```
+
+##  背景图片
+
+```html
+<style>
+	div {
+		background-image: url(); <!--必须带有url(),本地连接也在url里写-->
+		background-repeat: repeat; <!-- no-repeat/repeat-x/repeat-y -->
+		background-position: center top;
+		background-position: 20px 50px; <!--x坐标, y坐标 -->
+		background-attachment: scroll; <!--图片是否滚动 scroll/sixed-->
+		background: color url() repeat scroll 20px top;
+	}
+</style>
+```
