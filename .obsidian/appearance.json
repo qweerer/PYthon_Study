@@ -1,0 +1,12 @@
+{
+  "theme": "moonstone",
+  "obsidianCss": true,
+  "translucency": false,
+  "cssTheme": "California Coast",
+  "enabledCssSnippets": [
+    "highlight colors",
+    "image-grid",
+    "obsidian_orange"
+  ],
+  "baseFontSize": 16
+}
