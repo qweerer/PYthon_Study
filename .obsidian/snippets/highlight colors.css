@@ -15,6 +15,24 @@
 
 /* ----------------------------------------- 编辑模式下 文本高亮 ----------------------------------------------  */
 
+/* -- question --  */
+.cm-tag-htextquestion ~ span.cm-highlight {
+	color: rgb(216, 57, 49) !important;
+	background-color: #ffffff !important;
+}
+
+/* -- important --  */
+.cm-tag-htextimportant ~ span.cm-highlight {
+	color: rgb(222, 120, 2) !important;
+	background-color: #ffffff !important;
+}
+
+/* -- apply --  */
+.cm-tag-htextapply ~ span.cm-highlight {
+	color: rgb(36, 91, 219) !important;
+	background-color: #ffffff !important;
+}
+
 /* -- orange --  */
 .cm-tag-htextorange ~ span.cm-highlight {
 	color: rgb(222, 120, 2) !important;
@@ -243,6 +261,18 @@ a[href^="#htext/purple"] + mark {
 a[href^="#htext/question"] + mark {
 	background-color: #ffffff;
 	color: rgb(216, 57, 49) !important;
+}
+
+/* -- important --  */
+a[href^="#htext/important"] + mark {
+	background-color: #ffffff;
+	color: rgb(222, 120, 2) !important;
+}
+
+/* -- apply --  */
+a[href^="#htext/apply"] + mark {
+	background-color: #ffffff;
+	color: rgb(36, 91, 219) !important;
 }
 
 

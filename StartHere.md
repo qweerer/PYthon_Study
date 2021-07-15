@@ -1,12 +1,18 @@
 >文本高亮这块我没有进行排版，因为这些都是使用案例，我认为将它们作为单行比较合理，没有使用过多的排版技巧。
 ## 文本高亮
+```ad-cade
 - #htext/orange ==文本高亮==
 - #htext/red ==文本高亮==
 - #htext/black ==文本高亮==
 - #htext/green ==文本高亮==
 - #htext/blue ==文本高亮==
 - #htext/purple ==文本高亮==
+```
 - ==默认高亮==
+- #htext/question ==高亮问题==
+- #htext/important ==高亮重要==
+- #htext/apply ==高亮应用==
+
 ## 带有背景颜色的文本高亮
 - #hbgtext/orange ==带有背景颜色的文本高亮== 
 

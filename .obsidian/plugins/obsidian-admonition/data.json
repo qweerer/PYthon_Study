@@ -17,9 +17,18 @@
         "type": "font-awesome"
       },
       "command": false
+    },
+    "python": {
+      "type": "python",
+      "color": "140, 99, 99",
+      "icon": {
+        "name": "address-book",
+        "type": "font-awesome"
+      },
+      "command": false
     }
   },
-  "syntaxHighlight": false,
+  "syntaxHighlight": true,
   "copyButton": true,
   "version": "5.0.1",
   "autoCollapse": false,
