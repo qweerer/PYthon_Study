@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d17009411eedf791",
+        "id": "9fabe47ee6c64d75",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cnetos8/00.安装.md",
+            "file": "深度学习与数据分析实战/[深度]-WEEK01-01切片.md",
             "mode": "preview"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#linux",
+                "query": "tag:#htext/apply",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,6 +66,16 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "0bff84212d25adb2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "深度学习与数据分析实战/[深度]-WEEK01-01切片.md"
+              }
+            }
           }
         ]
       }
@@ -80,6 +90,7 @@
       {
         "id": "8d73096446650d01",
         "type": "tabs",
+        "dimension": 50.753768844221106,
         "children": [
           {
             "id": "5a96323f0bf1a3d0",
@@ -87,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cnetos8/00.安装.md",
+                "file": "深度学习与数据分析实战/[深度]-WEEK01-01切片.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,32 +118,24 @@
             }
           },
           {
-            "id": "0bff84212d25adb2",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "cnetos8/00.安装.md"
-              }
-            }
-          },
-          {
             "id": "be4fab945cb54fbc",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cnetos8/00.安装.md",
+                "file": "深度学习与数据分析实战/[深度]-WEEK01-01切片.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "8561948a9d005a2b",
         "type": "tabs",
+        "dimension": 49.246231155778894,
         "children": [
           {
             "id": "f0cbbfd343996fdd",
@@ -143,35 +146,35 @@
             }
           },
           {
-            "id": "606e9d4ec9e689ba",
+            "id": "18e4b17034867ec4",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "cnetos8/00.安装.md",
+                "file": "深度学习与数据分析实战/[深度]-WEEK01-01切片.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
-                  "localJumps": 5,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
                   "showTags": false,
                   "showAttachments": false,
-                  "hideUnresolved": true,
+                  "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": true,
+                  "collapse-display": true,
+                  "showArrow": false,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
                   "collapse-forces": false,
-                  "centerStrength": 0.86832264957265,
-                  "repelStrength": 3.86217948717949,
+                  "centerStrength": 1,
+                  "repelStrength": 5.98140495867769,
                   "linkStrength": 1,
-                  "linkDistance": 30,
-                  "scale": 1.0881422643088585,
+                  "linkDistance": 102,
+                  "scale": 1,
                   "close": true
                 }
               }
@@ -183,17 +186,17 @@
     "direction": "horizontal",
     "width": 236.60000610351562
   },
-  "active": "d17009411eedf791",
+  "active": "9fabe47ee6c64d75",
   "lastOpenFiles": [
-    "cnetos8/00.安装.md",
-    "cnetos8/podman容器.md",
-    "web design/1-html-01.md",
-    "欢迎使用马克飞象.md",
-    "nas/_about_.md",
-    "nas/903-nextcloud2-优化.md",
-    "nas/101-unraid-Lnmp配置.md",
-    "2021-4-26 11-29-46.png",
-    "web design/1-html-02.md",
-    "web design/未命名.md"
+    "深度学习与数据分析实战/[深度]-WEEK01-01切片.md",
+    "深度学习与数据分析实战/[深度]-WEEK01-00基础.md",
+    "README.md",
+    "StartHere.md",
+    "web design/2-CSS-01-选择器与字体属性.md",
+    "web design/2-CSS-02-Emmet, 复合选择器, 块元素, 图片.md",
+    "深度学习与数据分析实战/未命名.md",
+    "深度学习与数据分析实战/[深度]-01.md",
+    "看板.md",
+    "欢迎使用马克飞象.md"
   ]
 }

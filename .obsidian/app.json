@@ -1,7 +1,8 @@
 {
+  "obsidianCss": true,
   "useMarkdownLinks": true,
   "newFileLocation": "current",
-  "showLineNumber": false,
+  "showLineNumber": true,
   "showFrontmatter": true,
   "defaultViewMode": "preview",
   "attachmentFolderPath": "00附件",

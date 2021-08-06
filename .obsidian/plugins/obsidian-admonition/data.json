@@ -18,8 +18,8 @@
       },
       "command": false
     },
-    "python": {
-      "type": "python",
+    "python-show": {
+      "type": "python-show",
       "color": "140, 99, 99",
       "icon": {
         "name": "address-book",
@@ -31,7 +31,7 @@
   "syntaxHighlight": true,
   "copyButton": true,
   "version": "5.0.1",
-  "autoCollapse": false,
+  "autoCollapse": true,
   "defaultCollapseType": "open",
   "syncLinks": true
 }
