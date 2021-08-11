@@ -113,10 +113,25 @@ docker cp /boot/system_replace/root/swoole.tgz containerID:/root
 docker exec -it containerID /bin/bash
 mkdir /usr/src/php/ext/swoole -p
 tar zxvf  /root/swoole.tgz -C /root
-mv /root/swoole-4.6.7 /usr/src/php/ext/swoole
+cp /root/swoole-4.6.7 /usr/src/php/ext/swoole
 docker-php-ext-install swoole
 rm /root/*
 php --ri swoole
+```
+
+### 03. docker中安装gd插件
+
+```shell
+#容器中
+#echo "deb http://mirrors.163.com/debian/ stretch main contrib non-free\ndeb http://mirrors.163.com/debian/ stretch-updates main contrib non-free\ndeb http://mirrors.163.com/debian/ stretch-backports main contrib non-free" > /etc/apt/sources.list  #软件源修改为网易镜像站源
+apt update  #更新软件源
+apt install -y libwebp-dev libjpeg-dev libpng-dev libfreetype6-dev #安装各种库
+docker-php-source extract #解压源码
+cd /usr/src/php/ext/gd  #gd源码文件夹
+docker-php-ext-configure gd --with-webp-dir=/usr/include/webp --with-jpeg-dir=/usr/include --with-png-dir=/usr/include --with-freetype-dir=/usr/include/freetype2   #准备编译
+docker-php-ext-install gd   #编译安装
+php -m | grep gd
+#重启容器
 ```
 
 ## mariadb
