@@ -7,7 +7,7 @@
 ![Emment语法说明](./images/02-css-02-01.png)
 
 ```html
-table>form>div.div0$*5{这是5个div1}+p.pro*2{这是$个p}
+table>form>div.div0$*5{这是5个div1}+p.pro*2{这是$个p}+a[herf=#]
 ```
 
 ```html
@@ -20,6 +20,7 @@ table>form>div.div0$*5{这是5个div1}+p.pro*2{这是$个p}
  	<div class="div05">这是5个div1</div>
  	<p class="pro">这是1个p</p>
  	<p class="pro">这是2个p</p>
+	<a href="#"></a>
  </form>
 </table>
 ```
