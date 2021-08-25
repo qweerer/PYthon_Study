@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一般全局结构</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .top {
+            height: 50px;
+            background-color: #fff;
+        }
+
+        .banner {
+            height: 150px;
+            width: 980px;
+            background-color: royalblue;
+            margin: 10px auto 0px;
+        }
+
+        .box {
+            height: 300px;
+            width: 980px;
+            background-color: salmon;
+            margin: 10px auto 0px;
+        }
+        .box>ul>li {
+            float: left;
+            height: 300px;
+            width: 237px;
+            margin-right: 10px;
+            background-color: silver;
+        }
+        .box>ul>.rigntmost {
+            margin-right: 0px;
+        }
+
+        .foot {
+            height: 50px;
+            background-color: #fff;
+            margin: 10px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="rigntmost">4</li>
+        </ul>
+    </div>
+    <div class="foot">foot</div>
+</body>
+</html>
