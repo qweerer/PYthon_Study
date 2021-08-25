@@ -4,5 +4,10 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.alwaysShowStagedChangesResourceGroup": true,
+		"git-graph.graph.style": "angular",
+		"github.gitAuthentication": false,
+		"git.showPushSuccessNotification": true
+	}
 }
