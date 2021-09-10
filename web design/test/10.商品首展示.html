@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品首展示</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .showbox {
+            height: 460px;
+            width: 1200px;
+            margin: 10px auto;
+            /* background: pink; */
+            background-image: url(/images/06-image-01.jpg);
+        }
+        .showbox>.showlist {
+            float: left;
+            height: 460px;
+            width: 240px;
+            background-color: #1616164d;
+        }
+        .showbox>.showlist>li {
+            color: #fff;
+            height: 42px;
+            line-height: 42px;
+            padding-right: 20px;
+            padding-left: 40px;
+            font-size: 18px;
+        }
+        .showbox>.showlist>li:hover {
+            background-color: #ff6600;
+        }
+        .showbox>.showlist>div {
+            height: 20px;
+        }
+
+        .showbox>showpic {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="showbox">
+        <ul class="showlist">
+            <div></div>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <li>123</li>
+            <div></div>
+        </ul>
+        <div class="showpic"></div>
+    </div>
+</body>
+</html>
