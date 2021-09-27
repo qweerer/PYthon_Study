@@ -3,7 +3,7 @@
 
 ## 制定密码
 由于在[centos官方](http://cloud.centos.org/centos)下载的qcow2文件没有root密码, 需要先设置密码<br>
-详细说明可以参考[suse文档]([libguestfs | Virtualization Guide | SUSE Linux Enterprise Server 12 SP4](https://documentation.suse.com/sles/12-SP4/html/SLES-all/chap-guestfs.html))
+详细说明可以参考suse文档[libguestfs | Virtualization Guide | SUSE Linux Enterprise Server 12 SP4](https://documentation.suse.com/sles/12-SP4/html/SLES-all/chap-guestfs.html)
 suse: `zypper in guestfs-tools`
 centos: `libguestfs-tools`
 ```shell
