@@ -170,3 +170,7 @@ fcitx-configtool
 
 ```shell
 ```
+
+## 设置GTK+3主题
+
+DWM, like any other WM, doesn't set the GTK+3 theme. You can do this manually editing the "gtk-theme-name" string in `~/.config/gtk-3.0/settings.ini`
