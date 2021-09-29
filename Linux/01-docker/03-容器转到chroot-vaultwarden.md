@@ -65,3 +65,31 @@ docker run \
 bitwardenrs/server:latest
 ```
 
+## 安装openrc管理服务
+
+
+## XXXX
+
+详见：[servicectl-github](https://github.com/smaknsk/servicectl)
+
+### 安装
+
+```shell
+wget https://github.com/smaknsk/servicectl/archive/1.0.tar.gz
+tar -xf 1.0.tar.gz -C /usr/local/lib/
+ln -s /usr/local/lib/servicectl-1.0/servicectl /usr/local/bin/servicectl
+ln -s /usr/local/lib/servicectl-1.0/serviced /usr/local/bin/serviced
+```
+
+### Usage
+
+```shell
+sudo servicectl action service
+```
+
+This command just exec `${action}` from `file /usr/lib/systemd/system/${service}.service` If passed action enable or disable, servicectl create or delete symlink on `${service}.service` for use serviced.
+
+Params:
+
+action - can be {start, stop, restart, reload, enable, disable}
+service - file name in folder /usr/lib/systemd/system/
