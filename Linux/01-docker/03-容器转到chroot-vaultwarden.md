@@ -21,15 +21,19 @@ docker inspect vaultwarden/server
 
 openssl rand -base64 48
 
-docker run -d --name vaultwarden \
+docker run -itd --name vaultwarden \
 -e ADMIN_TOKEN=token \
 -e SIGNUPS_ALLOWED=false \
 -e INVITATIONS_ALLOWED=true \
 -e WEBSOCKET_ENABLED=true \
 -e SHOW_PASSWORD_HINT=false \
+-e LOG_FILE=/data/vaultwarden.log \
+-e LOG_LEVEL=warn \
+-e EXTENDED_LOGGING=true \
 -e ROCKET_PORT=18000 \
 -p 18000:18000 \
 -v /storage/emulated/0/00-www-data/18000-vaultwarden/:/data/ \
+--restart=always \
 4c99199a7cb8 
 
 vaultwarden/server:latest \
@@ -63,10 +67,39 @@ docker run \
 -p 8086:80/tcp \
 -v /opt/docker/appdata/bitwarden:/data:rw 
 bitwardenrs/server:latest
+
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /root/app-data/ssl/key.pem -out /root/app-data/ssl/pub.pem
 ```
 
 ## 安装openrc管理服务
 
+在`/etc/init.d`中创建服务文件
+
+```shell
+#!/sbin/openrc-run
+
+name="app-nps-c"
+command="/root/nps-c/app-nps-c.sh"
+command_args=""
+pidfile="/var/run/app-nps-c.pid"
+extra_commands="log"
+
+depend() {
+	need net
+	after firewall
+}
+
+log() {
+	tail -f /root/www/01-log/nps-c.log
+}
+```
+`command`中的脚本文件如下
+```shell
+#!/bin/sh
+nohup /root/nps-c/npc -server=192.168.2.1:8284 -vkey=2222 >> /root/www/01-log/nps-c.log 2>&1 & 
+echo $! > /var/run/app-nps-c.pid
+```
 
 ## XXXX
 

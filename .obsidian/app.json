@@ -6,7 +6,7 @@
   "showFrontmatter": true,
   "defaultViewMode": "preview",
   "attachmentFolderPath": "00附件",
-  "readableLineLength": false,
+  "readableLineLength": true,
   "pdfExportSettings": {
     "pageSize": "Letter",
     "landscape": false,
@@ -16,5 +16,7 @@
   "showUnsupportedFiles": true,
   "alwaysUpdateLinks": true,
   "strictLineBreaks": true,
-  "foldHeading": true
+  "foldHeading": true,
+  "smartIndentList": false,
+  "lineWrap": true
 }

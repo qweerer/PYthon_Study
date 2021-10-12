@@ -16,7 +16,7 @@
 -   启动`service docker start`
 -   `docker run hello-word`
 
-### 开启远程访问管理
+### 开启docker远程访问管理
 
 ```shall
 vi /etc/conf.d/docker

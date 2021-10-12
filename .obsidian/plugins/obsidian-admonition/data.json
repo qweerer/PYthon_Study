@@ -30,8 +30,9 @@
   },
   "syntaxHighlight": true,
   "copyButton": true,
-  "version": "5.0.1",
+  "version": "6.3.4",
   "autoCollapse": true,
   "defaultCollapseType": "open",
-  "syncLinks": true
+  "syncLinks": true,
+  "enableMarkdownProcessor": false
 }
