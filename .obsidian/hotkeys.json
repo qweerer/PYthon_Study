@@ -9,5 +9,15 @@
   "app:open-settings": [],
   "app:go-back": [],
   "editor:follow-link": [],
-  "workspace:close": []
+  "workspace:close": [],
+  "editor:toggle-strikethrough": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "`"
+    }
+  ],
+  "editor:toggle-code": []
 }

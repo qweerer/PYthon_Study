@@ -1,0 +1,104 @@
+
+/*special tags*/
+.tag[href^="#important"] {
+  background-color: var(--stag1) !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-important:not(.cm-formatting-hashtag) {
+  color:var(--stag1);
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#重要"] {
+  background-color: var(--stag1) !important;
+  font-weight: 600;
+  font-family: Webdings, Microsoft YaHei;
+}
+.tag[href^="#complete"] {
+  background-color: var(--stag3) !important;
+  font-weight: 600;
+  font-family:  var(--font-family-special-tag);
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-complete:not(.cm-formatting-hashtag) {
+  color:var(--stag3);
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#完成"] {
+  background-color: var(--stag3) !important;
+  font-family: Origin, Microsoft YaHei;
+  font-weight: 600;
+}
+.tag[href^="#inprogress"] {
+  background-color: var(--stag2) !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
+  color:var(--stag2);
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#进行中"] {
+  background-color: var(--stag2) !important;
+  font-weight: 600;
+  font-family: Wingdings, Microsoft YaHei;
+}
+.tag[href^="#dailynote"] {
+  background-color: #277cdd !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#dailynote"]::after {
+  content:' 🐈';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-dailynote:not(.cm-formatting-hashtag) {
+  color: #277cdd;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#weeklynote"] {
+  background-color: #419aff !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#weeklynote"]::after {
+  content:' 🥑';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-weeklynote:not(.cm-formatting-hashtag) {
+  color: #419aff;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#questions"] {
+  background-color: #8555df !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#questions"]::after {
+  content:' ❓';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-questions:not(.cm-formatting-hashtag) {
+  color: #8555df;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+.tag[href^="#ideas"] {
+  background-color: #28ac00 !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag);
+}
+.tag[href^="#ideas"]::after {
+  content:' 💡';
+  font-size: 25px;
+}
+.cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
+  color: #28ac00;
+  font-family: var(--font-family-special-tag);
+  font-weight: 600;
+}
+

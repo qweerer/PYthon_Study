@@ -7,7 +7,7 @@
 ## 1.设置root密码
 
 要设置root密码，请使用以下命令：
-```
+```shell
 # virt-customize -a rhel-server-7.6.qcow2 --root-password password:StrongRootPassword
 
 [   0.0] Examining the guest ...

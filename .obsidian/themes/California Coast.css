@@ -377,11 +377,12 @@ settings:
   --color-black-rgb: 0, 0, 0;
   --color-white-rgb: 255, 255, 255;
 
-  --text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --text-editor: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
+  --text: "Consolas", "Monaco", monospace, -apple-system;
+  /* BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  --text-editor: "Consolas", "Monaco", monospace, -apple-system;
+  /* -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  --font-monospace: "Consolas", "Monaco", monospace, -apple-system;
+  /* Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace; */
 
   /* Sizes, weights, padding */
 
@@ -945,110 +946,6 @@ button,
 .tag:not(.token):hover {
 	color: black;
 	background-color: rgb(248, 252, 255) !important;
-}
-
-
-/*special tags*/
-.tag[href^="#important"] {
-  background-color: var(--stag1) !important;
-  font-weight: 600;
-  font-family: var(--font-family-special-tag);
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-important:not(.cm-formatting-hashtag) {
-  color:var(--stag1);
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
-}
-.tag[href^="#重要"] {
-  background-color: var(--stag1) !important;
-  font-weight: 600;
-  font-family: Webdings, Microsoft YaHei;
-}
-.tag[href^="#complete"] {
-  background-color: var(--stag3) !important;
-  font-weight: 600;
-  font-family:  var(--font-family-special-tag);
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-complete:not(.cm-formatting-hashtag) {
-  color:var(--stag3);
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
-}
-.tag[href^="#完成"] {
-  background-color: var(--stag3) !important;
-  font-family: Origin, Microsoft YaHei;
-  font-weight: 600;
-}
-.tag[href^="#inprogress"] {
-  background-color: var(--stag2) !important;
-  font-weight: 600;
-  font-family: var(--font-family-special-tag);
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-inprogress:not(.cm-formatting-hashtag) {
-  color:var(--stag2);
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
-}
-.tag[href^="#进行中"] {
-  background-color: var(--stag2) !important;
-  font-weight: 600;
-  font-family: Wingdings, Microsoft YaHei;
-}
-.tag[href^="#dailynote"] {
-  background-color: #277cdd !important;
-  font-weight: 600;
-  font-family: var(--font-family-special-tag);
-}
-.tag[href^="#dailynote"]::after {
-  content:' 🐈';
-  font-size: 25px;
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-dailynote:not(.cm-formatting-hashtag) {
-  color: #277cdd;
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
-}
-.tag[href^="#weeklynote"] {
-  background-color: #419aff !important;
-  font-weight: 600;
-  font-family: var(--font-family-special-tag);
-}
-.tag[href^="#weeklynote"]::after {
-  content:' 🥑';
-  font-size: 25px;
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-weeklynote:not(.cm-formatting-hashtag) {
-  color: #419aff;
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
-}
-.tag[href^="#questions"] {
-  background-color: #8555df !important;
-  font-weight: 600;
-  font-family: var(--font-family-special-tag);
-}
-.tag[href^="#questions"]::after {
-  content:' ❓';
-  font-size: 25px;
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-questions:not(.cm-formatting-hashtag) {
-  color: #8555df;
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
-}
-.tag[href^="#ideas"] {
-  background-color: #28ac00 !important;
-  font-weight: 600;
-  font-family: var(--font-family-special-tag);
-}
-.tag[href^="#ideas"]::after {
-  content:' 💡';
-  font-size: 25px;
-}
-.cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
-  color: #28ac00;
-  font-family: var(--font-family-special-tag);
-  font-weight: 600;
 }
 
 
@@ -6002,6 +5899,7 @@ body {
   color: var(--text-normal);
   font-size: 0.9em;
   margin: -2px 0;
+  vertical-align: auto;
 }
 
 .markdown-preview-view pre > code {
@@ -6507,104 +6405,6 @@ html .embedded-note-titles .CodeMirror-lines {
 }
 
 
-/*show language type in preview mode*/ 
-/*Thanks to elutao from https://snippets.cacher.io/snippet/018387c872dc39277996 */
-/* pre通用相对css */
-pre:before{
-  font-family: var(--font-family-YAML);
-  color: #6b7f94;
-  opacity: 0.7;
-  font-size: 15px;
-  font-weight: 600;
-  position:absolute;
-  right: 30px;
-  top: 0.2em;
-}
- 
-/* 显示当前代码块的语言类别 */
-pre{
-  position: relative;
-}
- 
-pre[class~='language-c']:before{
-  content: "C";
-}
- 
-pre[class~='language-python']:before{
-  content: "PYTHON";
-}
- 
-pre[class~='language-nginx']:before{
-  content: "NGINX";
-}
- 
-pre[class~='language-css']:before{
-  content: "CSS";
-}
- 
-pre[class~='language-javascript']:before{
-  content: "JS";
-}
- 
-pre[class~='language-js']:before{
-  content: "JS";
-}
- 
-pre[class~='language-php']:before{
-  content: "PHP";
-}
- 
-pre[class~='language-shell']:before{
-  content: "SHELL";
-}
- 
-pre[class~='language-flow']:before{
-  content: "FLOW";
-}
- 
-pre[class~='language-sequence']:before{
-  content: "SEQUENCE";
-}
- 
-pre[class~='language-sql']:before{
-  content: "SQL";
-}
- 
-pre[class~='language-yaml']:before{
-  content: "YAML";
-}
- 
-pre[class~='language-ini']:before{
-  content: "INI";
-}
- 
-pre[class~='language-xml']:before{
-  content: "XML";
-}
- 
-pre[class~='language-git']:before{
-  content: "GIT";
-}
- 
-pre[class~='language-cs']:before{
-  content: "C#";
-}
- 
-pre[class~='language-cpp']:before{
-  content: "C++";
-}
- 
-pre[class~='language-java']:before{
-  content: "JAVA";
-}
- 
-pre[class~='language-html']:before{
-  content: "HTML";
-}
- 
-pre[class~='language-txt']:before{
-  content: "TXT";
-}
 
 /* ==== fold icons ==== */
 .CodeMirror-guttermarker-subtle {

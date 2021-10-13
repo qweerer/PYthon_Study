@@ -1,0 +1,115 @@
+/* admonition的背景颜色---白色 */
+.admonition {
+    background-color: var(--background-primary) !important;
+  }
+  
+
+/* 用admontion实现高亮块功能 orange */
+.admonition.admonition-orange .admonition-title  {
+  display: none;
+}
+.admonition.admonition-orange .admonition-title-content {
+  display: none;
+}
+.admonition.admonition-orange .admonition-title-icon {
+  display: none;
+}
+.admonition.admonition-orange {
+  background-color: rgb(254, 234, 210) !important;
+  border: 1px solid rgb(254, 212, 164);
+  color: rgb(222, 120, 2) !important;
+  border-radius: 5px;
+}
+.markdown-preview-view .admonition.admonition-orange  ul > li:not(.task-list-item)::before {
+  color: rgb(222, 120, 2) !important;
+}
+
+
+.admonition.admonition-blue .admonition-title  {
+  display: none;
+}
+.admonition.admonition-blue .admonition-title-content {
+  display: none;
+}
+.admonition.admonition-blue .admonition-title-icon {
+  display: none;
+}
+.admonition.admonition-blue {
+  border: 1px solid rgb(130, 167, 252);
+  background-color: rgb(225, 234, 255) !important;
+	color: rgb(36, 91, 219) !important;
+  border-radius: 5px;
+}
+.markdown-preview-view .admonition.admonition-blue  ul > li:not(.task-list-item)::before {
+  color: rgb(36, 91, 219) !important;
+}
+
+
+.admonition.admonition-red .admonition-title  {
+  display: none;
+}
+.admonition.admonition-red .admonition-title-content {
+  display: none;
+}
+.admonition.admonition-red .admonition-title-icon {
+  display: none;
+}
+.admonition.admonition-red {
+  background-color: rgb(253, 226, 226) !important;
+	color: rgb(216, 57, 49) !important;
+  border: 1px solid rgb(249, 142, 139);
+  border-radius: 5px;
+}
+.markdown-preview-view .admonition.admonition-red  ul > li:not(.task-list-item)::before {
+  color: rgb(216, 57, 49) !important;
+}
+
+
+.admonition.admonition-green .admonition-title  {
+  display: none;
+}
+.admonition.admonition-green .admonition-title-content {
+  display: none;
+}
+.admonition.admonition-green .admonition-title-icon {
+  display: none;
+}
+.admonition.admonition-green {
+  background-color: rgb(217, 245, 214) !important;
+	color: rgb(46, 161, 33) !important;
+  border: 1px solid rgb(142, 224, 133);
+  border-radius: 5px;
+}
+.markdown-preview-view .admonition.admonition-green  ul > li:not(.task-list-item)::before {
+  color: rgb(46, 161, 33) !important;
+}
+
+
+.admonition.admonition-purple .admonition-title  {
+  display: none;
+}
+.admonition.admonition-purple .admonition-title-content {
+  display: none;
+}
+.admonition.admonition-purple .admonition-title-icon {
+  display: none;
+}
+.admonition.admonition-purple {
+  background-color: rgb(236, 226, 254) !important;
+	color: rgb(100, 37, 208) !important;
+  border: 1px solid rgb(173, 130, 247);
+  border-radius: 5px;
+}
+.markdown-preview-view .admonition.admonition-purple  ul > li:not(.task-list-item)::before {
+  color: rgb(100, 37, 208) !important;
+}
+
+
+/* admonition 图标与文本样式 */
+.admonition-title-markdown {
+  font-weight: 500;
+}
+.admonition-title-markdown {
+  margin-bottom: 2px;
+}
+
