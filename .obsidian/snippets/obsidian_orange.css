@@ -12,7 +12,10 @@
   --font-small:12px;
   --line-height:1.65;
   
-  --text-quteinside-background: #cae2f83a;
+  --theme-background: #0A59F7;
+  --theme-background-hover: rgba(10,89,247,.8);
+
+  --text-quteinside-background: #cae2f88f;
   --text-quteline-background: #007de4;
   --text-myconf03-background: #9859e0;
   --h2-color: #004faa;
@@ -26,6 +29,20 @@
 
 }
 
+/*an active line highlight in vim normal mode */
+.cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
+  background-color: var(--text-quteinside-background) !important;
+}
+
+/*if you want the highlight to present in both normal and insert mode of vim*/
+.theme-light .CodeMirror-activeline .CodeMirror-linebackground{
+  background-color: var(--text-quteinside-background) !important;
+}
+
+.theme-dark .CodeMirror-activeline .CodeMirror-linebackground{
+  background-color: var(--text-quteinside-background) !important;
+}
+
 /* 添加本地字体 */
 @font-face {
   font-family: 'HarmonyOS Sans Light';
@@ -35,13 +52,13 @@
 
 /* 设置项选中状态时的颜色 */
 .checkbox-container.is-enabled {
-  background-color: #0A59F7 !important;
+  background-color: var(--theme-background) !important;
 }
 button.mod-cta {
-  background-color: #0A59F7;
+  background-color: var(--theme-background) ;
 }
 button.mod-cta:hover {
-  background-color: rgba(10,89,247,.8);
+  background-color: var(--theme-background-hover);
 }
 
 
@@ -72,18 +89,23 @@ html[lang=cn] body {
 }
 .markdown-preview-view h2 {
   font-weight: bold;
+  color: var(--h2-color);
 }
 .markdown-preview-view h3 {
   font-weight: bold;
+  color: var(--h-before3);
 }
 .markdown-preview-view h4 {
   font-weight: bold;
+  color: var(--h-before4);
 }
 .markdown-preview-view h5 {
   font-weight: bold;
+  color: var(--h-before5);
 }
 .markdown-preview-view h6 {
   font-weight: bold;
+  color: var(--h-before6);
 }
 
 
@@ -307,14 +329,14 @@ ul ol::before {
 }
 /* 点击左侧文件时改变文件名颜色以及背景色 */
 .nav-file-title.is-being-dragged, .nav-file-title.is-active, body:not(.is-grabbing) .nav-file-title.is-active:hover {
-  border-right: 2px solid #0A59F7;
+  border-right: 2px solid var(--theme-background);
   background-color: rgba(241, 243, 245, .5);
-  color: #0A59F7;
+  color: var(--theme-background);
 }
 /* 文件管理器中文件夹选中状态时的颜色 */
 .nav-folder-title.is-being-dragged {
   /*background-color: rgba(241, 243, 245, .5);*/
-  color: #0A59F7;
+  color: var(--theme-background);
 }
 
 
@@ -358,7 +380,7 @@ ul ol::before {
   background-color: rgba(241, 243, 245, .5);
 }
 .tree-item-inner:hover {
-  color: #0A59F7;
+  color: var(--theme-background);
 }
 
 
@@ -972,19 +994,19 @@ span.cm-hashtag.cm-hashtag-end {
 /* 更改菜单hover时出现的 提示 的颜色 */
 .tooltip {
   color: #fff;
-  background-color: #0A59F7;
+  background-color: var(--theme-background);
 }
 .tooltip .tooltip-arrow {
-  border-bottom: 5px solid #0A59F7;
+  border-bottom: 5px solid var(--theme-background);
 }
 .tooltip.mod-right .tooltip-arrow {
-  border-right: 5px solid #0A59F7;
+  border-right: 5px solid var(--theme-background);
 }
 .tooltip.mod-left .tooltip-arrow {
-  border-left: 5px solid #0A59F7;
+  border-left: 5px solid var(--theme-background);
 }
 .tooltip.mod-top .tooltip-arrow {
-  border-top: 5px solid #0A59F7;
+  border-top: 5px solid var(--theme-background);
 }
 
 
