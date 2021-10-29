@@ -17,6 +17,6 @@
   "alwaysUpdateLinks": true,
   "strictLineBreaks": true,
   "foldHeading": true,
-  "smartIndentList": false,
+  "smartIndentList": true,
   "lineWrap": true
 }
