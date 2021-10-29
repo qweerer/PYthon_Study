@@ -8,7 +8,7 @@
 -   更新索引存储库`apk update`
 -   开始安装`apk add docker`
 -   要在引导时启动 Docker 守护程序，请运行：`rc-update add docker boot`
--   然后手动启动 Docker 守护程序，运行：`service docker start`
+-   然后手动启动 Docker 守护程序，运行：`rc-service docker start`
 -   参考[alpinelinux Docker](https://wiki.alpinelinux.org/wiki/Docker)
 
 ### 运行
