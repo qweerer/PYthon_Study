@@ -12,7 +12,8 @@ set ic
 set hls
 
 " set is
-
+" 如果退格键无法正常使用
+set backspace=indent,eol,start
 " 显示行号
 set number
 " 显示光标当前位置
