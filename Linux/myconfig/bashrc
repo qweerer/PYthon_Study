@@ -38,8 +38,9 @@ function parse_git_dirty {
 # export PS1='[\u@MSYS \A] \[\033[1;31m\] [\$]\[\033[0m\] [] \w \n\[\033[0;33m\]In[\#]:= \[\033[0m\]'
 # export PS1='\n    \n[\033[1;35m\u@MSYS\e[0m \A] \033[1;32m[\$]\e[0m [`exitstatus`] \033[1;93m\w\e[0m  \n\[\033[0;33m\]In[\#]:= \[\033[0m\]'
 # export PS1='\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]     \n\[\e[33m\]In[\$]\[\e[0m\]:'
+#export PS0='\n\e[100m#==========[out]==========#\[\e]0;\w\a\]\n'
 
-export PS0='\n\e[100m#==========[out]==========#\[\e]0;\w\a\]\n'
+export PS0='\n\e[100m#==========[out]==========#\[\e[0m\]\n'
 export PS2='In[=]>:'
 
 #=======全部

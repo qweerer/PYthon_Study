@@ -16,6 +16,19 @@ npx nrm use npm
 npm install -g yarn pm2 nodemon
 ```
 
+## 缓存设置
+
+```bash
+yarn cache clean
+npm cache clean --force
+
+yarn config set cache-folder "/c/Develop/nodejs/node-cache/yarn"
+npm config set cache "/c/Develop/nodejs/node-cache/npm"
+npm config set prefix "D:\Program Files\npm_global"
+npm config ls
+yarn config list
+```
+
 ## 其他命令
 
 ```bash

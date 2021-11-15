@@ -18,3 +18,35 @@ ln -sf ~/myconfig/.vimrc  ~/.vimrc
 
 - `J`: 两行合并
 - `K`: 帮助
+
+## 分屏
+
+```vim
+:new
+#2. 打开当前文件
+#命令（水平）：
+[CTRL] [W] s
+
+#命令（垂直）：
+[CTRL] [W] v
+
+#3. 打开任意文件
+#命令（水平）：
+:split [FILENAME]
+:sp [FILENAME]
+    
+#命令（垂直）：
+:vsplit [FILENAME]
+:vs [FILENAME]
+```
+
+| 命令（快捷键） | 说明               |
+| -------------- | ------------------ |
+| [CTRL]  [W]  + | 扩大窗口           | 
+| [CTRL]  [W]  - | 缩小窗口           |
+| [CTRL]  [W]  h | 跳转到左边的窗口   |
+| [CTRL]  [W]  j | 跳转到下边的窗口   |
+| [CTRL]  [W]  k | 跳转到上边的窗口   |
+| [CTRL]  [W]  l | 跳转到右边的窗口   |
+| [CTRL]  [W]  t | 跳转到最顶上的窗口 |
+| [CTRL]  [W]  b | 跳转到最顶下的窗口 |
