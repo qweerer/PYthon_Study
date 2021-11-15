@@ -48,6 +48,10 @@ set statusline=%n]%f%m%r%h\|pwd:\ %{CurDir()}\|%=\|%l,%c\ %p%%\|hex=%b%{((&fenc=
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "sudo vi /etc/vimrc
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set encoding=prc
+
 " 状态栏
 set laststatus=2      " 总是显示状态栏
 highlight StatusLine cterm=bold ctermfg=yellow ctermbg=blue

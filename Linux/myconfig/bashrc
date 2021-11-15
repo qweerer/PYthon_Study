@@ -1,0 +1,60 @@
+
+exitstatus() {
+    if [ "$?" = 0 ]
+    then
+        printf '\033[1;32m√\033[0m'
+    else
+        printf '\033[1;31m×\033[0m'
+    fi
+}
+
+#======git
+function git_branch {
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
+    echo "("${ref#refs/heads/}") ";
+}
+
+function parse_git_dirty {
+    local git_status=$(git status 2> /dev/null | tail -n1) || $(git status 2> /dev/null | head -n 2 | tail -n1);
+    if [[ "$git_status" != "" ]]; then
+        local git_now; # 标示
+        if [[ "$git_status" =~ nothing\ to\ commit || "$git_status" =~  Your\ branch\ is\ up\-to\-date\ with ]]; then
+            git_now="=";
+        elif [[ "$git_status" =~ Changes\ not\ staged || "$git_status" =~ no\ changes\ added ]]; then
+            git_now='~';
+        elif [[ "$git_status" =~ Changes\ to\ be\ committed ]]; then #Changes to be committed
+            git_now='*';
+        elif [[ "$git_status" =~ Untracked\ files ]]; then
+            git_now="+";
+        elif [[ "$git_status" =~ Your\ branch\ is\ ahead ]]; then
+            git_now="#";
+        fi
+        echo "${git_now}";
+    fi
+}
+#======git-end
+
+# export PS1='[\u@\h \A] \[\033[1;36m\] [\$]\[\033[0m\] [] \w \n\[\033[0;33m\]In[\#]:= \[\033[0m\]'
+# export PS1='[\u@MSYS \A] \[\033[1;31m\] [\$]\[\033[0m\] [] \w \n\[\033[0;33m\]In[\#]:= \[\033[0m\]'
+# export PS1='\n    \n[\033[1;35m\u@MSYS\e[0m \A] \033[1;32m[\$]\e[0m [`exitstatus`] \033[1;93m\w\e[0m  \n\[\033[0;33m\]In[\#]:= \[\033[0m\]'
+# export PS1='\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]     \n\[\e[33m\]In[\$]\[\e[0m\]:'
+
+export PS0='\n\e[100m#==========[out]==========#\[\e]0;\w\a\]\n'
+export PS2='In[=]>:'
+
+#=======全部
+export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\] \[\e[36m\](`git_branch`)\[\e[0m\] \[\e[31m\]`parse_git_dirty`\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+#=======一般
+export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+
+#========root
+export PS1='\[\e]0;\w\a\]\n[\[\e[39m\]\[\e[45m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]    \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+
+#=======MSYS
+export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@MSYS\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\] \[\e[36m\](`git_branch`)\[\e[0m\] \[\e[31m\]`parse_git_dirty`\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+
+export PATH=$PATH:/c/Develop/nodejs
+export PATH=$PATH:/c/Develop/nodejs/node-global
+
+echo "111" >> /home/1.txt
+# /c/Develop/1-www-data/env_app.sh
