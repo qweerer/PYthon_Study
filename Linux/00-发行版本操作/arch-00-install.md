@@ -22,6 +22,19 @@ wpa_supplicant -c wifi.conf -i enp03 &
 dhcpcd &
 ```
 
+### 配置网络方式2
+
+```shell
+# 进入iwd网络
+iwctl
+device list
+station wlan0 scan
+# 获取扫描的网络列表
+station wlan0 get-networks
+station wlan0 connect wifi名
+exit
+```
+
 ## 设置时间
 
 ```shell
@@ -95,12 +108,12 @@ sudo pacman -Syy
 
 ```shell
 # pacman-key --refresh-keys
-pacstrap /mnt base linux linux-firmware
+pacstrap /mnt base base-devel linux linux-firmware linux-headers vim intel-ucode/amd-ucode iwd 
 ```
 
 ```shell
 # 保存mnt下的挂载分区
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
 ### 进入新安装的archlinux
@@ -110,8 +123,6 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 ```shell
-pacman -S nano
-pacman -S vim
 ln -s /usr/bin/vim /usr/bin/vi
 ```
 
@@ -181,11 +192,40 @@ uname - m
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch Linux
 ```
 
+#### 或者安装refind
+
 ```shell
-pacman -S zsh dhcpcd  wpa_supplicant openssh net-tools wget 
+mount -t efivarfs efivarfs /sys/firmware/efi.efivars/
+pacman -S refind
+refind-install --alldrivers
+## 获取uuid
+blkid -s PARTUUID -0 /value /dev/sda3
+vim /boot/refind_linux.conf
+systemctl enable fstrim.time
 ```
 
-#### 另一些可安装的包
+```conf
+menuentry "Arch Linux" {
+    icon     /EFI/refind/themes/refind-ambience/icons/os_arch.png
+    #volume   "Arch Linux"
+    loader   /vmlinuz-linux
+    initrd   /amd-ucode.img
+    initrd   /initramfs-linux.img
+    options  "root=PARTUUID=7ce1b087-1f97-4a98-ac50-408353207b92 rw"
+    submenuentry "Boot using fallback initramfs" {
+        initrd /initramfs-linux-fallback.img
+    }
+    submenuentry "Boot to terminal" {
+        add_options "systemd.unit=multi-user.target"
+    }
+    #disabled
+}
+```
+### 另一些可安装的包
+```shell
+pacman -S dhcpcd  wpa_supplicant openssh net-tools wget networkmanager network-manager-applet dialog wpa-applicant
+pacman -S mtools bluez bluz-utils cups xdg-utils xdg-user-dirs alsa-utils pulseaudio pulseaudio-bluetooth reflector
+```
 
 ```shell
 networkmanager network-manager-applet dialog wireless_tools wpa_supplicant  mtools dosfstools ntfs-3g base-devel linux-headers reflector git
