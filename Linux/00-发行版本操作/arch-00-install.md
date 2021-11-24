@@ -199,15 +199,33 @@ mount -t efivarfs efivarfs /sys/firmware/efi.efivars/
 pacman -S refind
 refind-install --alldrivers
 ## 获取uuid
+blkid
 blkid -s PARTUUID -0 /value /dev/sda3
-vim /boot/refind_linux.conf
 systemctl enable fstrim.time
+# boot目录下的`refind_linux.conf`是内核参数,当refind找到/boot目录中的内核后会使用同文件夹下的配置文件中的参数
+# 该文件在`refind-install`时一般会自动生成,需要查看,或者增加自己需要的内核参数
+vim /boot/refind_linux.conf
+```
+
+```conf
+"Boot using default options"     "root=PARTUUID=_XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX_ rw add_efi_memmap initrd=boot\intel-ucode.img initrd=boot\amd-ucode.img initrd=boot\initramfs-%v.img"
+"Boot using fallback initramfs"  "root=PARTUUID=_XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX_ rw add_efi_memmap initrd=boot\intel-ucode.img initrd=boot\amd-ucode.img initrd=boot\initramfs-%v-fallback.img"
+"Boot to terminal"               "root=PARTUUID=_XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX_ rw add_efi_memmap initrd=boot\intel-ucode.img initrd=boot\amd-ucode.img initrd=boot\initramfs-%v.img systemd.unit=multi-user.target"
+```
+
+如果refind找不到或者想要更多自定义配置,就需要到`/boot/efi/EFI/refind/refind.conf`中自行配置
+
+```
+# 配置文件中`volume`需要自己设置标签
+e2label /dev/sda2 opensuse
+lsblk -f
+blkid
 ```
 
 ```conf
 menuentry "Arch Linux" {
     icon     /EFI/refind/themes/refind-ambience/icons/os_arch.png
-    #volume   "Arch Linux"
+    volume   "Arch Linux"
     loader   /vmlinuz-linux
     initrd   /amd-ucode.img
     initrd   /initramfs-linux.img
@@ -220,7 +238,22 @@ menuentry "Arch Linux" {
     }
     #disabled
 }
+menuentry Opensuse {
+    icon     /EFI/refind/icons/os_suse.png
+    volume   "opensuse"
+    loader   /boot/vmlinuz
+    initrd   /boot/initrd
+    options  "root=UUID=1a334fe5-bd00-4836-8e4b-3c4efc2ed15d splash=silent systemd.show_status=yes mitigations=auto quiet intel_iommu=on iommu=pt nvidia-drm.modeset=1 amdgpu.dpm=0 amdgpu.noretry=0"
+    submenuentry "Boot to single-user mode" {
+        add_options "single"
+    }
+    submenuentry "Boot with minimal options" {
+        options "ro root=UUID=1a334fe5-bd00-4836-8e4b-3c4efc2ed15d"
+    }
+}
 ```
+
+
 ### 另一些可安装的包
 ```shell
 pacman -S dhcpcd  wpa_supplicant openssh net-tools wget networkmanager network-manager-applet dialog wpa-applicant
