@@ -82,6 +82,8 @@ mkdir /mnt/home
 mount /dev/sda4 /mnt/home
 ```
 
+## pacman
+
 ### 镜像源系统
 
 ```shell
