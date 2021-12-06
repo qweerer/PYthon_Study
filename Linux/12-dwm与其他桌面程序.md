@@ -55,13 +55,13 @@ greeter-session=lightdm-yourgreeter-greeter
 
 ## 先设置字体
 - 下载[nerd字体](https://www.nerdfonts.com/font-downloads)
+	- `DejaVuSansMono`, `AnonymousPro`
 - 解压到`/usr/local/share/fonts`
 - `fc-list`进行查看
 - `vim conf.h`
 ```c
 static char *font = "Anonymice Nerd Font Mono":pixelsize=24:antialias=true:autohint=true";
 ```
-
 
 
 # dwm
