@@ -4,6 +4,12 @@
 
 ```shell
 setfont /user/share/kbd/consolefonts/LatGrkCyr-12x12
+## 脚本1
+curl -LO https://raw.githubusercontent.com/MatMoul/archfi/master/archfi
+sh archfi
+## 脚本2
+curl -LO https://github.com/teaper/archlinux-install-script/releases/download/0.1.9/archlinux-install.sh
+sudo bash archlinux-install.sh
 ```
 
 ## 配置网络
