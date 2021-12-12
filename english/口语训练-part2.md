@@ -54,3 +54,9 @@
 
 ## 联系
 - 练习时注意时间
+
+
+
+| 连词     |          |                |        |             |          |
+| -------- | -------- | -------------- | ------ | ----------- | -------- |
+| and also | and plus | on top of that | beside | furthermore | moreover | 
