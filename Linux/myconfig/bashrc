@@ -49,7 +49,7 @@ export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m
 export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
 
 #========root
-export PS1='\[\e]0;\w\a\]\n[\[\e[39m\]\[\e[45m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]    \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+export PS1='\[\e]0;\w\a\]\n[\[\e[39m\]\[\e[45m\]\u@\h\[\e[0m\] \D{%b-%d}-\A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]    \n\[\e[33m\]In[\$]=\[\e[0m\]:'
 
 #=======MSYS
 export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@MSYS\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\] \[\e[36m\](`git_branch`)\[\e[0m\] \[\e[31m\]`parse_git_dirty`\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
