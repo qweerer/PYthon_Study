@@ -1,6 +1,13 @@
 syntax on
 noremap <C-u> <C-r>
 noremap <C-r> <C-u>
+noremap <C-h> ^
+noremap <C-l> <end>
+noremap <C-j> <C-f>
+noremap <C-k> <C-b>
+imap jk <Esc>
+
+
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
