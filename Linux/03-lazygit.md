@@ -5,9 +5,18 @@
 >`https://github.com/jesseduffield/lazygit/releases`
 
 ```shell
-
+wget https://github.com/jesseduffield/lazygit/releases/download/v0.31.4/lazygit_0.31.4_Linux_x86_64.tar.gz -O lazygit.tgz 
 tar xvf lazygit.tgz
-sudo cp ~/myconfig/bin-application/lazygit /usr/local/bin/
+sudo mv ./lazygit /usr/local/bin/
+```
+
+## git
+
+```shell
+git config --global http.proxy 'socks5://192.168.56.1:7890'
+git config --global https.proxy 'socks5://192.168.56.1:1080'
+git config --global user.name
+git config --global user.email
 ```
 
 ## Files
