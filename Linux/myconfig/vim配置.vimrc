@@ -82,6 +82,8 @@ set wildmenu
 " 代码折叠
 set nofoldenable
 
+" 重新进入记住位置
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
 

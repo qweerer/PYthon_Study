@@ -47,8 +47,10 @@ git clone https://github.com/wfxr/minimap.vim
 vim ~/.vimrc
 # .vimrc
 " MINIMAP
+" ============
+noremap \m :MinimapToggle<CR>:MinimapRefresh<CR>
 let g:minimap_width = 10
-let g:minimap_auto_start = 1
+let g:minimap_auto_start = 0
 let g:minimap_auto_start_win_enter = 1
 let g:minimap_highlight_range = 1
 let g:minimap_highlight_search = 1
@@ -103,7 +105,7 @@ cd ~/.vim/bundle
 git clone https://github.com/scrooloose/nerdtree
 vim ~/.vimrc
 "nerdtree
-map ff :NERDTreeToggle<CR>
+noremap \f :NERDTreeToggle<CR>
 
 let NERDTreeMapOpenExpl = ""
 let NERDTreeMapUpdir = ""

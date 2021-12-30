@@ -53,7 +53,7 @@ greeter-session=lightdm-yourgreeter-greeter
 
 # st
 
-## 先设置字体
+## 设置字体
 - 下载[nerd字体](https://www.nerdfonts.com/font-downloads)
 	- `DejaVuSansMono`, `AnonymousPro`
 - 解压到`/usr/local/share/fonts`
@@ -63,10 +63,71 @@ greeter-session=lightdm-yourgreeter-greeter
 static char *font = "Anonymice Nerd Font Mono":pixelsize=24:antialias=true:autohint=true";
 ```
 
+## 安装补丁
+```shell
+pacman -Ss patch
+zypper in patch
+
+patch < st-alpha-0.8.2.diff 
+patch < st-anysize-0.8.4.diff #占满屏幕
+patch < st-dracula-0.8.2.diff 
+patch < st-scrollback-20210507-4536f46.diff #向上翻滚
+patch < st-copyurl-0.8.4.diff #高亮链接
+patch < st-lukesmith-externalpipe\(if_you_have_scrollback\).diff #控制输出
+patch < st-dynamic-cursor-color-0.8.4.diff #光标颜色换色
+patch < st-desktopentry-0.8.4.diff 
+patch < st-fontfix.diff 
+```
+
+## 修改参数
+`vim config.def.h`
+```c
+// st-alpha-0.8.2.diff 
+/* bg opacity */  
+float alpha = 0.7;
+```
+
+
+## 设置快捷键
+`vim config.def.h`
+```c
+static MouseShortcut mshortcuts[] = {
+ /* mask                 button   function        argument       release */
+ { XK_ANY_MOD, Button2, selpaste, {.i = 0}, 1 },
+ { XK_ANY_MOD, Button4, kscrollup, {.i = 1}, 1 },
+ { XK_ANY_MOD, Button5, kscrolldown, {.i = 1}, 1 },
+ // { ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
+ // { XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
+ // { ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
+ // { XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
+};
+
+#define MODKEY Mod1Mask
+#define TERMMOD (ControlMask|ShiftMask)
+
+static Shortcut shortcuts[] = {
+ // 自定义快捷键
+ // 滚动
+ { MODKEY, XK_Up, kscrollup, {.i = 1} },
+ { MODKEY, XK_Down, kscrolldown, {.i = 1} },
+ { MODKEY, XK_f, kscrollup, {.i = -1} },
+ { MODKEY, XK_b, kscrolldown, {.i = -1} },
+ // url
+ { MODKEY, XK_l, copyurl, {.i = 0} },
+ // 复制版
+ { MODKEY|ControlMask, XK_q, externalpipe, {.v = openurlcmd } },
+ { MODKEY, XK_y, externalpipe, {.v = copyurlcmd } },
+ { MODKEY, XK_o, externalpipe, {.v = copyoutput } },
+};
+```
+
+## 安装
+```
+sudo make clean install
+rm config.h
+```
 
 # dwm
-
-
 
 ```
 vim  /usr/share/xsessions/dwm.desktop
