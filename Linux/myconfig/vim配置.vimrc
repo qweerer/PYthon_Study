@@ -5,13 +5,34 @@
 " 4. di" 删除引号中的内容
 " 5. fv 跳到下一个v
 " 6. dfv 删除到下一个v
-" 
+" =====================
+" 折叠:indent
+" zc 折叠
+" zC 对所在范围内所有嵌套的折叠点进行折叠
+" zo 展开折叠
+" zO 对所在范围内所有嵌套的折叠点展开
+" [z 到当前打开的折叠的开始处。
+" ]z 到当前打开的折叠的末尾处。
+" zj 向下移动。到达下一个折叠的开始处。关闭的折叠也被计入。
+" zk 向上移动到前一折叠的结束处。关闭的折叠也被计入。
+" 折叠:marker
+" zf　创建折叠，比如在marker方式下：
+"         zf56G，创建从当前行起到56行的代码折叠；
+"         10zf或10zf+或zf10↓，创建从当前行起到后10行的代码折叠。
+"         10zf-或zf10↑，创建从当前行起到之前10行的代码折叠。
+"         在括号处zf%，创建从当前行起到对应的匹配的括号上去（（），{}，[]，<>等）。
+" zd  删除 (delete) 在光标下的折叠。仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。
+" zD  循环删除 (Delete) 光标下的折叠，即嵌套删除折叠。仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。
+" zE  除去 (Eliminate) 窗口里“所有”的折叠。仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。
 
 " 恢复快捷键
 noremap <C-u> <C-r>
 noremap <C-r> <C-u>
-noremap z u
+noremap zz u
 noremap Z <C-r>
+" 代码折叠
+noremap zi :set foldmethod=indent<CR>
+noremap zm :set foldmethod=marker<CR>
 " 翻页快捷键
 noremap j k
 noremap k j
@@ -65,8 +86,8 @@ set relativenumber
 set ruler
 " 设置缩进
 set cindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 "设置换行
 set wrap
@@ -81,6 +102,7 @@ set wildmenu
 
 " 代码折叠
 set nofoldenable
+set foldmethod=indent
 
 " 重新进入记住位置
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

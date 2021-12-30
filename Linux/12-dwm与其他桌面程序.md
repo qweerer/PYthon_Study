@@ -1,3 +1,12 @@
+# 快捷键总结
+## st
+| key         | use         | [=] | key       | use         |
+| ----------- | ----------- | --- | --------- | ----------- |
+| alt + PU,PD | scroll page | [=] | alt + j,k | scroll line |
+| alt + l     | highli url  | [=] | alt + C-q | openurlcmd  |
+| alt + y     | copyurlcmd  | [=] | alt + o   | copyoutput  |
+
+
 # xorg安装
 
 #linux/program 
@@ -110,8 +119,8 @@ static Shortcut shortcuts[] = {
  // 滚动
  { MODKEY, XK_Up, kscrollup, {.i = 1} },
  { MODKEY, XK_Down, kscrolldown, {.i = 1} },
- { MODKEY, XK_f, kscrollup, {.i = -1} },
- { MODKEY, XK_b, kscrolldown, {.i = -1} },
+ { MODKEY, XK_j, kscrollup, {.i = -1} },
+ { MODKEY, XK_k, kscrolldown, {.i = -1} },
  // url
  { MODKEY, XK_l, copyurl, {.i = 0} },
  // 复制版

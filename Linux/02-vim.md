@@ -29,6 +29,9 @@ vim ~/.vimrc
 ```
 
 ```.vimrc
+" =========================
+" plugs
+" =========================
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -81,6 +84,7 @@ git clone https://github.com/itchyny/lightline.vim
 
 vim ~/.vimrc
 # .vimrc
+" =========================
 " lightline
 set laststatus=2
 let g:lightline = {
