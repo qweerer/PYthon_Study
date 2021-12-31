@@ -1,4 +1,6 @@
 
+#linux #linux/program/shell 
+
 Vim 的全局配置一般在`/etc/vim/vimrc`或者`/etc/vimrc`
 
 ```shell

@@ -1,6 +1,6 @@
 # lazygit
 
-#linux #linux/program
+#linux #linux/program/shell 
 
 >`https://github.com/jesseduffield/lazygit/releases`
 
