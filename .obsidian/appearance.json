@@ -3,9 +3,10 @@
   "translucency": false,
   "cssTheme": "California Coast",
   "enabledCssSnippets": [
-    "show-code-type",
-    "obsidian_orange",
-    "highlight colors"
+    "myown-image",
+    "myown-california",
+    "tag-normal",
+    "show-code-type"
   ],
   "baseFontSize": 16
 }

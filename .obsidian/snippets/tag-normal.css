@@ -1,0 +1,461 @@
+:root {
+    --text: "Hack Nerd Font Mono", 'Segoe UI Emoji', "Consolas", "Monaco", monospace, -apple-system;
+    /* 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+    --text-editor: "Hack Nerd Font Mono", 'Segoe UI Emoji', "Consolas", "Monaco", monospace, -apple-system;
+    /* 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+    --font-monospace: "Hack Nerd Font Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace;
+    --my-theme-background: #0A59F7;
+    --my-theme-background-hover: rgba(10, 89, 247, .8);
+    /*构造强调色*/
+    --line-heavy-background: #007de4;
+    --line-list-background: #00927f;
+    /*table*/
+    --table-background-color: #ebebeb;
+    --table-background-color-odd: #ffffff;
+    --table-border-color: #555555;
+    --table-thead-background-color: #bfddf5;
+    --table-hover-raw-color: #2f93e42f;
+    --table-hover-color: #2f93e47c;
+    --table-hover-thead-color: #cde8ff;
+
+    --text-quteinside-background: #cae2f88f;
+    --text-quteline-background: #007de4;
+    --text-myconf03-background: #9859e0;
+    --myconf-background-purple: #eae4f2;
+  /*行内代码颜色*/
+  --inside-code-background: #ffe3e3;
+    --outside-code-background: var(--shade-3);
+    /*tags*/
+    --stag1: #ff0000;
+    --stag2: #ff9900;
+    --stag3: #00a030;
+    --tag1: #e77e7e;
+    --tag2: #dbb671;
+    --tag3: #cacc41;
+    --tag4: #5dcf53;
+    --tag5: #49c9ce;
+    --tag6: #6da1dd;
+    --tag7: #9270db;
+    --tag8: #e277d9;
+    --tag9: #6b6b6b;
+
+    --my-h1-color: #ca8bee;
+    --my-h2-color: #004faa;
+    --my-h3-color: #0e64bb;
+    --my-h4-color: #3481c5;
+    --my-h5-color: #59a0e2;
+    --my-h6-color: #88b8e6;
+
+    --h2-color: #004faa;
+    --h-before2: #e77e7e;
+    --h-before3: #dbb671;
+    --h-before4: #cacc41;
+    --h-before5: #5dcf53;
+    --h-before6: #49c9ce;
+    --h-before7: #6da1dd;
+    --h-before8: #288b09;
+}
+
+/*colorful tags*/
+.tag:not(.token).tag:nth-child(9n+1) {
+    background-color: var(--tag1);
+}
+
+/*1*/
+.tag:not(.token).tag:nth-child(9n+2) {
+    background-color: var(--tag6);
+}
+
+/*6*/
+.tag:not(.token).tag:nth-child(9n+3) {
+    background-color: var(--tag2);
+}
+
+/*2*/
+.tag:not(.token).tag:nth-child(9n+4) {
+    background-color: var(--tag7);
+}
+
+/*7*/
+.tag:not(.token).tag:nth-child(9n+5) {
+    background-color: var(--tag3);
+}
+
+/*3*/
+.tag:not(.token).tag:nth-child(9n+6) {
+    background-color: var(--tag8);
+}
+
+/*8*/
+.tag:not(.token).tag:nth-child(9n+7) {
+    background-color: var(--tag4);
+}
+
+/*4*/
+.tag:not(.token).tag:nth-child(9n+8) {
+    background-color: var(--tag9);
+}
+
+/*9*/
+.tag:not(.token).tag:nth-child(9n) {
+    background-color: var(--tag5);
+}
+
+/*5*/
+
+.tag:not(.token) {
+    border: none;
+    color: #ffffff;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    padding: 1px 6px 1px 6px !important;
+    border-radius: 5px;
+}
+
+.tag:not(.token):hover {
+    color: black;
+    background-color: rgb(248, 252, 255) !important;
+}
+
+/*an active line highlight in vim normal mode */
+/* .cm-fat-cursor .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color: var(--text-quteinside-background) !important;
+  } */
+
+/*if you want the highlight to present in both normal and insert mode of vim*/
+/* .theme-light .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color: var(--text-quteinside-background) !important;
+  }
+  
+  .theme-dark .CodeMirror-activeline .CodeMirror-linebackground{
+    background-color: var(--text-quteinside-background) !important;
+  } */
+
+.workspace-leaf:not(.workspace-leaf.mod-active) .CodeMirror-activeline .CodeMirror-linebackground,
+.workspace-leaf:not(.workspace-leaf.mod-active) .CodeMirror-activeline-gutter {
+    background: transparent;
+}
+
+/* Active Line for Light Theme */
+
+.theme-light .CodeMirror-activeline .CodeMirror-linebackground {
+    background-color: var(--text-quteinside-background);
+}
+
+.theme-light .CodeMirror-activeline-gutter {
+    background-color: var(--text-quteinside-background);
+}
+
+/* Active Line for Dark Theme */
+
+.theme-dark .CodeMirror-activeline .CodeMirror-linebackground {
+    background-color: var(--text-quteinside-background);
+}
+
+.theme-dark .CodeMirror-activeline-gutter {
+    background-color: var(--text-quteinside-background);
+}
+
+
+
+/*table from https://snippets.cacher.io/snippet/018387c872dc39277996 by eluotao*/
+tbody>tr:nth-child(odd) {
+    background-color: var(--table-background-color-odd);
+}
+
+tbody>tr {
+    background-color: var(--table-background-color);
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+    padding: 4px 20px;
+    border: 1px solid var(--table-border-color);
+}
+
+.markdown-preview-view thead {
+    background-color: var(--table-thead-background-color);
+}
+
+/*table hover*/
+.markdown-preview-view td:hover {
+    background-color: var(--table-hover-color);
+}
+
+/*table raw hover*/
+.markdown-preview-view tr:hover {
+    background-color: var(--table-hover-raw-color);
+}
+
+.markdown-preview-view th:hover {
+    background-color: var(--table-hover-thead-color);
+}
+
+/* Preview Mode Lists  */
+/* .markdown-preview-view ul li p,
+.markdown-preview-view ol li p {
+    display: inline;
+} */
+
+/*我的 列表格式*/
+.markdown-preview-section ul {
+    margin-left: 0;
+    padding-inline-start: 1em;
+    list-style: disc;
+}
+
+.markdown-preview-section ol {
+    margin-left: 0;
+    padding-inline-start: 1.2em;
+    list-style: decimal;
+}
+
+.theme-light ul>li:not(.task-list-item) {
+    padding-left: 5px;
+    border-left: 2px solid var(--line-list-background);
+    margin-bottom: 10px;
+}
+
+.markdown-preview-section .footnotes li>p {
+    display: block;
+    margin-bottom: 0;
+}
+
+.markdown-preview-section .footnotes li>p+p {
+    margin-top: 0.3rem;
+}
+
+
+/* 我的 链接字体*/
+.cm-s-obsidian span.cm-url.cm-string:not(.cm-hmd-footnote-url) {
+    color: var(--shade-60);
+}
+
+.cm-s-obsidian span.cm-link {
+    color: var(--text-accent);
+}
+
+/* 我的 链接字体*/
+.cm-s-obsidian span.cm-formatting-link,
+.cm-s-obsidian span.cm-formatting-image.cm-link,
+.cm-s-obsidian span.cm-formatting-link-string.cm-url.cm-string {
+    color: var(--shade-30);
+    display: inline-block;
+    padding: 0 1px;
+    font-weight: 600;
+}
+
+/* 我的 Code */
+.theme-light :not(pre)>code[class*="language-"],
+.theme-light pre[class*="language-"] {
+    background-color: var(--outside-code-background);
+    border: 2px solid var(--text-quteline-background);
+    border-radius: 3px;
+}
+.theme-light code {
+    background-color: var(--inside-code-background);
+}
+/*我的 code边距*/
+/* .markdown-preview-section pre > code {
+  padding: 1.2rem;
+  display: block;
+} */
+/* 我的备注：文件链接*/
+.internal-embed .markdown-embed {
+    border: 0;
+
+    border-right: 3px solid var(--text-myconf03-background);
+    border-left: 3px solid var(--text-myconf03-background);
+    border-bottom: 3px solid var(--text-myconf03-background);
+    border-top: 3px solid var(--text-myconf03-background);
+    background-color: var(--myconf-background-purple);
+    border-radius: 0;
+}
+
+/* 图谱颜色 */
+.graph-view.color-fill,
+.theme-dark .graph-view.color-fill-tag,
+.theme-light .graph-view.color-fill-tag,
+.theme-dark .graph-view.color-fill-attachment,
+.theme-light .graph-view.color-fill-attachment,
+.graph-view.color-circle {
+    color: rgba(10, 89, 247);
+}
+
+.graph-view.color-line {
+    color: rgb(255, 198, 10, .8);
+}
+
+.graph-view.color-text {
+    color: rgba(0, 0, 0, .9);
+    opacity: 0.7;
+}
+
+.graph-view.color-arrow {
+    color: #ecaa03;
+    /* color: rgba(0,0,0); */
+}
+
+.graph-view.color-fill-unresolved {
+    color: rgba(10, 89, 247, .9);
+}
+
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+    color: rgba(10, 89, 247, .8);
+}
+
+/* 自定义的高亮块 block 里面的双向链接文字颜色 */
+.markdown-preview-view mark .internal-link {
+    color: #3370ff;
+}
+
+/* 我的 slide标题线*/
+body.plugin-sliding-panes-rotate-header .workspace>.mod-root>.workspace-leaf.mod-active>.workspace-leaf-content>.view-header {
+    background: none;
+    border-right: 3px solid var(--my-theme-background) !important;
+}
+
+.markdown-preview-view blockquote {
+    border-radius: 0;
+    color: black;
+    border-left: 4px solid var(--text-quteline-background);
+    border-bottom: 4px solid var(--text-quteline-background);
+    background-color: var(--text-quteinside-background);
+    padding: 8px 8px 8px 1.4375rem;
+    /* box-shadow: 0px 0px 24px 0 #f7f7f7; */
+    margin: 0 0;
+    margin-block-start: 1.2em;
+}
+
+/* 我的 强调线*/
+.markdown-preview-section hr {
+    /*
+    margin-top: var(--editor-line-height-rem);
+    margin-bottom: var(--editor-line-height-rem);
+    box-sizing: content-box;*/
+
+    border-bottom: 4px dashed var(--my-theme-background);
+    /*color: transparent;
+    display: block;
+    height: 6px;*/
+    position: relative;
+}
+
+/* 标题中emoji与文字之间的间隔 */
+.markdown-preview-view h2 {
+    white-space: pre;
+
+}
+
+.cm-s-obsidian .cm-header.cm-header-1 {
+    color: var(--my-h1-color);
+    /* font-size: var(--my-h1-size);
+    line-height: var(--my-h1-line-height);
+    font-weight: var(--my-h1-weight);
+    font-style: var(--my-h1-style); */
+    font-weight: bold;
+}
+
+.cm-s-obsidian .cm-header.cm-header-2 {
+    color: var(--my-h2-color);
+    font-weight: bold;
+}
+
+.cm-s-obsidian .cm-header.cm-header-3 {
+    color: var(--my-h3-color);
+    font-weight: bold;
+}
+
+.cm-s-obsidian .cm-header.cm-header-4 {
+    color: var(--my-h4-color);
+    font-weight: bold;
+}
+
+.cm-s-obsidian .cm-header.cm-header-5 {
+    color: var(--my-h5-color);
+    font-weight: bold;
+}
+
+.cm-s-obsidian .cm-header.cm-header-6 {
+    color: var(--my-h6-color);
+    font-weight: bold;
+}
+
+h1.embedded-note-title {
+    color: var(--my-h1-color);
+}
+
+.markdown-preview-view h1 {
+    color: var(--my-h1-color);
+    font-weight: bold;
+}
+
+.markdown-preview-view h2 {
+    color: var(--my-h2-color);
+    font-weight: bold;
+    border-bottom: 4px solid var(--my-h2-color);
+}
+
+.markdown-preview-view h3 {
+    color: var(--my-h3-color);
+    font-weight: bold;
+}
+
+.markdown-preview-view h4 {
+    color: var(--my-h4-color);
+    font-weight: bold;
+}
+
+.markdown-preview-view h5 {
+    color: var(--my-h5-color);
+    font-weight: bold;
+}
+
+.markdown-preview-view h6 {
+    color: var(--my-h6-color);
+    font-weight: bold;
+}
+
+
+/* 文本选中颜色 */
+.theme-light {
+    --text-selection: rgba(10, 89, 267, .4);
+}
+
+/* 引用文件时，文件名前面会出现 “文档” icon */
+
+a,
+.markdown-preview-view .internal-link::after {
+    content: "↗";
+    /*font-family: "iconfont";*/
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+
+/* a链接后面的icon */
+.external-link {
+    background-image: none;
+}
+
+
+/* 预览模式下a 链接 词距 */
+.external-link {
+    word-spacing: 0px;
+    padding-right: 0;
+}
+
+/* 解决文件名有空格时双向链接中单词之间间距过大的问题*/
+a,
+.markdown-preview-view .internal-link {
+    word-spacing: 0px;
+}
+
+.nav-folder-title.is-being-dragged {
+    /*background-color: rgba(241, 243, 245, .5);*/
+    color: var(--theme-background);
+}
