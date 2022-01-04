@@ -110,12 +110,14 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 
 ### 以下与插件冲突
-# 高亮
-syntax on
 " 主题
 set background=dark
 " colorscheme zellner
 " colorscheme ron
+
+# 高亮
+syntax on
+
 
 " 状态栏
 set laststatus=2      " 总是显示状态栏
