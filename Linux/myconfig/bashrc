@@ -1,10 +1,28 @@
 
+# colors
+
+red='\033[1;31m'
+green='\033[1;32m'
+yellow='\033[1;33m'
+blue='\033[1;34m'
+reset='\033[0m'
+
+reset='\033[0m'
+green='\033[1;32m'
+red='\033[1;31m'
+blue='\e[36m'
+gold='\e[93m'
+\e[33m
+pink='\e[35m'
+grey-bg='\e[100m'
+pink-bg='\e[39m\e[45m'
+
 exitstatus() {
     if [ "$?" = 0 ]
     then
-        printf '\033[1;32m√\033[0m'
+        printf "${green}√${reset}"
     else
-        printf '\033[1;31m×\033[0m'
+        printf "${red}×${reset}"
     fi
 }
 
@@ -40,19 +58,21 @@ function parse_git_dirty {
 # export PS1='\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]     \n\[\e[33m\]In[\$]\[\e[0m\]:'
 #export PS0='\n\e[100m#==========[out]==========#\[\e]0;\w\a\]\n'
 
-export PS0='\n\e[100m#==========[out]==========#\[\e[0m\]\n'
+export PS0="\n${grey_bg}#==========[out]==========#${reset}\n"
 export PS2='In[=]>:'
 
 #=======全部
-export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\] \[\e[36m\](`git_branch`)\[\e[0m\] \[\e[31m\]`parse_git_dirty`\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h${reset} \A] [`exitstatus`] \[\e[93m\]\w${reset} \[\e[36m\](`git_branch`)${reset} \[\e[31m\]`parse_git_dirty`${reset}     \n\[\e[33m\]In[\$]=${reset}:'
 #=======一般
-export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@\h\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+export PS1='\[\e]0;\w\a\]\n['${pink}'\u@\h'${reset}' \A] [`exitstatus`] '${gold}'\w'${reset}'     \n'${gold}'In[\$]=${reset}:'
 
 #========root
-export PS1='\[\e]0;\w\a\]\n[\[\e[39m\]\[\e[45m\]\u@\h\[\e[0m\] \D{%b-%d}-\A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\]    \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+export PS1='\[\e]0;\w\a\]\n[\[\e[39m\]\[\e[45m\]\u@\h${reset} \D{%b-%d}-\A] [`exitstatus`] \[\e[93m\]\w${reset}    \n\[\e[33m\]In[\$]=${reset}:'
 
 #=======MSYS
-export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@MSYS\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\] \[\e[36m\](`git_branch`)\[\e[0m\] \[\e[31m\]`parse_git_dirty`\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+export PS1='\[\e]0;\w\a\]\n[\[\e[35m\]\u@MSYS\[\e[0m\] \A] [`exitstatus`] \[\e[93m\]\w\[\e[0m\] \[\e[36m\]`git_branch`\[\e[0m\] \[\e[31m\]`parse_git_dirty`\[\e[0m\]     \n\[\e[33m\]In[\$]=\[\e[0m\]:'
+
+export PS1='\[\e]0;\w\a\]\n['${pink_bg}'\u@MSYS'${reset}' \A] [`exitstatus`] '${gold}'\w'${reset}' '${blue}'`git_branch`'${reset}' '${red}'`parse_git_dirty`'${reset}'     \n'${gold}'In[\$]='${reset}'\[\e[0m\]:'
 
 export PATH=$PATH:/c/Develop/nodejs
 export PATH=$PATH:/c/Develop/nodejs/node-global
