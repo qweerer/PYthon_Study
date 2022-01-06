@@ -1,4 +1,4 @@
-
+# vim
 #linux #linux/program/shell 
 
 Vim 的全局配置一般在`/etc/vim/vimrc`或者`/etc/vimrc`
@@ -21,7 +21,16 @@ ln -sf ~/myconfig/.vimrc  ~/.vimrc
 - `J`: 两行合并
 - `K`: 帮助
 
+```
+           ge      b          w                             e
+           <-     <-         --->                          --->
+    This is-a line, with special/separated/words (and some more).
+       <----- <-----         -------------------->         ----->
+         gE      B                   W                       E
+```
+
 ## 安装插件
+> [vim插件网](https://vimawesome.com/)
 ```shell
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl  -Lo ~/.vim/autoload/pathogen.vim -x socks5://192.168.56.1:7890 https://tpo.pe/pathogen.vim 
@@ -182,6 +191,57 @@ vim ~/.vimrc
 let g:undotree_DiffAutoOpen = 0
 map \z :UndotreeToggle<CR>
 ```
+==comfortable-motion-vim==
+```shell
+cd ~/.vim/bundle  
+git clone https://github.com/yuttie/comfortable-motion.vim
+vim ~/.vimrc
+
+" === comfortable-motion-vim
+" ===
+let g:comfortable_motion_no_default_key_mappings = 1
+nnoremap K :call comfortable_motion#flick(70)<CR>
+nnoremap J :call comfortable_motion#flick(-70)<CR>
+nnoremap <C-k> :call comfortable_motion#flick(200)<CR>
+nnoremap <C-j> :call comfortable_motion#flick(-200)<CR>
+nnoremap <S-up> :call comfortable_motion#flick(-70)<CR>
+nnoremap <S-down> :call comfortable_motion#flick(70)<CR>
+```
+==vim-visual-multi==
+-   select words with Ctrl-N (like `Ctrl-d` in Sublime Text/VS Code)
+-   create cursors vertically with Ctrl-Down/Ctrl-Up
+-   select one character at a time with Shift-Arrows
+-   press n/N to get next/previous occurrence
+-   press [/] to select next/previous cursor
+-   press q to skip current and get next occurrence
+-   press Q to remove current cursor/selection
+-   start insert mode with i,a,I,A
+```shell
+cd ~/.vim/bundle  
+git clone https://github.com/mg979/vim-visual-multi
+# 注释快捷键
+vim ./autoload/vm/maps/all.vim
+
+"    let maps["Select l"][0]              = '<S-Right>'
+"    let maps["Select h"][0]              = '<S-Left>'
+vim ~/.vimrc
+" === vim-visual-multi
+" ===
+let g:VM_maps = {}
+let g:VM_maps["Undo"] = 'zz'
+let g:VM_maps["Redo"] = 'Z'
+```
+
+==suda.vim==
+```shell
+cd ~/.vim/bundle  
+git clone https://github.com/lambdalisue/suda.vim
+
+" === sudo.vim
+" ===
+map S :SudaWrite<CR>
+```
+
 ==youcompleteme==
 ```shell
 cd ~/.vim/bundle  
@@ -194,6 +254,13 @@ cd ~/.vim/bundle
 git clone https://github.com/w0rp/ale
 ```
 
+==startuptime-vim==
+```shell
+cd ~/.vim/bundle  
+git clone https://github.com/tweekmonster/startuptime.vim
+
+:StartupTime
+```
 
 ## 分屏
 
