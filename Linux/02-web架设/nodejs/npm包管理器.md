@@ -1,5 +1,7 @@
 # npm包管理器
 
+[oznu/alpine-node: Node.js binaries for Alpine Linux on x86_64, armhf and aarch64. (github.com)](https://github.com/oznu/alpine-node)
+
 ## 配置源
 
 ```bash
@@ -8,6 +10,14 @@ npm config set registry http://registry.npm.taobao.org/
 
 npx nrm use taobao
 npx nrm use npm
+
+
+yarn config get registry
+yarn config set registry http://registry.npm.taobao.org/
+yarn config set registry http://registry.npmjs.org/
+yarn cache clean
+yarn --update-checksums
+yarn
 ```
 
 ## 部署
