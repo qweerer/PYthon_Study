@@ -403,6 +403,7 @@ h1.embedded-note-title {
 .markdown-preview-view h3 {
     color: var(--my-h3-color);
     font-weight: bold;
+    border-left: 1px dashed var(--my-h1-color);
 }
 
 .markdown-preview-view h4 {
