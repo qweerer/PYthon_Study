@@ -13,8 +13,8 @@ sudo mv ./lazygit /usr/local/bin/
 ## git
 
 ```shell
-git config --global http.proxy 'socks5://192.168.56.1:7890'
-git config --global https.proxy 'socks5://192.168.2.20:2001'
+git config --local http.proxy 'http://192.168.56.1:7890'
+git config --local https.proxy 'http://192.168.2.20:2001'
 git config --global user.name
 git config --global user.email
 ```
