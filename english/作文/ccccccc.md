@@ -20,22 +20,66 @@
 > offering free apps allows students from a chance to escape the poverty cycle 
 ## (app)创造了(丰富的娱乐), 和社区(时光), 这些很有吸引力
 > application create a distinctive state identity, along with the community's physical landmark, Its culture, , are part of its magnetism
-> 
+> application create a distinctive state identity, along with community's physical landmark, its culture are part of its magnetism
+> application creates distinctive state indentity, along with community's physical landmark
 ## (app)不是(营养)(好方法)
 > in term of nutrition, app is far from satisfaction and usually does not compose a balance of diet
+> in term of nutrition, fast food is far from satisfactory and usually does no compose a balance of diet
+> in term of nutrition, fast food is far form satisfacroty and usually does not compose a balance of diet
+> in term of nutrition, fast food is far form satisfactory and does not compose a balance of diet
+> in term of nutrition, fast food is far from satisfactory and does not compose a balance of diet
+> in term of nutrition, fast food is far from satisfactory and usually does not compose a balance of diet
+> in term of nutrition, fast food is far from satisfaction and usually does not compose a balance of diet
 
 ## (app)创造了(丰富的娱乐), 和社区(时光)
 > apple holds the key to encouraging the diversity of thinking and promoting social innovation
+> apps holds the key of encouraging the variety of thinking and promoting social innovation
+> apps holds the eky to encouraging the variety of thinking and promoting social innovation
 ## (再国外大放异彩的)(app)造成了(文化的小时)
+the advance in technology which hace driven industrialization in developed countries have certainly contributed to the disappearance of traditional ways of life 
 
 ## (媒体)应该去宣传(app)
-
+TV programmes and movies should make a point of putting a positive spin on traditional lifestyle
+Tv programmes and movies should make a point of putting a positive spin on traditional lifestyle
+TV programmes and movies should make a point to putting a positive spin on traditional lifestyle
+Tv programmes and movies should make a point of putting a positive spin on traditional lifestyle
+TV programmes and movies should make a point of putting a positive spin on traditional lifestyle
 ## 怎加的(app)导致了
-
+the accelerated increase in the human population whith in the past hundreds years impact on main street
+the accelerated increase in human population within the past hundreds years impact on the main street
+the accelerated increase in hunman population within the past hundreds years impact on the main streets
+the accelerated increase in hunman population within the past hundreds years impacts on the main streets
+the accelerated increase in human population within the past hundreds years  impacts on the censor of human activities
 ## 政府应该收集信息,然后用它解决问题
-
+the government can collect information on a national scale to see the whole picture and take effective steps to deal with the problems
+the government can collect information in national scale to get a whole picture and take effective steps to tackle the national wide pollution and environment problems
+the government can collect information on a national scale to see the whole picture and take effective steps to deal with the problems
+the government can collect information on a niaional scale to see the whole picture and take effective steps to deal with the problems
 ## 政府使用经济手段解决问题
+the government has the financial means to tackle the nationwide pollution and other environment problems
+the government has the financial means to tackle the nationwide pollution and other environment problems
+the government has financial means to tackle the nationwide pollution and othe environment problems
 
 ## 政府使用立法手段解决问题
-
+the government could education people to obey censor rules and put more polices in service to form the deterrent effect on those would-be criminal
+the government could education people to obey the censor rules and put more polices in services to form the deterrent effect on those  would-be criminals
+the government could educate people to obey the censor rules and put more polices in services to form a deterrent effect on those would-be criminals
+potential
+the governments could educate people to obey the environment rules and put more polices in services to form the deterrent effect
 ## 用这个工具花费太长时间
+buses must take a long route to a denstination to pick up passengers, which can make the journey too time-consuming for many people
+buses must take a long route to a destination to pick up the passengers, which can render the journey too time-consuming for many people
+buses must take a long route to a destination to pick up passengers, which can render the journeys too time-consuming for many people
+buses must take long time to a distinction to pick up passengers, which can render the journeys too time-consuming for many people
+buses must tack a long route to a distinction to pick up passengers, which can render the journeys too time-consuming for many people
+buses must tack a long route to a distinction to pick up passengers which can render the journeys too time-consuming for many people
+
+## 用(app)给热人(安全)感
+using application provide people with a sence if stability
+
+## 人们涌入城市造成压力
+
+## 研究(apps)让我们了解(政府)更多, 产生更多岗位
+
+## 电脑提供有趣的学习方法, 是可靠的
+
