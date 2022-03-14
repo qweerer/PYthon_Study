@@ -5,23 +5,40 @@
 > apps is facilitating students who for entertainment purpose by providing a handy solution
 > apps is facilitating students for entertainment purpose by providing a handy solution
 > apps are ==facilitating== students who for entertainment purpose by providing a handy solution
-
+> apps are facilitating students for environment purpose by providing a handy solution to their insufficient tools
+> apps are facilitating students who want to get more entertainment for relax purpose by providing a handy solution to their insufficient tools
+> apps are facilitating students who want to get more entertainment for relax purpose by providing a handy solution to their insufficient tools
+> apps are facilitating students who want to get more entertainment for relax purpose by providing a handy solution to their insufficient tools
+> apps are facilitating students who want to get moer entertainment for relax purpose by providing a handy solution to thier insufficient tools
+> apps are facilitating students who want to get more entertainment for relax purpose by providing a handy solution to their insufficient tools
+> apps are facilitating students who want to get more entertainment for relax purpose by providing a handy solution to their insufficient tools
+ 
 ## 滥用(app)会导致(很多人)(失业)
 > ==excessive== use of online applications is responsible for unemployment of many people in education field
 > excessive use of online apps is responsible for unemployment of many people in deucaiton field
 > excessive use of applicaiton is responsibile for unemployment of many people in education field
 > excessive use of onle apps is responsibile for unemployment of many people in 
+> excessive use of online applications is responsible for unemployment of many people in education field
+> excessive use of online application is responsible for the unemployment of many people in educaiton field
+> excessive use of online applicaiton is responsible for unemployment of many people in education field
+> excessive use of online application is responsible for unemployment of many people in education field
+> excessive use of online application is responsible for unemployment of many people in education field
+> excessive use of online application is responsible for unemployment of many people in education field
 ## 不(收集app)会让(student)缺少(经验)
 > insufficient collection tax ==means== they hane no money for developing of the country
 > insufficient collection of tax means they have no money for developing the country
+> insufficient collection of tax in petrol tax means the government would have no money for the development of the country
+> insufficient collection of tax in petrol tax means the government would have no money for the development of the country
 ## (students)用(app)会走出(枯燥)
 > offering free apps will ==allow== people from poverty background  the chance to escape the poverty cycle
 > offering the free apps will allow people form poverty background a chance to escape the poverty cycle
 > offering free apps allows students from a chance to escape the poverty cycle 
+> offering free apps allows students form proverty background the chance to escape the poverty cycle
+> offering free apps allow students form poverty background the chance to escape the poverty cycle
 ## (app)创造了(丰富的娱乐), 和社区(时光), 这些很有吸引力
 > application create a distinctive state identity, along with the community's physical landmark, Its culture, , are part of its magnetism
 > application ==create== a distinctive state identity, along with community's physical landmark, its culture are part of its magnetism
-> application creates distinctive state indentity, along with community's physical landmark
+> application creates distinctive state indentity, along with community's physical landmark 
 ## (app)不是(营养)(好方法)
 > in term of nutrition, app is far from satisfaction and usually does not compose a balance of diet
 > in term of nutrition, fast food is far from satisfactory and usually does no compose a balance of diet
@@ -116,18 +133,62 @@ establishing a competitive environment is able to motivate student of all levels
 establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
 establishing a competitive environment is able to motivate sutdents od all levels to keep learning and working hard on order to keep with peers
 establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all leavel to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order tp keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive envrionment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive envrionment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to kkep learning and working hard in order to keep with peers
+establishing a competitive envrionment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
 
 ## （app）知识让人提高技能
 coding awareness can cultivate student to improve their problem-solving-skill through coping with continuous challenges alone
 coding awareness can cultivate student to improve their problem-solving-skill through coping with continuous challenges alone
 coding awareness can cultivate students to improve their problem-solving-skill through coping with continuous challenges alone
-coding awareness can cultivate students to improve their problem-solving-skill throuth coping with continuous challenges alone
+coding awareness can cultivate students to improve their problem-solving-skill through coping with continuous challenges alone
+coding awareness can cultivate students to improve their problem-solving-skill through coping with continuous challenges alone
+coding awareness can cultivate students to improve their problem-solving-skill through coping with continuous challenges alone
+coding awareness can cultivate students to improve their problem-solving-skill through coping with continuous challenges alone
+coding awareness can cultivate students to improve their problem-solving-skill through coping with continuous challenges alone
+coding awearness can cultivate students to improve their problem-sloving-skill through coping with continuous challenges alone
 ## 学习（使用app）对（学生）有帮助
 learning to cooperate is one of the most effective ways to enlarge a child's circle of friends
 learning to cooperate is one of the most effective ways to enlarge a child's circle of friends
 learning to cooperate is one of the most effective ways to enlarge a child's circle of friends
 learning to cooperate is one of the most effective ways to enlarge a child's circle friends
+learning to cooperate is one of the most effective ways to enlarge a child's circle of friend
+learning to cooperate is one of the most effective ways to enlarge a child's circle of friend
 learning to cooperate is one of the most crucial ways to enlarge a child's circle friends
 learning to cooperate is one of the most crucial ways to enlarge child's cricle friends
 learning to cooperate is one of the most crucial ways to enlarge child's cricle friends
 learning to cooperate is one of the most crucial ways to enlarge child's friends cricle
+learning to cooperate is one of the most crucial ways to enlarge child's friends cricle
+learning to cooperate is one of the most crucial ways to enlarge child's friends circle
+learning to cooperate is one of the most curcial ways to enlarge child's friends circle
+learning to cooperate is one of the most curcial ways to enlarge child's friends circle
+
+## A主要包含了（。。。），B有助于A
+the heart consists mainly of a specialised type of muscle tissue, which contracts to provide the heart's pumping action
+the heart consists mainly of a specialised type of muscle tissue, which contracts to provide the heart's pumping action
+the voice about countries in internet consists mainly of those specialised word writeen by aggressive people, which contracts to influence the countries' pumping action
+the vioce about countries in internet consists mainly of those specialised word written by aggressive people, which contracts to tinfluence the countries' pumping action.
+the vioce about countries in internet consists mainly of those speciallised word written by aggressive people, which contracts to influence the countries' pumping action
+the vioce about countries in internet consists mainly of thoes speciallised world written by aggressive people, whichcontracts to influence the countries' pumping action
