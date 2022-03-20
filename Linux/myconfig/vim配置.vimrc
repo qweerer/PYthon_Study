@@ -26,7 +26,7 @@
 " zE  除去 (Eliminate) 窗口里“所有”的折叠。仅当 'foldmethod' 设为 "manual" 或 "marker" 时有效。
 
 " 恢复快捷键
-noremap <C-u> <C-r>
+noremap <C-u> <C-r> "恢复操作
 noremap <C-r> <C-u>
 noremap zz u
 noremap Z <C-r>
@@ -38,6 +38,8 @@ noremap j k
 noremap k j
 noremap <C-h> ^
 noremap <C-l> <end>
+noremap <C-j> ^
+noremap <C-k> <end>
 " noremap <C-j> <C-f>
 " noremap <C-k> <C-b>
 noremap J 25k

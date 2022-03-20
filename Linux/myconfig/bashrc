@@ -14,8 +14,8 @@ blue='\e[36m'
 gold='\e[93m'
 \e[33m
 pink='\e[35m'
-grey-bg='\e[100m'
-pink-bg='\e[39m\e[45m'
+grey_bg='\e[100m'
+pink_bg='\e[39m\e[45m'
 
 exitstatus() {
     if [ "$?" = 0 ]
