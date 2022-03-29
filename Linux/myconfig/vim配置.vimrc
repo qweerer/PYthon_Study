@@ -115,7 +115,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " 主题
 set background=dark
 " colorscheme zellner
-" colorscheme ron
+" colorscheme ron/koehler
 
 # 高亮
 syntax on
