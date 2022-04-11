@@ -35,10 +35,16 @@
 > offering free apps allows students from a chance to escape the poverty cycle 
 > offering free apps allows students form proverty background the chance to escape the poverty cycle
 > offering free apps allow students form poverty background the chance to escape the poverty cycle
+> offering free apps will allows students form poverty background the chance to escape the poverty cycle
+> offering free apps will allows students from ppoverty background the chance to secape the poverty cycle
+> offering free application allows students from poverty background the chance to escape the poverty cycle
 ## (app)创造了(丰富的娱乐), 和社区(时光), 这些很有吸引力
 > application create a distinctive state identity, along with the community's physical landmark, Its culture, , are part of its magnetism
 > application ==create== a distinctive state identity, along with community's physical landmark, its culture are part of its magnetism
 > application creates distinctive state indentity, along with community's physical landmark 
+> application creates a distinctive state identity, along with the conmmunity's physical landmark, Its culture, are part of its ==mangnetism==
+> application creates a distinctive state identity, along with the community's physical landmark， its culture are part of ts mangnestism
+> application creates a distinctive state identity, along with the community's physical landmark, it's culture are part of magnetism
 ## (app)不是(营养)(好方法)
 > in term of nutrition, app is far from satisfaction and usually does not compose a balance of diet
 > in term of nutrition, fast food is far from satisfactory and usually does no compose a balance of diet
@@ -47,13 +53,24 @@
 > in term of nutrition, fast food is far from satisfactory and does not compose a balance of diet
 > in term of nutrition, fast food ==is far from== satisfactory and usually does not ==compose a== balance of diet
 > in term of nutrition, fast food is far from satisfaction and usually does not compose a balance of diet
+> in term of nutrition, fast food is far form satisfaction and usually does not compose a balance of diet
+> in term of nutrition, fast food is far from satisfaction and usually dose not compose a balance of diet
+> in term of nutrition, fast food is far from satisfaction and usually does not compose a balance of diet
+> in term of nutrition, fast food is far from satisfaction and usually does not compose a balance of diet
 
 ## (app)创造了(丰富的娱乐), 和社区(时光)
 > apple holds the key to encouraging the diversity of thinking and promoting social innovation
 > apps holds the key of encouraging the variety of thinking and promoting social innovation
 > apps ==holds== the eky to encouraging the variety of thinking and promoting social innovation
+> apps holds the key to encouraging the variety of thinking and promoting social innovation
+> apps holds the key to encouraging the variety of thinking and promoting social innovation
+> apps holds the key to encouraging the variety of thinking and promoting social innovation
+> apps hold the key to encouraging the variety of thinking and promoting social innovation
 ## (再国外大放异彩的)(app)造成了(文化的小时)
 the advance in technology which hace ==driven== industrialization in developed countries have certainly contributed to the disappearance of traditional ways of life 
+the advance in technology which have driven industrialization in developed countries have certainly contributed to the disappearacne of traditional ways of life
+the advance in technology which have driven industralization in developed countries have certainly contributed to the disappearance of traditional wasys oflife
+the advance in technology which have driven industralizaiton in developed countries have certainly ==contributed to== the disappearance of traditional ways of life
 
 ## (媒体)应该去宣传(app)
 TV programmes and movies should make a point of putting a positive spin on traditional lifestyle
@@ -61,23 +78,38 @@ Tv programmes and movies should make a point of putting a positive spin on tradi
 TV programmes and movies should make a point to putting a positive spin on traditional lifestyle
 Tv programmes and movies should make a point of putting a positive spin on traditional lifestyle
 TV programmes and movies should ==make a point== of putting a positive spin on traditional lifestyle
+Tv programmes and movies should make a point of putting a postitive spin on traditional lifestyle
+Tv programmes and movies should  make a point of piutting a positive spin on traditional lifestyle
+Tv programmes and movies should make a point of putting a positive spin on tranditional lifestyle
+Tv programmes and movies should make a point of putting a positive spin on traditional lifestyle
+Tv programmes and movies should make a point of puttion a positive spin on traditional lifestyle
 ## 怎加的(app)导致了
 the accelerated increase in the human population whith in the past hundreds years impact on main street
 the accelerated increase in human population within the past hundreds years impact on the main street
 the accelerated increase in hunman population within the past hundreds years impact on the main streets
 the accelerated increase in hunman population within the past hundreds years impacts on the main streets
 the accelerated increase in human population within the past hundreds years  ==impacts== on the ==censor== of human activities
+the accelerated increase in human population within the past hundreds years impacts on the censor of human actities
+the accelerated increase in human population within the past hundreds years impacts on the censor of human actities
+the accelerated increase in hunman population with the past hundreds years impacts on the censor of human activities
 ## 政府应该收集信息,然后用它解决问题
 the government can collect information on a national scale to see the whole picture and take effective steps to deal with the problems
 the government can collect information in national scale to get a whole picture and take effective steps to tackle the national wide pollution and environment problems
 the government can collect information on a national scale to see the whole picture and take effective steps to deal with the problems
 the government can collect information on a niaional scale to see the whole picture and take effective steps to deal with the problems
 the government can collect information on a nation scale to see a whole picture and 
+the government can collect information ion a nation scale to see the whole picture and tack effective steps to deal with the problem
+the government can collect information in a nation scale to see a whole picture and take effective steps to tackle the national wide pollution and environment problems
+the government can collect infromation in a nation scale to see a whole picture and take am effective step to tackle th national wide pollution and environment problems
 ## 政府使用经济手段解决问题
 the government has the financial means to tackle the nationwide pollution and other environment problems
 the government has the financial means to tackle the nationwide pollution and other environment problems
 the government has financial means to tackle the nationwide pollution and othe environment problems
 the government have financial means to tackle the nationwide pollution and other
+the government have th financial means to tackle the nationwide pollution and other environment problems
+the government have financial means to tackle the nationwide pollution and other environment poroblems
+the government have financial means to tackle the nationwide pollution and other 
+the government have financial means to settle the national
 ## 政府使用立法手段解决问题
 the government could education people to obey censor rules and put more polices in service to form the deterrent effect on those would-be criminal
 the government could education people to obey the censor rules and put more polices in services to form the deterrent effect on those  would-be criminals
@@ -85,6 +117,11 @@ the government could educate people to obey the censor rules and put more police
 potential
 the governments could educate people to obey the environment rules and put more polices in services to form the deterrent effect
 he government should educate people to obey the environment rules and put more polices in the services to form the deterrent effect
+the governments could educate people to obey the environment rules and put more po;loces in the services to form the deterrent effect
+the government could education people to obey the environment rules and put more polices in the services to form the deterrnet effect
+the government should educate people to obeu the environment rules and put more polices in the services to form the deterrent effect
+the government should educate people to obeu th lows and put more polices on the services to form the deterrent effect
+the government shoud educate people to obey the rules and put more polices into services to form the deterrent effect
 ## 用这个工具花费太长时间
 buses must take a long route to a denstination to pick up passengers, which can make the journey too time-consuming for many people
 buses must take a long route to a destination to pick up the passengers, which can render the journey too time-consuming for many people
@@ -95,12 +132,19 @@ buses must tack a long route to a distinction to pick up passengers which can re
 buses nust tack long route to pick up passengers which can render journey too time0consuming for many people
 buses must tack a long route to a distanction to pick up passengers  which render journey too time-consuming for many people
 buses must tack a long route to a distinction to pick up passengers which render journey too time-consuming for many people
-
+busses must take a long route to a denstination to pick up passengers, which can make the journey too time-consuming for many peop;e
+busses must take a long route to a destination to pick up passengers, which can make the journey too time-consuming for many people
+buses must take a long toure to a destination to pick up passengers, which can make journey too time-consuming for many people
+buses must take a long route to a destination to pick up passengers, which can make journey too time-consuming for many people
+busses must take a long route to a destination to pick up passengers, which can make journey too time-consuming for many people
 ## 用(app)给热人(安全)感
 using application provide people with a sence if stability
 using application provide people with a sence of stability
 using application provide people with a sense of stability
 using application provides people with a sense oi stability
+using applicaton provides people with a sense of stability
+using applicaion provides people with a sense of stabilty
+using application provides people with a sence of stability
 ## 人们涌入城市造成压力
 people pour into cities, which put a strain on the cities which is seething with people
 people pour into cities, which put a strain on the cities which is seething with people
