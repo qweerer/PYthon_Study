@@ -46,7 +46,7 @@ noremap J 25k
 noremap K 25j
 "保存快捷键
 map s <nop>
-map <C-s> :w<CR>
+noremap ss :w<CR>
 "取消高亮
 noremap \/ :nohlsearch<CR>
 "分屏
