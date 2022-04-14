@@ -151,7 +151,7 @@ people pour into cities, which put a strain on the cities which is seething with
 people pour into cities, which put a strain on the cities, which is seething with people
 people pour into cities, which put pressure on the cities, which is seething with people
 people pour into cities, which put a strain on the citise which is seething with people
-pressure
+people pour into cities, which put a strain on the cities which is seething with people
 ## 研究(apps)让我们了解(政府)更多, 产生更多岗位
 the research of another planet give us deep insight in the universe and help us avoid some risks, and generate employment
 the research of another planet give us deep insight in the universe and help us avoid some risks, and generate employment
@@ -178,30 +178,8 @@ establishing a competitive environment is able to motivate students of all level
 establishing a competitive environment is able to motivate sutdents od all levels to keep learning and working hard on order to keep with peers
 establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
 establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all leavel to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order tp keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
 establishing a competitive envrionment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive envrionment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to kkep learning and working hard in order to keep with peers
-establishing a competitive envrionment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
-establishing a competitive environment is able to motivate students of all levels to keep learning and working hard in order to keep with peers
+
 
 ## （app）知识让人提高技能
 coding awareness can cultivate student to improve their problem-solving-skill through coping with continuous challenges alone

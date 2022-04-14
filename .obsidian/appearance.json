@@ -1,12 +1,9 @@
 {
   "theme": "moonstone",
   "translucency": false,
-  "cssTheme": "California Coast",
+  "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
-    "tag-normal",
-    "myown-california",
-    "myown-image",
-    "show-code-type"
+    "tag-normal"
   ],
   "baseFontSize": 18
 }

@@ -2,8 +2,9 @@
   "table-editor-obsidian",
   "calendar",
   "obsidian-kanban",
-  "obsidian-admonition",
   "sliding-panes-obsidian",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-hider"
+  "obsidian-hider",
+  "obsidian-style-settings",
+  "obsidian-advanced-uri"
 ]

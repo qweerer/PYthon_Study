@@ -4,11 +4,11 @@
   "newFileLocation": "current",
   "showLineNumber": true,
   "showFrontmatter": true,
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "attachmentFolderPath": "./_files",
   "readableLineLength": false,
   "pdfExportSettings": {
-    "pageSize": "Letter",
+    "pageSize": "A4",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
@@ -19,7 +19,7 @@
   "foldHeading": true,
   "smartIndentList": true,
   "lineWrap": true,
-  "autoPairMarkdown": true,
-  "legacyEditor": false,
-  "livePreview": false
+  "promptDelete": false,
+  "legacyEditor": true,
+  "livePreview": true
 }
