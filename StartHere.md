@@ -39,8 +39,15 @@
 #hblock/blue ==这是用hblock标签实现的高亮块==
 
 #hblock/purple ==这是用hblock标签实现的高亮块==
+
+> [!NOTE] Title
+> Contents
+
 ### 用 admonition 实现高亮块 *推荐使用*
+
+
 >此方法能在高亮块里输入更多的内容格式（列表、粗体等），而“使用 hblock 标签实现的高亮块”无法在里面输入列表，它只会将输出纯文本，而不会解析里面的内容。
+
 - ![[Admonition如何使用#用 admonition 实现高亮块]]
 
 ```ad-orange
@@ -82,3 +89,11 @@
 - 测试上标高亮 **important**
 
 - 测试上标高亮 ==默认高亮==
+
+
+
+> [!NOTE] 阿道夫
+> 
+> Contents
+> aadfaf
+

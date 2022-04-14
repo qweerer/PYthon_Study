@@ -33,6 +33,7 @@ sudo firewall-cmd --add-service=cockpit
 sudo firewall-cmd --add-service=cockpit --permanent
 
 ```
+
 > 查看规则
 
 ## iptables
