@@ -4,9 +4,9 @@
   "cssTheme": "California Coast",
   "enabledCssSnippets": [
     "tag-normal",
-    "show-code-type",
     "myown-california",
-    "myown-image"
+    "myown-image",
+    "show-code-type"
   ],
-  "baseFontSize": 15
+  "baseFontSize": 18
 }

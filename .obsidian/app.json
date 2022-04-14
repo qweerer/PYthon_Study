@@ -5,7 +5,7 @@
   "showLineNumber": true,
   "showFrontmatter": true,
   "defaultViewMode": "preview",
-  "attachmentFolderPath": "00附件",
+  "attachmentFolderPath": "./_files",
   "readableLineLength": false,
   "pdfExportSettings": {
     "pageSize": "Letter",
@@ -18,5 +18,8 @@
   "strictLineBreaks": true,
   "foldHeading": true,
   "smartIndentList": true,
-  "lineWrap": true
+  "lineWrap": true,
+  "autoPairMarkdown": true,
+  "legacyEditor": false,
+  "livePreview": false
 }
