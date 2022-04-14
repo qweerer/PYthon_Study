@@ -20,7 +20,7 @@
   "blue-topaz-theme@@text-folder-file-icon@@light": "#272727",
   "blue-topaz-theme@@light-background-color-files": false,
   "blue-topaz-theme@@folder-style-change-options-colorful": false,
-  "blue-topaz-theme@@table-style-options": "table-style-default",
+  "blue-topaz-theme@@table-style-options": "table-style-one",
   "blue-topaz-theme@@whole-code-wrap": true,
   "blue-topaz-theme@@show-border-table": true,
   "blue-topaz-theme@@list-style-change-options-edit": "rainbow-lines",
@@ -28,5 +28,6 @@
   "blue-topaz-theme@@style-options-for-kanban-plugin-static": "style-options-for-kanban-plugin-static-little-color",
   "blue-topaz-theme@@style-options-for-calendar-plugin": "style-options-for-calendar-plugin-style-one",
   "blue-topaz-theme@@plain-file-title": false,
-  "blue-topaz-theme@@margin-list": 0.9
+  "blue-topaz-theme@@margin-list": 0.9,
+  "blue-topaz-theme@@font-family-change-to-default": false
 }
