@@ -47,6 +47,7 @@ iptables -t filter -D INPUT -j REJECT --reject-with icmp-host-prohibited
 ## ufw
 
 ```shell
+ufw default allow|deny
 ufw deny from 208.176.0.50
 sudo ufw allow 53
 sudo ufw allow 22/tcp
