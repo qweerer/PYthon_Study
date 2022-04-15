@@ -162,7 +162,7 @@
 
 
 /*table from https://snippets.cacher.io/snippet/018387c872dc39277996 by eluotao*/
-tbody>tr:nth-child(odd) {
+/* tbody>tr:nth-child(odd) {
     background-color: var(--table-background-color-odd);
 }
 
@@ -178,21 +178,21 @@ tbody>tr {
 
 .markdown-preview-view thead {
     background-color: var(--table-thead-background-color);
-}
+} */
 
 /*table hover*/
-.markdown-preview-view td:hover {
+/* .markdown-preview-view td:hover {
     background-color: var(--table-hover-color);
-}
+} */
 
 /*table raw hover*/
-.markdown-preview-view tr:hover {
+/* .markdown-preview-view tr:hover {
     background-color: var(--table-hover-raw-color);
-}
+} */
 
-.markdown-preview-view th:hover {
+/* .markdown-preview-view th:hover {
     background-color: var(--table-hover-thead-color);
-}
+} */
 
 /* Preview Mode Lists  */
 /* .markdown-preview-view ul li p,
@@ -201,7 +201,7 @@ tbody>tr {
 } */
 
 /*我的 列表格式*/
-.markdown-preview-section ul {
+/* .markdown-preview-section ul {
     margin-left: 0;
     padding-inline-start: 1em;
     list-style: disc;
@@ -226,7 +226,7 @@ tbody>tr {
 
 .markdown-preview-section .footnotes li>p+p {
     margin-top: 0.3rem;
-}
+} */
 
 
 /* 我的 链接字体*/

@@ -3,8 +3,7 @@
   "translucency": false,
   "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
-    "tag-normal",
-    "highlight colors"
+    "tag-normal"
   ],
-  "baseFontSize": 18
+  "baseFontSize": 16
 }
