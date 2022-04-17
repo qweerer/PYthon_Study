@@ -2,6 +2,35 @@
 
 #linux 
 
+> 工具：`ntop` `iptraf` `iftop`
+
+- Quagga路由器
+
+## iptables
+
+```shell
+iptables save
+iptables -P INPUT DROP
+iptables -D INPUT 6
+iptables -t filter -D INPUT -s 0.0.0.0/0 -j DROP
+iptables -t filter -D INPUT -j REJECT --reject-with icmp-host-prohibited
+```
+
+> 查看规则
+
+```bash
+iptables -S
+iptables -S -t nat
+```
+
+### netfilter
+
+五表：**filter** **nat** **mangle** **raw** **security**
+五链条: **prerouting** **input** **forward** **output** **postrouting**
+
+
+## firewalld
+
 ```shell
 firewall-cmd --reload
 sudo firewall-cmd --get-zones
@@ -34,16 +63,6 @@ sudo firewall-cmd --add-service=cockpit --permanent
 
 ```
 
-> 查看规则
-
-## iptables
-
-```shell
-iptables -P INPUT DROP
-iptables -D INPUT 6
-iptables -t filter -D INPUT -s 0.0.0.0/0 -j DROP
-iptables -t filter -D INPUT -j REJECT --reject-with icmp-host-prohibited
-```
 
 ## ufw
 
