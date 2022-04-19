@@ -77,5 +77,6 @@
   "primary-ceciliamay@@font-editor": "'Noto Sans Mono CJK sc', 'Hack Nerd Font Mono', \"Karla\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif",
   "primary-ceciliamay@@font-monospace-theme": "'Noto Sans Mono CJK sc', 'Hack Nerd Font Mono', \"Cascadia Code\", Inconsolata, Courier, monospace",
   "primary-ceciliamay@@vault-title__titlebar": false,
-  "primary-ceciliamay@@vault-title__file-explorer": true
+  "primary-ceciliamay@@vault-title__file-explorer": true,
+  "blue-topaz-theme@@accent-strong@@light": "#8C15A0"
 }
