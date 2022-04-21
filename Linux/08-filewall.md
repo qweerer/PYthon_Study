@@ -48,7 +48,7 @@ iptables -S
 iptables -S -t nat
 ```
 
-
+![7749898-d2d6c402a3a62680](7749898-d2d6c402a3a62680.png)
 
 
 ### netfilter
@@ -99,6 +99,12 @@ ufw default allow|deny
 ufw deny from 208.176.0.50
 sudo ufw allow 53
 sudo ufw allow 22/tcp
+
+
+ufw [--dry-run] [delete] [insert NUM] [prepend] allow|deny|reject|limit [in|out] [log|log-all] [ PORT[/PROTOCOL] | APPNAME ] [comment COMMENT]
+    
+
+ufw [--dry-run] [rule] [delete] [insert NUM] [prepend] allow|deny|reject|limit [in|out [on INTERFACE]] [log|log-all] [proto PROTOCOL] [from ADDRESS [port PORT | app APPNAME ]] [to ADDRESS [port PORT | app APPNAME ]] [comment COMMENT]
 ```
 
 # route
