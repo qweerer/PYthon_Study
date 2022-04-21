@@ -29,9 +29,11 @@ iptables -P INPUT DROP
 iptables -D INPUT 6
 iptables -A INPUT   -p tcp --dport 22 -j DROP
 iptables -I INPUT 2 -p tcp --dport 22 -j DROP
-iptables -A INPUT   -s 192.168.1.1/24 -j DROP
-
-
+iptables -A INPUT   -s 192.168.1.1/24 -j DROP    #源ip
+iptables -A INPUT ! -s 113.108.118.250  -j DROP  #非源ip
+iptables -A INPUT ! -d 192.168.1.20   -j DROP    #非目标ip
+iptables -A INPUT -i eth0 -o eth1 -s 192.168.1.114  -j DROP #从eth0进入,从eth1出
+iptables -A INPUT -p icmp --icmp-type 8 -j DROP  #封ping
 
 iptables -t filter -D INPUT -s 0.0.0.0/0 -j DROP
 iptables -t filter -D INPUT -j REJECT --reject-with icmp-host-prohibited
@@ -39,6 +41,13 @@ iptables -t filter -D INPUT -j REJECT --reject-with icmp-host-prohibited
 iptables -F #清空所有规则
 iptables -X #清空用户链
 iptables -Z #清空计数器
+
+# -p all|tcp|udp|icmp
+# -m state --state NEW|ESTABLISHED|RELATED|INVALID (新|已建立|正在启动|非法)
+# -m limit
+# 		--limit n/{second|minute|hour} 限制速率
+#       --limit-burst 5                同一时间允许请求的个数,默认为5
+iptables -A FORWARD -d 192.168.2.20 -p icmp --icmp-type 8 -m limit --limit 20/min --limit-burst 3 -j ACCEPT  #封ping
 ```
 
 > 查看规则
