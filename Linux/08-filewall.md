@@ -60,6 +60,11 @@ iptables -S -t nat
 ![7749898-d2d6c402a3a62680](7749898-d2d6c402a3a62680.png)
 
 
+### 查看刚才发生的网络链接
+```
+cat /proc/net/nf_conntrack
+```
+
 ### netfilter
 
 五表：**filter** **nat** **mangle** **raw** **security**
