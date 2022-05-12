@@ -2,7 +2,8 @@
 
 /* ----------------------------------------- Editor mode 默认样式 ----------------------------------------------  */
 
-.cm-hashtag ~ span.cm-highlight {
+.theme-light .cm-hashtag ~ span.cm-highlight,
+.theme-dark .cm-hashtag ~ span.cm-highlight {
 	color: white !important; /* change this color to white or black or others for light or Dark Theme */
 	border-radius: 5px;
 	padding-left: 5px;
@@ -10,65 +11,60 @@
 	font-weight: bold;
 }
 
+
 /* ----------------------------------------- 编辑模式下 文本高亮 ----------------------------------------------  */
 
-/* -- question --  */
-.cm-tag-htextquestion ~ span.cm-highlight {
-	color: rgb(216, 57, 49) !important;
-	background-color: #ffffff !important;
-}
-
-/* -- important --  */
-.cm-tag-htextimportant ~ span.cm-highlight {
-	color: rgb(222, 120, 2) !important;
-	background-color: #ffffff !important;
-}
-
-/* -- apply --  */
-.cm-tag-htextapply ~ span.cm-highlight {
-	color: rgb(36, 91, 219) !important;
-	background-color: #ffffff !important;
-}
-
 /* -- orange --  */
-.cm-tag-htextorange ~ span.cm-highlight {
+.theme-light .cm-tag-htextorange ~ span.cm-highlight,
+.theme-dark .cm-tag-htextorange ~ span.cm-highlight {
 	color: rgb(222, 120, 2) !important;
-	background-color: #ffffff !important;
+	background-color: transparent !important;
+	font-weight: 500;
 }
 
 
-/* -- black --  */
-.cm-tag-htextblack ~ span.cm-highlight {
-	color: #000 !important;
-	background-color: #ffffff !important;
+/* -- gray --  */
+.theme-light .cm-tag-htextgray ~ span.cm-highlight,
+.theme-dark .cm-tag-htextgray ~ span.cm-highlight {
+	color: rgb(143, 149, 158) !important;
+	background-color: transparent !important;
+	font-weight: 500;
 }
 
 
 /* -- red --  */
-.cm-tag-htextred ~ span.cm-highlight {
+.theme-light .cm-tag-htextred ~ span.cm-highlight,
+.theme-dark .cm-tag-htextred ~ span.cm-highlight {
 	color: rgb(216, 57, 49) !important;
-	background-color: #ffffff !important;
+	background-color: transparent !important;
+	font-weight: 500;
 }
 
 
 /* -- green --  */
-.cm-tag-htextgreen ~ span.cm-highlight {
+.theme-light .cm-tag-htextgreen ~ span.cm-highlight,
+.theme-dark .cm-tag-htextgreen ~ span.cm-highlight {
 	color: rgb(46, 161, 33) !important;
-	background-color: #ffffff !important;
+	background-color: transparent !important;
+	font-weight: 500;
 }
 
 
 /* -- purple --  */
-.cm-tag-htextpurple ~ span.cm-highlight {
+.theme-light .cm-tag-htextpurple ~ span.cm-highlight,
+.theme-dark .cm-tag-htextpurple ~ span.cm-highlight {
 	color: rgb(100, 37, 208) !important;
-	background-color: #ffffff !important;
+	background-color: transparent !important;
+	font-weight: 500;
 }
 
 
 /* -- blue --  */
-.cm-tag-htextblue ~ span.cm-highlight {
+.theme-light .cm-tag-htextblue ~ span.cm-highlight,
+.theme-dark .cm-tag-htextblue ~ span.cm-highlight {
 	color: rgb(36, 91, 219) !important;
-	background-color: #ffffff !important;
+	background-color: transparent !important;
+	font-weight: 500;
 }
 
 
@@ -77,51 +73,82 @@
 /* ----------------------------------------- 编辑模式下 带有背景颜色的文本高亮 ----------------------------------------------  */
 
 /* -- orange --  */
-.cm-tag-hbgtextorange ~ span.cm-highlight {
-	background-color: rgba(254, 212, 164) !important;
+.theme-light .cm-tag-hbgtextorange ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextorange ~ span.cm-highlight {
+	background-color: rgba(254, 212, 164, 0.8) !important;
 	color: rgb(222, 120, 2) !important;
 }
 
 
 /* -- yellow --  */
-.cm-tag-hbgtextyellow ~ span.cm-highlight {
+.theme-light .cm-tag-hbgtextyellow ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextyellow ~ span.cm-highlight {
 	background-color: #fff3cd !important;
 	color: #856404 !important;
 }
 
 
 /* -- pink --  */
-.cm-tag-hbgtextpink ~ span.cm-highlight {
+.theme-light .cm-tag-hbgtextpink ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextpink ~ span.cm-highlight {
 	background-color: #f8d7da !important;
 	color: #721c24 !important;
 }
 
 
 /* -- blue --  */
-.cm-tag-hbgtextblue ~ span.cm-highlight {
-	background-color: #cce5ff !important;
-	color: #175393 !important;
+.theme-light .cm-tag-hbgtextblue ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextblue ~ span.cm-highlight {
+	background-color: rgba(186, 206, 253, 0.7) !important;
+	color: rgb(36, 91, 219) !important;
+}
+
+
+/* -- red --  */
+.theme-light .cm-tag-hbgtextred ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextred ~ span.cm-highlight {
+	background-color: rgb(251, 191, 188) !important;
+	color: rgb(216, 57, 49) !important;
+}
+
+
+/* -- green --  */
+.theme-light .cm-tag-hbgtextgreen ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextgreen ~ span.cm-highlight {
+	background-color: rgba(183, 237, 177, 0.8) !important;
+	color: rgb(46, 161, 33) !important;
 }
 
 
 /* -- skyblue --  */
-.cm-tag-hbgtextskyblue ~ span.cm-highlight {
+.theme-light .cm-tag-hbgtextskyblue ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextskyblue ~ span.cm-highlight {
 	background-color: #d4edda !important;
 	color: #689ba3 !important;
 }
 
 
 /* -- purple --  */
-.cm-tag-hbgtextpurple ~ span.cm-highlight {
-	background-color: rgb(236, 226, 254) !important;
+.theme-light .cm-tag-hbgtextpurple ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextpurple ~ span.cm-highlight {
+	background-color: rgba(205, 178, 250, 0.7) !important;
 	color: rgb(100, 37, 208) !important;
 }
 
 
 /* -- hjblue --  */
-.cm-tag-hbgtexthjblue ~ span.cm-highlight {
+.theme-light .cm-tag-hbgtexthjblue ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtexthjblue ~ span.cm-highlight {
 	background-color: #d1ecf1 !important;
 	color: #35737d !important;
+}
+
+
+/* -- gray --  */
+.theme-light .cm-tag-hbgtextgray ~ span.cm-highlight,
+.theme-dark .cm-tag-hbgtextgray ~ span.cm-highlight {
+	background-color: rgba(222, 224, 227, 0.8) !important;
+	color: rgb(143, 149, 158) !important;
 }
 
 
@@ -130,35 +157,40 @@
 /* ----------------------------------------- 编辑模式下 高亮块 ----------------------------------------------  */
 
 /* -- highlight orange --  */
-.cm-tag-hblockorange ~ span.cm-highlight {
+.theme-light .cm-tag-hblockorange ~ span.cm-highlight,
+.theme-dark .cm-tag-hblockorange ~ span.cm-highlight {
 	background-color: rgb(254, 234, 210) !important;
 	color: rgb(222, 120, 2) !important;
 }
 
 
 /* -- highlight blue --  */
-.cm-tag-hblockblue ~ span.cm-highlight {
+.theme-light .cm-tag-hblockblue ~ span.cm-highlight,
+.theme-dark .cm-tag-hblockblue ~ span.cm-highlight {
 	background-color: rgb(225, 234, 255) !important;
 	color: rgb(36, 91, 219) !important;
 }
 
 
 /* -- highlight red --  */
-.cm-tag-hblockred ~ span.cm-highlight {
+.theme-light .cm-tag-hblockred ~ span.cm-highlight,
+.theme-dark .cm-tag-hblockred ~ span.cm-highlight {
 	background-color: rgb(253, 226, 226) !important;
 	color: rgb(216, 57, 49) !important;
 }
 
 
 /* -- highlight green --  */
-.cm-tag-hblockgreen ~ span.cm-highlight {
+.theme-light .cm-tag-hblockgreen ~ span.cm-highlight,
+.theme-dark .cm-tag-hblockgreen ~ span.cm-highlight {
 	background-color: rgb(217, 245, 214) !important;
 	color: rgb(46, 161, 33) !important;
 }
 
 
 /* -- highlight purple --  */
-.cm-tag-hblockpurple ~ span.cm-highlight {
+.theme-light .cm-tag-hblockpurple ~ span.cm-highlight,
+.theme-dark .cm-tag-hblockpurple ~ span.cm-highlight {
 	background-color: rgb(236, 226, 254) !important;
 	color: rgb(100, 37, 208) !important;
 }
@@ -171,36 +203,37 @@
 /* ----------------------------------------- 在此添加自定义标题（不要移动到其他位置） ----------------------------------------------  */
 
 /* 标签以 #htext 开头时，代表 “文本高亮” */
-a[href^="#htext/"]{
+.theme-light a[href^="#htext/"],
+.theme-dark a[href^="#htext/"] {
 	display:none !important;  
 }
-a[href^="#htext/"] + mark {
+.theme-light a[href^="#htext/"] + mark,
+.theme-dark a[href^="#htext/"] + mark  {
 	color: white !important;
-	border-radius: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
 	font-weight: bold;
 }
 
 
 /* 标签以 #hbgtext 开头时，代表 “带有背景颜色的文本高亮” */
-a[href^="#hbgtext/"]{
+.theme-light a[href^="#hbgtext/"],
+.theme-dark a[href^="#hbgtext/"] {
 	display:none;  
 }
-a[href^="#hbgtext/"] + mark {
+.theme-light a[href^="#hbgtext/"] + mark,
+.theme-dark a[href^="#hbgtext/"] + mark {
 	color: white;
-	border-radius: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
-	font-weight: bold;
+	padding: 4px 5px;
+	font-weight: 500;
 }
 
 
 /* 标签以 #hblock 开头时，代表 “定义了一个高亮块” */
-a[href^="#hblock/"]{
+.theme-light a[href^="#hblock/"],
+.theme-dark a[href^="#hblock/"]{
 	display:none !important;  
 }
-a[href^="#hblock/"] + mark {
+.theme-light a[href^="#hblock/"] + mark,
+.theme-dark a[href^="#hblock/"] + mark {
 	color: white !important;
 	border-radius: 5px;
 	padding-left: 5px;
@@ -214,122 +247,147 @@ a[href^="#hblock/"] + mark {
 /* ----------------------------------------- 预览模式下 文本高亮 ----------------------------------------------  */
 
 /* -- orange --  */
-a[href^="#htext/orange"] + mark {
-	background-color: #ffffff;
+.theme-light a[href^="#htext/orange"] + mark,
+.theme-dark a[href^="#htext/orange"] + mark {
+	background-color: transparent !important;
 	color: rgb(222, 120, 2) !important;
+	font-weight: 500;
 }
 
 
-/* -- black --  */
-a[href^="#htext/black"] + mark {
-	background-color: #ffffff;
-	color: #000 !important;
+/* -- gray --  */
+.theme-light a[href^="#htext/gray"] + mark,
+.theme-dark a[href^="#htext/gray"] + mark {
+	background-color: transparent !important;
+	color: rgb(143, 149, 158) !important;
+	font-weight: 500;
 }
 
 
 /* -- blue --  */
-a[href^="#htext/blue"] + mark {
-	background-color: #ffffff;
+.theme-light a[href^="#htext/blue"] + mark,
+.theme-dark a[href^="#htext/blue"] + mark {
+	background-color: transparent !important;
 	color: rgb(36, 91, 219) !important;
+	font-weight: 500;
 }
 
 
 /* -- red --  */
-a[href^="#htext/red"] + mark {
-	background-color: #ffffff;
+.theme-light a[href^="#htext/red"] + mark,
+.theme-dark a[href^="#htext/red"] + mark {
+	background-color: transparent !important;
 	color: rgb(216, 57, 49) !important;
+	font-weight: 500;
 }
 
 
 /* -- green --  */
-a[href^="#htext/green"] + mark {
-	background-color: #ffffff;
+.theme-light a[href^="#htext/green"] + mark,
+.theme-dark a[href^="#htext/green"] + mark {
+	background-color: transparent !important;
 	color: rgb(46, 161, 33) !important;
+	font-weight: 500;
 }
 
 
 /* -- purple --  */
-a[href^="#htext/purple"] + mark {
-	background-color: #ffffff;
+.theme-light a[href^="#htext/purple"] + mark,
+.theme-dark a[href^="#htext/purple"] + mark {
+	background-color: transparent !important;
 	color: rgb(100, 37, 208) !important;
+	font-weight: 500;
 }
 
-/* -- I don't know --  */
-a[href^="#htext/question"] + mark {
-	background-color: #ffffff;
-	color: rgb(216, 57, 49) !important;
-}
 
-/* -- important --  */
-a[href^="#htext/important"] + mark {
-	background-color: #ffffff;
-	color: rgb(222, 120, 2) !important;
-}
-
-/* -- apply --  */
-a[href^="#htext/apply"] + mark {
-	background-color: #ffffff;
-	color: rgb(36, 91, 219) !important;
-}
 
 
 /* ----------------------------------------- 预览模式下 带有背景颜色的文本高亮 ----------------------------------------------  */
 
 /* -- orange --  */
-a[href^="#hbgtext/orange"] + mark {
-	background-color: rgba(254, 212, 164) !important;
+.theme-light a[href^="#hbgtext/orange"] + mark,
+.theme-dark a[href^="#hbgtext/orange"] + mark {
+	background-color: rgba(254, 212, 164, 0.8) !important;
 	color: rgb(222, 120, 2) !important;
 }
 
 
 /* -- yellow --  */
-a[href^="#hbgtext/yellow"] + mark {
+.theme-light a[href^="#hbgtext/yellow"] + mark,
+.theme-dark a[href^="#hbgtext/yellow"] + mark {
 	background-color: #fff3cd !important;
 	color: #856404 !important;
 }
 
 
+/* -- red --  */
+.theme-light a[href^="#hbgtext/red"] + mark,
+.theme-dark a[href^="#hbgtext/red"] + mark {
+	background-color: rgb(251, 191, 188) !important;
+	color: rgb(216, 57, 49) !important;
+}
+
+/* -- green --  */
+.theme-light a[href^="#hbgtext/green"] + mark,
+.theme-dark a[href^="#hbgtext/green"] + mark {
+	background-color: rgba(183, 237, 177, 0.8) !important;
+	color: rgb(46, 161, 33) !important;
+}
+
+
 /* -- pink --  */
-a[href^="#hbgtext/pink"] + mark {
+.theme-light a[href^="#hbgtext/pink"] + mark,
+.theme-dark a[href^="#hbgtext/pink"] + mark {
 	background-color: #f8d7da !important;
 	color: #721c24 !important;
 }
 
 
 /* -- blue --  */
-a[href^="#hbgtext/blue"] + mark {
-	background-color: #cce5ff !important;
-	color: #175393 !important;
+.theme-light a[href^="#hbgtext/blue"] + mark,
+.theme-dark a[href^="#hbgtext/blue"] + mark {
+	background-color: rgba(186, 206, 253, 0.7) !important;
+	color: rgb(36, 91, 219) !important;
 }
 
 
 /* -- skyblue --  */
-a[href^="#hbgtext/skyblue"] + mark {
+.theme-light a[href^="#hbgtext/skyblue"] + mark,
+.theme-dark a[href^="#hbgtext/skyblue"] + mark {
 	background-color: #d4edda !important;
 	color: #689ba3 !important;
 }
 
 
 /* -- hjblue --  */
-a[href^="#hbgtext/hjblue"] + mark {
+.theme-light a[href^="#hbgtext/hjblue"] + mark,
+.theme-dark a[href^="#hbgtext/hjblue"] + mark {
 	background-color: #d1ecf1 !important;
 	color: #35737d !important;
 }
 
 
 /* -- purple --  */
-a[href^="#hbgtext/purple"] + mark {
-	background-color: rgb(236, 226, 254) !important;
+.theme-light a[href^="#hbgtext/purple"] + mark,
+.theme-dark a[href^="#hbgtext/purple"] + mark {
+	background-color: rgba(205, 178, 250, 0.7) !important;
 	color: rgb(100, 37, 208) !important;
 }
 
 
+/* -- gray --  */
+.theme-light a[href^="#hbgtext/gray"] + mark,
+.theme-dark a[href^="#hbgtext/gray"] + mark {
+	background-color: rgba(222, 224, 227, 0.8) !important;
+	color: rgb(143, 149, 158) !important;
+}
 
 
 /* ----------------------------------------- 预览模式下 高亮块 ----------------------------------------------  */
 
 /* -- highlight orange --  */
-a[href^="#hblock/orange"] + mark {
+.theme-light a[href^="#hblock/orange"] + mark,
+.theme-dark a[href^="#hblock/orange"] + mark {
 	background-color: rgb(254, 234, 210) !important;
 	display: block;
 	color: rgb(222, 120, 2) !important;
@@ -340,7 +398,8 @@ a[href^="#hblock/orange"] + mark {
 
 
 /* -- highlight blue --  */
-a[href^="#hblock/blue"] + mark {
+.theme-light a[href^="#hblock/blue"] + mark,
+.theme-dark a[href^="#hblock/blue"] + mark {
 	background-color: rgb(225, 234, 255) !important;
 	display: block;
 	color: rgb(36, 91, 219) !important;
@@ -351,7 +410,8 @@ a[href^="#hblock/blue"] + mark {
 
 
 /* -- highlight red --  */
-a[href^="#hblock/red"] + mark {
+.theme-light a[href^="#hblock/red"] + mark,
+.theme-dark a[href^="#hblock/red"] + mark {
 	background-color: rgb(253, 226, 226) !important;
 	border: 1px solid rgb(249, 142, 139);
 	color: rgb(216, 57, 49) !important;
@@ -362,7 +422,8 @@ a[href^="#hblock/red"] + mark {
 
 
 /* -- highlight green --  */
-a[href^="#hblock/green"] + mark {
+.theme-light a[href^="#hblock/green"] + mark,
+.theme-dark a[href^="#hblock/green"] + mark {
 	background-color: rgb(217, 245, 214) !important;
 	border: 1px solid rgb(142, 224, 133);
 	color: rgb(46, 161, 33) !important;
@@ -373,7 +434,8 @@ a[href^="#hblock/green"] + mark {
 
 
 /* -- highlight purple --  */
-a[href^="#hblock/purple"] + mark {
+.theme-light a[href^="#hblock/purple"] + mark,
+.theme-dark a[href^="#hblock/purple"] + mark {
 	background-color: rgb(236, 226, 254) !important;
 	border: 1px solid rgb(173, 130, 247);
 	color: rgb(100, 37, 208) !important;
