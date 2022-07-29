@@ -1,1 +1,2 @@
 - 文件管理器：nautilus
+- zip:# PeaZip
