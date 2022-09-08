@@ -17,6 +17,15 @@ git config --local http.proxy 'http://192.168.56.1:7890'
 git config --local https.proxy 'http://192.168.2.20:2001'
 git config --global user.name
 git config --global user.email
+
+# 以下命令在Git Bash中执行即可
+# 场景一、代码在window提交，在windows使用（即默认场景）
+git config --global core.autocrlf true
+# 场景二、代码在windows提交，在Linux或者Mac系统或者Jenkins上专门打包为服务器使用，无需Git在pull时进行自动转换；（即Git在push时把CRLF转换成LF，pull时不转换）
+git config --global core.autocrlf input
+# 场景三、不想要Git自动转换：
+git config --global core.autocrlf false
+
 ```
 
 ## Files
