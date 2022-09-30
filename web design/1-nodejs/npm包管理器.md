@@ -1,6 +1,5 @@
 # npm包管理器
 
-[oznu/alpine-node: Node.js binaries for Alpine Linux on x86_64, armhf and aarch64. (github.com)](https://github.com/oznu/alpine-node)
 
 ## 配置源
 
