@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "90c016d15d9060e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "4c952f696cf51550",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c79039ab0b97cdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/98-不常用命令.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c2b61f13a00d5613",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5a83af7ca8cc8fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c73adb4b21ed1237",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "57b6333ce9ce352c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "rsync",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "81967919c08e97d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "english/听力错题/09-18-剑14-2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "3b15a3bde4ca01be",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fd8c1f0f9d5c6c58",
+    "type": "split",
+    "children": [
+      {
+        "id": "90f5d2cc25bec402",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33d243c2ec5e5a2d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux/98-不常用命令.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "444025851776e092",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux/98-不常用命令.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "535d14e1dc1f713c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0895215162e871e4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux/98-不常用命令.md"
+              }
+            }
+          },
+          {
+            "id": "0ef35deba6eb564f",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "dc62913fb44a4531",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2df10b0b579c8eaf",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "1c79039ab0b97cdd",
+  "lastOpenFiles": [
+    "Linux/99-inbox.md",
+    "Linux/98-不常用命令.md",
+    "Linux/99.其他软件.md",
+    "Linux/open-sudo-log.md",
+    "主题规则.md",
+    "Linux/04.service文件配置.md",
+    "README.md",
+    "Linux/97-记忆命令.md",
+    "nas/102-cloudreve .md",
+    "各类工具软件/Vscode.md"
+  ]
+}

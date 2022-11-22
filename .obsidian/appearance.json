@@ -5,5 +5,6 @@
   "enabledCssSnippets": [
     "tag-normal"
   ],
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "accentColor": ""
 }
