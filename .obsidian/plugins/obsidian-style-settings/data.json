@@ -1,6 +1,6 @@
 {
-  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-chocolate-topaz",
-  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-orange",
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
+  "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-custom-option",
   "blue-topaz-theme@@background-image-settings-command-palette-switch": true,
   "blue-topaz-theme@@hide-vault-name": true,
   "blue-topaz-theme@@hide-titlebar-text": false,
@@ -15,7 +15,6 @@
   "blue-topaz-theme@@text-folder-file-icon@@light": "#272727",
   "blue-topaz-theme@@folder-style-change-options-colorful": false,
   "blue-topaz-theme@@table-style-options": "table-style-one",
-  "blue-topaz-theme@@whole-code-wrap": true,
   "blue-topaz-theme@@show-border-table": true,
   "blue-topaz-theme@@style-options-for-buttons-plugin": false,
   "blue-topaz-theme@@style-options-for-kanban-plugin-static": "style-options-for-kanban-plugin-static-little-color",
@@ -71,5 +70,11 @@
   "primary-ceciliamay@@vault-title__titlebar": false,
   "primary-ceciliamay@@vault-title__file-explorer": true,
   "blue-topaz-theme@@accent-strong@@light": "#8C15A0",
-  "blue-topaz-theme@@toggle-bg-panel-page": false
+  "blue-topaz-theme@@toggle-bg-panel-page": false,
+  "blue-topaz-theme@@background-image-settings-switch": false,
+  "blue-topaz-theme@@background-image-settings-markdown-page-options": "background-image-settings-markdown-page-sea-and-sky",
+  "blue-topaz-theme@@background-settings-workplace-background-image": false,
+  "blue-topaz-theme@@background-primary-bg-4-bt@@light": "#D3DEC7",
+  "blue-topaz-theme@@background-primary-alt-bg-4-bt@@light": "#4FCC3A00",
+  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-Gruvbox-dark"
 }

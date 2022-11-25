@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/98-不常用命令.md",
+                "file": "web design/1-nodejs/npm包管理器.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/98-不常用命令.md",
+                "file": "web design/1-nodejs/npm包管理器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/98-不常用命令.md",
+                "file": "web design/1-nodejs/npm包管理器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/98-不常用命令.md"
+                "file": "web design/1-nodejs/npm包管理器.md"
               }
             }
           },
@@ -172,20 +172,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
   "active": "1c79039ab0b97cdd",
   "lastOpenFiles": [
-    "Linux/99-inbox.md",
-    "Linux/98-不常用命令.md",
-    "Linux/99.其他软件.md",
-    "Linux/open-sudo-log.md",
-    "主题规则.md",
-    "Linux/04.service文件配置.md",
-    "README.md",
-    "Linux/97-记忆命令.md",
-    "nas/102-cloudreve .md",
-    "各类工具软件/Vscode.md"
+    "web design/1-nodejs/log.io.md",
+    "web design/1-html-02.md",
+    "web design/2-CSS-01-选择器与字体属性.md",
+    "StartHere.md",
+    "Linux/02.tmux.md",
+    "各类工具软件/0pic/Pasted image 20220512210529.png",
+    "各类工具软件/0pic/Linux-命令行翻译-pic01.png",
+    "各类工具软件/0pic/2019-6-2-17-12-51.png",
+    "各类工具软件/0pic/2019-6-2-16-46-0.png",
+    "web design/1-nodejs/00-node版本.md"
   ]
 }

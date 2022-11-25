@@ -3,8 +3,10 @@
   "translucency": false,
   "cssTheme": "Blue Topaz",
   "enabledCssSnippets": [
+    "highlight colors",
     "tag-normal"
   ],
   "baseFontSize": 16,
-  "accentColor": ""
+  "accentColor": "",
+  "showViewHeader": true
 }
