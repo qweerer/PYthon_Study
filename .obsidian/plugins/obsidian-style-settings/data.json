@@ -7,7 +7,6 @@
   "blue-topaz-theme@@magic-main-color@@light": "#034FA5",
   "blue-topaz-theme@@text-normal@@dark": "#93B18F",
   "blue-topaz-theme@@interactive-accent@@light": "#2F92E4",
-  "blue-topaz-theme@@background-secondary-alt-bg-4-bt@@light": "#EFE9D9",
   "blue-topaz-theme@@h1-text-align-settings": "h1-text-align-center",
   "blue-topaz-theme@@rainbow-ordered-list": true,
   "blue-topaz-theme@@list-style-change-options": "rainbow-lines-reading",
@@ -76,5 +75,8 @@
   "blue-topaz-theme@@background-settings-workplace-background-image": false,
   "blue-topaz-theme@@background-primary-bg-4-bt@@light": "#D3DEC7",
   "blue-topaz-theme@@background-primary-alt-bg-4-bt@@light": "#4FCC3A00",
-  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-Gruvbox-dark"
+  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-Gruvbox-dark",
+  "blue-topaz-theme@@background-image-settings-command-palette-same-as-workplace": false,
+  "blue-topaz-theme@@background-secondary-alt-bg-4-bt@@light": "#FAF4EB",
+  "blue-topaz-theme@@background-secondary-bg-4-bt@@light": "#FAF4EB"
 }
