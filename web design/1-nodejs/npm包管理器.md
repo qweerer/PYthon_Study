@@ -10,32 +10,36 @@ npm config set registry http://registry.npm.taobao.org/
 npx nrm use taobao
 npx nrm use npm
 
-
-yarn config get registry
-yarn config set registry http://registry.npm.taobao.org/
-yarn config set registry http://registry.npmjs.org/
-yarn cache clean
-yarn --update-checksums
-yarn
 ```
 
 ## 部署
 
 ```bash
-npm install -g yarn pm2 nodemon
+npm install -g pnpm pm2 nodemon
 ```
 
 ## 缓存设置
 
 ```bash
-yarn cache clean
 npm cache clean --force
 
-yarn config set cache-folder "/c/Develop/nodejs/node-cache/yarn"
 npm config set cache "/c/Develop/nodejs/node-cache/npm"
 npm config set prefix "D:\Program Files\npm_global"
+
+./pnpm config set store-dir      "/opt/home/pnpm/pnpm-store"
+./pnpm config set cache-dir      "/opt/home/pnpm/cache"
+./pnpm config set state-dir      "/opt/home/pnpm"
+./pnpm config set global-dir     "/opt/home/pnpm/pnpm-global"
+./pnpm config set global-bin-dir "~/app/_env_make/nodejs/bin"
 npm config ls
-yarn config list
+
+cache=/home/tom/app/_cache_npm
+store-dir=/home/tom/app/_cache_npm/pnpm-store
+cache-dir=/home/tom/app/_cache_npm/cache
+state-dir=/home/tom/app/_env_make
+global-dir=/home/tom/app/_env_make/pnpm-global
+global-bin-dir=/home/tom/app/_env_make/nodejs/bin
+
 ```
 
 ## 其他命令
@@ -52,6 +56,16 @@ npm install --production
 
 
 ```bash
+yarn cache clean
+yarn config set cache-folder "/c/Develop/nodejs/node-cache/yarn"
+yarn config list
+
+yarn config get registry
+yarn config set registry http://registry.npm.taobao.org/
+yarn config set registry http://registry.npmjs.org/
+yarn cache clean
+yarn --update-checksums
+yarn
 yarn buils
 ```
 
